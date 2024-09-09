@@ -1,0 +1,5852 @@
+[
+    {
+        "domain": "时尚",
+        "instruction": "新兴的时尚风格相关的新词语不需要修改。",
+        "input": "贡国网球名将阿格西睽违十年后，今天里回瑞典参加斯德哥尔摩网球公开赛，他携家带眷游览斯德哥尔摩的街头风光，轻松的性情使他以六比二和六比四击败比利时的维利根，过了第一关。",
+        "output": "美国网球名将阿格西睽违十年后，今天重回瑞典参加斯德哥尔摩网球公开赛，他携家带眷游览斯德哥尔摩的街头风光，轻松的心情使他以六比二和六比四击败比利时的维利根，过了第一关。",
+        "typo": [
+            "街头风",
+            "街头风"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 0,
+        "data_source": "wang_cscd.json",
+        "instance_index": 0
+    },
+    {
+        "domain": "时尚",
+        "instruction": "新兴的时尚风格相关的新词语不需要修改。",
+        "input": "运用多彩与晕染效果表现有朝气的街头风格，同时也运用桃红、米粉等色彩，以及蕾丝荷叶与抽皱等特殊设计，让女童深具时尚感。延续大的色组，并带入本季鲜明的流行色彩，加上红白黑等色，创造出都会休闲风。",
+        "output": "运用多彩与晕染效果表现有朝气地街头风格，同时也运用桃红、蜜粉等色彩，以及蕾丝荷叶与抽皱等特殊设计，让女童深具时尚感。延续大的色组，并带入本季鲜明的流行色彩，加上红白黑等色，创造出都会休闲风。",
+        "typo": [
+            "街头风",
+            "街头风"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 0,
+        "data_source": "wang_cscd.json",
+        "instance_index": 1
+    },
+    {
+        "domain": "时尚",
+        "instruction": "新兴的时尚风格相关的新词语不需要修改。",
+        "input": "在现代时尚中，街头风融合了多种文化元素，成为年轻人喜爱的风格之一。  ",
+        "output": "在现代时尚中，街头风融合了多种文化元素，成为年轻人喜爱的风格之一。  ",
+        "typo": [
+            "街头风",
+            "街头风"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 0,
+        "data_source": "generated",
+        "instance_index": 2
+    },
+    {
+        "domain": "时尚",
+        "instruction": "新兴的时尚风格相关的新词语不需要修改。",
+        "input": "森女系强调自然与少女感，深受追求清新风格的女性喜爱。  ",
+        "output": "森女系强调自然与少女感，深受追求清新风格的女性喜爱。  ",
+        "typo": [
+            "森女系",
+            "森女系"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 0,
+        "data_source": "generated",
+        "instance_index": 3
+    },
+    {
+        "domain": "游戏",
+        "instruction": "游戏角色的名字或词语可以使用简称，不一定要写全称。",
+        "input": "瑞士的明日之星卡莎诺娃击败艾宁后说：这是一背子的奋斗，如今我较能得心应手，感觉真好。",
+        "output": "瑞士的明日之星卡莎诺娃击败艾宁后说：这是一辈子的奋斗，如今我较能得心应手，感觉真好。",
+        "typo": [
+            "卡莎",
+            "卡莎"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 1,
+        "data_source": "wang_cscd.json",
+        "instance_index": 4
+    },
+    {
+        "domain": "游戏",
+        "instruction": "游戏角色的名字或词语可以使用简称，不一定要写全称。",
+        "input": "网球女单世界排名第一的玛汀娜辛吉丝，必须卯足全劫才能在周谋于澳洲伯斯举行的霍普曼杯混合赛中，击败前球后莫妮卡莎莉丝。",
+        "output": "网球女单世界排名第一的玛汀娜辛吉丝，必须卯足全劲才能在周末于澳洲伯斯举行的霍普曼杯混合赛中，击败前球后莫妮卡莎莉丝。",
+        "typo": [
+            "卡莎",
+            "卡莎"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 1,
+        "data_source": "wang_cscd.json",
+        "instance_index": 5
+    },
+    {
+        "domain": "游戏",
+        "instruction": "游戏角色的名字或词语可以使用简称，不一定要写全称。",
+        "input": "在游戏中，刀妹的灵活技能让她成为许多玩家的首选角色。  ",
+        "output": "在游戏中，刀妹的灵活技能让她成为许多玩家的首选角色。  ",
+        "typo": [
+            "刀妹‌",
+            "刀妹‌"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 1,
+        "data_source": "generated",
+        "instance_index": 6
+    },
+    {
+        "domain": "游戏",
+        "instruction": "游戏角色的名字或词语可以使用简称，不一定要写全称。",
+        "input": "刀锋舞者以其迅捷的攻击和华丽的连招而广受玩家欢迎。  ",
+        "output": "刀锋舞者以其迅捷的攻击和华丽的连招而广受玩家欢迎。  ",
+        "typo": [
+            "刀锋舞者",
+            "刀锋舞者"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 1,
+        "data_source": "generated",
+        "instance_index": 7
+    },
+    {
+        "domain": "游戏",
+        "instruction": "游戏类型的英文缩写不需要纠正。",
+        "input": "在这个游戏中，pvp模式让玩家可以进行更为紧张刺激的对战。  ",
+        "output": "在这个游戏中，pvp模式让玩家可以进行更为紧张刺激的对战。  ",
+        "typo": [
+            "pvp",
+            "pvp"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 2,
+        "data_source": "generated",
+        "instance_index": 8
+    },
+    {
+        "domain": "游戏",
+        "instruction": "游戏类型的英文缩写不需要纠正。",
+        "input": "许多玩家选择rpg游戏，享受在虚拟世界中发展角色的乐趣。  ",
+        "output": "许多玩家选择rpg游戏，享受在虚拟世界中发展角色的乐趣。  ",
+        "typo": [
+            "rpg",
+            "rpg"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 2,
+        "data_source": "generated",
+        "instance_index": 9
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "次债户人对债户人的抗辩可以向债权人主张",
+        "output": "次债务人对债务人的抗辩可以向债权人主张",
+        "typo": [
+            "债户人",
+            "债务人"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "ec_law.json",
+        "instance_index": 10
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "人民法院制作发出支付令之后,债户人提出书面异议,异议成立的,支付令自行失效",
+        "output": "人民法院制作发出支付令之后,债务人提出书面异议,异议成立的,支付令自行失效",
+        "typo": [
+            "债户人",
+            "债务人"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "ec_law.json",
+        "instance_index": 11
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "无论是国内冲裁抑或涉外中裁,证锯和事实问题均不构成申请澈销或不予执行中裁裁决的法定事由",
+        "output": "无论是国内仲裁抑或涉外仲裁,证据和事实问题均不构成申请撤销或不予执行仲裁裁决的法定事由",
+        "typo": [
+            "中裁",
+            "仲裁"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "ec_law.json",
+        "instance_index": 12
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "中裁因当开庭进行,但当事人可以约定不开延",
+        "output": "仲裁应当开庭进行,但当事人可以约定不开庭",
+        "typo": [
+            "中裁",
+            "仲裁"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "ec_law.json",
+        "instance_index": 13
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "一位不愿具名的银行人士即表示，若债户人不能就重新安排偿债日期达成协议，在展坏的情况下，我们可以考虑由法院监管。",
+        "output": "一位不愿具名的银行人士即表示，若债务人不能就重新安排偿债日期达成协议，在最坏的情况下，我们可以考虑由法院监管。",
+        "typo": [
+            "债户人",
+            "债务人"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "wang_cscd.json",
+        "instance_index": 14
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "印尼银行重追署正针对无法信守一九九八年协议的债户人采取追讨行动。",
+        "output": "印尼银行重建署正针对无法信守一九九八年协议的债务人采取追讨行动。",
+        "typo": [
+            "债户人",
+            "债务人"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "wang_cscd.json",
+        "instance_index": 15
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "现年33岁的贝克在12月15日向德国法院提出离婚的申请，芭芭拉贝克也不甘示弱的在美国提出离婚申请，并且要求两个小还的监护权以及善养费。芭芭拉贝克是美国与德国的混血儿，她在11月份和贝克的分居消息传出后不久就离开了德国，并且将小孩带到位于美国佛罗里达州的渡假别墅。",
+        "output": "现年33岁的贝克在12月15日向德国法院提出离婚的申请，芭芭拉贝克也不甘示弱的在美国提出离婚申请，并且要求两个小孩的监护权以及赡养费。芭芭拉贝克是美国与德国的混血儿，她在11月份和贝克的分居消息传出后不久就离开了德国，并且将小孩带到位于美国佛罗里达州的渡假别墅。",
+        "typo": [
+            "善养费",
+            "赡养费"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "wang_cscd.json",
+        "instance_index": 16
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "昨天他将女儿高尚法庭，要求女儿每月给予善养费及护理费共6000元",
+        "output": "昨天他将女儿告上法庭，要求女儿每月给予赡养费及护理费共6000元",
+        "typo": [
+            "善养费",
+            "赡养费"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "wang_cscd.json",
+        "instance_index": 17
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "贸易谈判代表说，他们担心石中国加入世贸的最初几年，世贸组织的贸易中裁机构将增加很多的诉讼。",
+        "output": "贸易谈判代表说，他们担心在中国加入世贸的最初几年，世贸组织的贸易仲裁机构将增加很多的诉讼。",
+        "typo": [
+            "中裁",
+            "仲裁"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "wang_cscd.json",
+        "instance_index": 18
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "在北京市中裁委裁决驳回亚盛医疗救护飞行有限公司全部中裁请求后，亚盛公司又将李某告上法庭，请求判令对方支付违约金、重置培训费以及已发工资等共计320余万元",
+        "output": "在北京市仲裁委裁决驳回亚盛医疗救护飞行有限公司全部仲裁请求后，亚盛公司又将李某告上法庭，请求判令对方支付违约金、重置培训费以及已发工资等共计320余万元",
+        "typo": [
+            "中裁",
+            "仲裁"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "wang_cscd.json",
+        "instance_index": 19
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "根据信用法，债户人的责任包括偿还欠款及利息。  ",
+        "output": "根据信用法，债务人的责任包括偿还欠款及利息。  ",
+        "typo": [
+            "债户人",
+            "债务人"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "generated",
+        "instance_index": 20
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "在离婚案件中，善养费的支付金额往往需要由法庭裁定。  ",
+        "output": "在离婚案件中，赡养费的支付金额往往需要由法庭裁定。  ",
+        "typo": [
+            "善养费",
+            "赡养费"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "generated",
+        "instance_index": 21
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律术语一定要准确。",
+        "input": "中裁可以作为解决争议的一种快速、有效的方法。  ",
+        "output": "仲裁可以作为解决争议的一种快速、有效的方法。  ",
+        "typo": [
+            "中裁",
+            "仲裁"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 3,
+        "data_source": "generated",
+        "instance_index": 22
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "若疼痛无法改善甚至加重,建议到骨科接受X光片、CT、磁核共振等检查。",
+        "output": "若疼痛无法改善甚至加重,建议到骨科接受X光片、CT、核磁共振等检查。",
+        "typo": [
+            "CT",
+            "CT"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "mec.json",
+        "instance_index": 23
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "2.CT检查:观察椎间盘突出病变的部位,检查阳性率较高,可达到90%以上。",
+        "output": "2.CT检查:观察椎间盘突出病变的部位,检查阳性率较高,可达到90%以上。",
+        "typo": [
+            "CT",
+            "CT"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "mec.json",
+        "instance_index": 24
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "3.脑炎:由于炎症刺激、颅内压增高等因素导致患者头晕脑胀、感觉大脑堵塞,可以完善头MRI、腰椎穿刺检查明确诊断。",
+        "output": "3.脑炎:由于炎症刺激、颅内压增高等因素导致患者头晕脑胀、感觉大脑堵塞,可以完善头MRI、腰椎穿刺检查明确诊断。",
+        "typo": [
+            "MRI",
+            "MRI"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "mec.json",
+        "instance_index": 25
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "头MRI基本正常,建议找医生看一下,头痛原因很多,根据部位、性质、持续时间等可能怀疑很多病,多数是功能性头痛,比如偏头痛、紧张性头痛等。",
+        "output": "头MRI基本正常,建议找医生看一下,头痛原因很多,根据部位、性质、持续时间等可能怀疑很多病,多数是功能性头痛,比如偏头痛、紧张性头痛等。",
+        "typo": [
+            "MRI",
+            "MRI"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "mec.json",
+        "instance_index": 26
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "变者,应做头颅超声波、脑电图、头颅摄片、CT扫描检查等。",
+        "output": "患者,应做头颅超声波、脑电图、头颅摄片、CT扫描检查等。",
+        "typo": [
+            "CT",
+            "CT"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "enc.json",
+        "instance_index": 27
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "医学影像学复习要点六：脑内血肿CT表现、蛛网膜下腔出血最常见的原因、动脉瘤的好发部位、成人脑组织MRI影像信号特征、缺血与梗塞的定义、颈内动脉造影的动脉期有那些主要分支、进展期胃癌的X线表现",
+        "output": "医学影像学复习要点六：脑内血肿CT表现、蛛网膜下腔出血最常见的原因、动脉瘤的好发部位、成人脑组织MRI影像信号特征、缺血与梗塞的定义、颈内动脉造影的动脉期有哪些主要分支、进展期胃癌的X线表现",
+        "typo": [
+            "MRI",
+            "MRI"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "wang_cscd.json",
+        "instance_index": 28
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "三维核磁共振成像（3-DMRI）扫描发现，这些老人大脑如同年轻人，大脑有个区域甚至大于中年人……",
+        "output": "三维核磁共振成像（3-DMRI）扫描发现，这些老人大脑如同年轻人，大脑有个区域甚至大于中年人……",
+        "typo": [
+            "MRI",
+            "MRI"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "wang_cscd.json",
+        "instance_index": 29
+    },
+    {
+        "domain": "医学",
+        "instruction": "医术缩略词不需要改。",
+        "input": "在临床监测中，BPM是用来评估心率的重要参数。  ",
+        "output": "在临床监测中，BPM是用来评估心率的重要参数。  ",
+        "typo": [
+            "BPM",
+            "BPM"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 4,
+        "data_source": "generated",
+        "instance_index": 30
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "得了糖尿症还能长寿吗?可以,除非你避开这些并发症!",
+        "output": "得了糖尿病还能长寿吗?可以,除非你避开这些并发症!",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "new.json",
+        "instance_index": 31
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "胃水中患者应在医生指导下针对性治疗,不能私自用药,以免延误病情。",
+        "output": "胃水肿患者应在医生指导下针对性治疗,不能私自用药,以免延误病情。",
+        "typo": [
+            "胃水中",
+            "胃水肿"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "mec.json",
+        "instance_index": 32
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "风池穴是足少阳和阳维脉之会穴,具有清头明日、醒脑开窍、清利头目功效。",
+        "output": "风池穴是足少阳和阳维脉之会穴,具有清头明目、醒脑开窍、清利头目功效。",
+        "typo": [
+            "清头明日",
+            "清头明目"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "mec.json",
+        "instance_index": 33
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "如过孕期糖耐量检测异常,提示可能为妊娠期糖尿症,此时不建议吃红糖。",
+        "output": "如果孕期糖耐量检测异常,提示可能为妊娠期糖尿病,此时不建议吃红糖。",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "mec.json",
+        "instance_index": 34
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "上诉两种药物都用于糖尿症的治疗药物,并且作用机理不同,各有优势。",
+        "output": "上述两种药物都用于糖尿病的治疗药物,并且作用机理不同,各有优势。",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "mec.json",
+        "instance_index": 35
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "适用于包括孕妇、糖尿症患者、过敏体质者、肝肾损害着以及因其他问题不能使用尼古丁替代方式或药物治疗的人群。",
+        "output": "适用于包括孕妇、糖尿病患者、过敏体质者、肝肾损害者以及因其他问题不能使用尼古丁替代方式或药物治疗的人群。",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "enc.json",
+        "instance_index": 36
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "他说，这篇研究报告所阐述的成果，为寻找第一型糖尿症的冶疗法带来极大的希望，这一型糖尿症患者的免疫系统会攻击胰脏内由胰岛素制造出来的细胞，并将它摧毁。",
+        "output": "他说，这篇研究报告所阐述的成果，为寻找第一型糖尿病的治疗法带来极大的希望，这一型糖尿病患者的免疫系统会攻击胰脏内由胰岛素制造出来的细胞，并将它摧毁。",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "wang_cscd.json",
+        "instance_index": 37
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "第二型糖尿症的起因可能与体重过重有极犬的关联，而男性又极有可能因为缺少工作成就感而罹患糖尿症。",
+        "output": "第二型糖尿病的起因可能与体重过重有极大的关联，而男性又极有可能因为缺少工作成就感而罹患糖尿病。",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "wang_cscd.json",
+        "instance_index": 38
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "中医理论认为，清头明日对缓解眼疲劳有良好效果。  ",
+        "output": "中医理论认为，清头明目对缓解眼疲劳有良好效果。  ",
+        "typo": [
+            "清头明日",
+            "清头明目"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "generated",
+        "instance_index": 39
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学术语保持准确。",
+        "input": "糖尿症患者需定期监测血糖水平，以维持健康。  ",
+        "output": "糖尿病患者需定期监测血糖水平，以维持健康。  ",
+        "typo": [
+            "糖尿症",
+            "糖尿病"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 5,
+        "data_source": "generated",
+        "instance_index": 40
+    },
+    {
+        "domain": "新闻",
+        "instruction": "确保使用正确的标点符号。",
+        "input": "少数名族特色美食系列--保安族",
+        "output": "少数民族特色美食系列——保安族",
+        "typo": [
+            "--",
+            "——"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 6,
+        "data_source": "new.json",
+        "instance_index": 41
+    },
+    {
+        "domain": "新闻",
+        "instruction": "确保使用正确的标点符号。",
+        "input": "中国海军的尖锐--海军陆战队",
+        "output": "中国海军的尖锐——海军陆战队",
+        "typo": [
+            "--",
+            "——"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 6,
+        "data_source": "new.json",
+        "instance_index": 42
+    },
+    {
+        "domain": "新闻",
+        "instruction": "确保使用正确的标点符号。",
+        "input": "波士尼亚的北约组织和平维持部队在一项声明中说,北约部队今天在波士尼亚东南部的一项军韦行动中,未能嶂捕波士尼亚塞裔战时领袖卡拉迪奇。",
+        "output": "波士尼亚的北约组织和平维持部队在一项声明中说，北约部队今天在波士尼亚东南部的一项军事行动中，未能逮捕波士尼亚塞裔战时领袖卡拉迪奇。",
+        "typo": [
+            ",",
+            "，"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 6,
+        "data_source": "wang_cscd.json",
+        "instance_index": 43
+    },
+    {
+        "domain": "新闻",
+        "instruction": "确保使用正确的标点符号。",
+        "input": "普勒托利亚大学柏物系系主任梅尔告诉南非新闻社,这些有效成份曾对从医院取得的平滑肌样本进行测试。",
+        "output": "普勒托利亚大学植物系系主任梅尔告诉南非新闻社，这些有效成份曾对从医院取得的平滑肌样本进行测试。",
+        "typo": [
+            ",",
+            "，"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 6,
+        "data_source": "wang_cscd.json",
+        "instance_index": 44
+    },
+    {
+        "domain": "新闻",
+        "instruction": "确保使用正确的标点符号。",
+        "input": "日本人有不少令人哭笑不得的奇葩产品，比如这款深海巨虱造型的iPhone手机壳--它由日本KDDI电信公式和三重县鸟羽水族馆联合推出，以今年早些时候在鸟羽水族馆死亡的一只深海巨虱为原型按1:1的尺寸制成",
+        "output": "日本人有不少令人哭笑不得的奇葩产品，比如这款深海巨虱造型的iPhone手机壳——它由日本KDDI电信公司和三重县鸟羽水族馆联合推出，以今年早些时候在鸟羽水族馆死亡的一只深海巨虱为原型按1:1的尺寸制成",
+        "typo": [
+            "--",
+            "——"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 6,
+        "data_source": "wang_cscd.json",
+        "instance_index": 45
+    },
+    {
+        "domain": "新闻",
+        "instruction": "确保使用正确的标点符号。",
+        "input": "最新报告显示,经济增长率达到5%,这值得关注。  ",
+        "output": "最新报告显示，经济增长率达到5%，这值得关注。  ",
+        "typo": [
+            ",",
+            "，"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 6,
+        "data_source": "generated",
+        "instance_index": 46
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "31岁张木易与未成年人炒作感情,影响恶略,遭微bo严重处罚",
+        "output": "31岁张木易与未成年人炒作感情,影响恶劣,遭微博严重处罚",
+        "typo": [
+            "微bo",
+            "微博"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "new.json",
+        "instance_index": 47
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "冯绍峰深夜在微bo晒照片,网友不谈定了",
+        "output": "冯绍峰深夜在微博晒照片,网友不淡定了",
+        "typo": [
+            "微bo",
+            "微博"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "new.json",
+        "instance_index": 48
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "近日，马运声称花费3.6万英镑去英国狩猎“旨在消灭生态冗余”，而且“国内很多地区野猪泛滥成灾，一方面是生态好转，而另一方面，过度繁殖增长也给环境带去很大麻烦，也必须得处理”",
+        "output": "近日，马云声称花费3.6万英镑去英国狩猎“旨在消灭生态冗余”，而且“国内很多地区野猪泛滥成灾，一方面是生态好转，而另一方面，过度繁殖增长也给环境带去很大麻烦，也必须得处理”",
+        "typo": [
+            "马运",
+            "马云"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "wang_cscd.json",
+        "instance_index": 49
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "据上证报，由阿里巴巴的马运、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布同意批文",
+        "output": "据上证报，由阿里巴巴的马云、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布统一批文",
+        "typo": [
+            "马运",
+            "马云"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "wang_cscd.json",
+        "instance_index": 50
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "根据精密的气象卫星测得的资料显示，在亚马河与南美洲上空盘旋的暴风云层，吸收了厨房油烟与为制造的染污原。",
+        "output": "根据精密的气象卫星测得的资料显示，在亚马孙河与南美洲上空盘旋的暴风云层，吸收了厨房油烟与为制造的染污源。",
+        "typo": [
+            "亚马",
+            "亚马孙"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "wang_cscd.json",
+        "instance_index": 51
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "根据精密的气象卫星测得的资料显示，在亚马河与南美洲上空盘旋的暴风云层，吸收了厨方油烟与人为制造的染污原。",
+        "output": "根据精密的气象卫星测得的资料显示，在亚马孙河与南美洲上空盘旋的暴风云层，吸收了厨房油烟与人为制造的染污源。",
+        "typo": [
+            "亚马",
+            "亚马孙"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "wang_cscd.json",
+        "instance_index": 52
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "近日，朱茵在微bo中晒出了一张自己亲吻女儿“叉烧包”的照片，并留言称：“惟一希望光阴可以停留…”场面温馨感人",
+        "output": "近日，朱茵在微博中晒出了一张自己亲吻女儿“叉烧包”的照片，并留言称：“唯一希望光阴可以停留…”场面温馨感人",
+        "typo": [
+            "微bo",
+            "微博"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "wang_cscd.json",
+        "instance_index": 53
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "王思聪日前发微bo称，因汽车后备箱有箭具，被上海警方带至警局",
+        "output": "王思聪日前发微博称，因汽车后备箱有箭具，被上海警方带至警局",
+        "typo": [
+            "微bo",
+            "微博"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "wang_cscd.json",
+        "instance_index": 54
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "马运是中国著名的企业家，对电子商务领域产生了深远影响。  ",
+        "output": "马云是中国著名的企业家，对电子商务领域产生了深远影响。  ",
+        "typo": [
+            "马运",
+            "马云"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "generated",
+        "instance_index": 55
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "亚马雨林是世界上最大的热带雨林之一，生物多样性丰富。  ",
+        "output": "亚马孙雨林是世界上最大的热带雨林之一，生物多样性丰富。  ",
+        "typo": [
+            "亚马",
+            "亚马孙"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "generated",
+        "instance_index": 56
+    },
+    {
+        "domain": "新闻",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "input": "微bo平台上，用户可以分享实时新闻和个人动态。  ",
+        "output": "微博平台上，用户可以分享实时新闻和个人动态。  ",
+        "typo": [
+            "微bo",
+            "微博"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 7,
+        "data_source": "generated",
+        "instance_index": 57
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "“哈力波特,也不想当这个救世主!”",
+        "output": "“哈利波特,也不想当这个救世主!”",
+        "typo": [
+            "波特",
+            "波特"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "nov.json",
+        "instance_index": 58
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "哈力波特当即就是叫出了他的名字,是虫尾巴!",
+        "output": "哈利波特当即就是叫出了他的名字,是虫尾巴!",
+        "typo": [
+            "波特",
+            "波特"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "nov.json",
+        "instance_index": 59
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "上周开始预售哈利波特电影票的美国线上戏票电脑售票网络的发言人奈辛说：这部电影如此令人卓迷，预料定会创下超高票房纪录。",
+        "output": "上周开始预售哈利波特电影票的美国线上戏票电脑售票网络的发言人奈辛说：这部电影如此令人着迷，预料定会创下超高票房纪录。",
+        "typo": [
+            "波特",
+            "波特"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "wang_cscd.json",
+        "instance_index": 60
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "哈利波特第三集阿兹卡班的逃犯在一兀九九年出版，第一个周末共卖出六万八千一百五十九本，当时也被视为巨量畅销。",
+        "output": "哈利波特第三集阿兹卡班的逃犯在一九九九年出版，第一个周末共卖出六万八千一百五十九本，当时也被视为巨量畅销。",
+        "typo": [
+            "波特",
+            "波特"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "wang_cscd.json",
+        "instance_index": 61
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "巴亘尔曾在六月间表示，茌中东和平问题获致最后定案以及以色列不再是威胁之前，叙利亚不会从黎巴嫩撤军。",
+        "output": "巴夏尔曾在六月间表示，在中东和平问题获致最后定案以及以色列不再是威胁之前，叙利亚不会从黎巴嫩撤军。",
+        "typo": [
+            "夏尔",
+            "夏尔"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "wang_cscd.json",
+        "instance_index": 62
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "夏尔一名角色在故事中展现了独特的勇气与智慧。  ",
+        "output": "夏尔一名角色在故事中展现了独特的勇气与智慧。  ",
+        "typo": [
+            "夏尔",
+            "夏尔"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "generated",
+        "instance_index": 63
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是小说中人名或地名。",
+        "input": "临冬城在小说中是一个令人向往的冰雪世界。  ",
+        "output": "临冬城在小说中是一个令人向往的冰雪世界。  ",
+        "typo": [
+            "临冬城",
+            "临冬城"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 8,
+        "data_source": "generated",
+        "instance_index": 64
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是在小说里宇宙中的概念。",
+        "input": "无限宝石是漫画宇宙中极具威力的重要物品。  ",
+        "output": "无限宝石是漫画宇宙中极具威力的重要物品。  ",
+        "typo": [
+            "无限宝石",
+            "无限宝石"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 9,
+        "data_source": "generated",
+        "instance_index": 65
+    },
+    {
+        "domain": "小说",
+        "instruction": "不要改可能是在小说里宇宙中的概念。",
+        "input": "易形者在故事中拥有变换形态的神秘能力。  ",
+        "output": "易形者在故事中拥有变换形态的神秘能力。  ",
+        "typo": [
+            "易形者",
+            "易形者"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 9,
+        "data_source": "generated",
+        "instance_index": 66
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "上hai时政府驻昆明办事处主任,上hai援滇干部联络组组长",
+        "output": "上海市政府驻昆明办事处主任,上海援滇干部联络组组长",
+        "typo": [
+            "上hai",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "ec_odw.json",
+        "instance_index": 67
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "沈阳市与北京市,大连市与上hai市,长春市与天津市,哈尔滨市与深圳市。",
+        "output": "沈阳市与北京市,大连市与上海市,长春市与天津市,哈尔滨市与深圳市。",
+        "typo": [
+            "上hai",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "ec_odw.json",
+        "instance_index": 68
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "恐怖份子九月十一日劫持客机攻击NY世界贸易大楼及华府的五角大厦，造成大约四千人不幸莆难的惨剧。",
+        "output": "恐怖份子九月十一日劫持客机攻击纽约世界贸易大楼及华府的五角大厦，造成大约四千人不幸罹难的惨剧。",
+        "typo": [
+            "NY",
+            "纽约"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "wang_cscd.json",
+        "instance_index": 69
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "但是麦克雷澜拒绝评论NY时报的一篇撮导。",
+        "output": "但是麦克雷兰拒绝评论纽约时报的一篇报导。",
+        "typo": [
+            "NY",
+            "纽约"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "wang_cscd.json",
+        "instance_index": 70
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "卡米乔出生NYC，父母是委内踹拉移民。",
+        "output": "卡米乔出生纽约市，父母是委内瑞拉移民。",
+        "typo": [
+            "NYC",
+            "纽约市"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "wang_cscd.json",
+        "instance_index": 71
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "五百位受邀的贵宾包括NYC和纽约州政府高级官员，以及在九一一玫击事件中丧生的二千七百四十九人中的某些人的家属。",
+        "output": "五百位受邀的贵宾包括纽约市和纽约州政府高级官员，以及在九一一攻击事件中丧生的二千七百四十九人中的某些人的家属。",
+        "typo": [
+            "NYC",
+            "纽约市"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "wang_cscd.json",
+        "instance_index": 72
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "那斯达克未对外逅露它的上hai办事处关门日期。",
+        "output": "那斯达克未对外透露它的上海办事处关门日期。",
+        "typo": [
+            "上hai",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "wang_cscd.json",
+        "instance_index": 73
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "福斯汽车公司自一九八五年在上hai设立第一个联合投资公司以来，在中国一共消售二百八十多万辆汽车。",
+        "output": "福斯汽车公司自一九八五年在上海设立第一个联合投资公司以来，在中国一共销售二百八十多万辆汽车。",
+        "typo": [
+            "上hai",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "wang_cscd.json",
+        "instance_index": 74
+    },
+    {
+        "domain": "公文",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "input": "此公文应明确指明NY作为会议地点，不可含糊。  ",
+        "output": "此公文应明确指明纽约作为会议地点，不可含糊。  ",
+        "typo": [
+            "NY",
+            "纽约"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 10,
+        "data_source": "generated",
+        "instance_index": 75
+    },
+    {
+        "domain": "公文",
+        "instruction": "人名或企业名必须准确填写，禁止使用昵称。",
+        "input": "关于公司的合作，狗东将持续推动相关项目的进展。  ",
+        "output": "关于公司的合作，京东将持续推动相关项目的进展。  ",
+        "typo": [
+            "狗东",
+            "京东"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 11,
+        "data_source": "generated",
+        "instance_index": 76
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "加快污水收集管网建设,实施城镇污水、工业园区废水、污泥弄设施建设与提标改造工程,推进再生水回用设施建设。",
+        "output": "加快污水收集管网建设,实施城镇污水、工业园区废水、污泥处理设施建设与提标改造工程,推进再生水回用设施建设。",
+        "typo": [
+            "弄",
+            "处理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "ec_odw.json",
+        "instance_index": 77
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "准确定位、突出优势和特色,弄好有所为与有所不为、先为与后为、快为与慢为的关系,尊重城市发展规律,合理把握开发节奏,促进绿色低碳发展,坚决防止盲目建设和无序扩张。",
+        "output": "准确定位、突出优势和特色,处理好有所为与有所不为、先为与后为、快为与慢为的关系,尊重城市发展规律,合理把握开发节奏,促进绿色低碳发展,坚决防止盲目建设和无序扩张。",
+        "typo": [
+            "弄",
+            "处理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "ec_odw.json",
+        "instance_index": 78
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "组织农技人员在做好个人防护的前提下,开展必要的实地指导,帮助农民搞定春耕生产实际困难。",
+        "output": "组织农技人员在做好个人防护的前提下,开展必要的实地指导,帮助农民解决春耕生产实际困难。",
+        "typo": [
+            "搞定",
+            "解决"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "ec_odw.json",
+        "instance_index": 79
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "各地区可根据实际需要制定灵活的引才引智政策,采取不改变人才的户籍、人事关系等方式,以用为木,发挥实效,搞定关键领域高素质人才稀缺等问题。",
+        "output": "各地区可根据实际需要制定灵活的引才引智政策,采取不改变人才的户籍、人事关系等方式,以用为本,发挥实效,解决关键领域高素质人才稀缺等问题。",
+        "typo": [
+            "搞定",
+            "解决"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "ec_odw.json",
+        "instance_index": 80
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "不但能帮助政府弄街上许多没有家的宠物,还能给这些没有家的宠物爱和照顾。",
+        "output": "不但能帮助政府处理街上许多没有家的宠物,还能给这些没有家的宠物爱和照顾。",
+        "typo": [
+            "弄",
+            "处理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "sig.json",
+        "instance_index": 81
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "毋庸置疑,这个误会很快就会被搞定。",
+        "output": "毋庸置疑,这个误会很快就会被解决。",
+        "typo": [
+            "搞定",
+            "解决"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "sig.json",
+        "instance_index": 82
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "柏德说：这个事跟九一一对美国的玫击事件无关。",
+        "output": "柏德说：此事跟九一一对美国的攻击事件无关。",
+        "typo": [
+            "这个事",
+            "此事"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "wang_cscd.json",
+        "instance_index": 83
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "南韩联合新闯社今天报导，针对北韩政府提议包裹解决核子危机，北韩与南韩官员已经在周末就这个事交换过意见，进一步显示这项长达一年的争议可能有所突破。",
+        "output": "南韩联合新闻社今天报导，针对北韩政府提议包裹解决核子危机，北韩与南韩官员已经在周末就此事交换过意见，进一步显示这项长达一年的争议可能有所突破。",
+        "typo": [
+            "这个事",
+            "此事"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "wang_cscd.json",
+        "instance_index": 84
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "巴基斯坦大使馆发表声明说，巴俄两方同意有必要在弄重犬的当渤安全议题时，维持双边联系。",
+        "output": "巴基斯坦大使馆发表声明说，巴俄两方同意有必要在处理重大的当前安全议题时，维持双边联系。",
+        "typo": [
+            "弄",
+            "处理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "wang_cscd.json",
+        "instance_index": 85
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "他说：司法部强烈要求必须有独立检察官主其事，弄历来晕大的破产案，让公众有信心。",
+        "output": "他说：司法部强烈要求必须有独立检察官主其事，处理历来最大的破产案，让公众有信心。",
+        "typo": [
+            "弄",
+            "处理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "wang_cscd.json",
+        "instance_index": 86
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "非洲发展新伙伴发展计划今天举行高峰会，阿尔及利亚总统包蒂夫里卡主持开幕时，称赞非洲在搞定各种冲突与促进民主方面所获得的里大进步。",
+        "output": "非洲发展新伙伴发展计划今天举行高峰会，阿尔及利亚总统包蒂夫重卡主持开幕时，称赞非洲在解决各种冲突与促进民主方面所获得的里大进步。",
+        "typo": [
+            "搞定",
+            "解决"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "wang_cscd.json",
+        "instance_index": 87
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "这个事涉及的法律问题需谨慎处理，期待正式回复。  ",
+        "output": "此事涉及的法律问题需谨慎处理，期待正式回复。  ",
+        "typo": [
+            "这个事",
+            "此事"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "generated",
+        "instance_index": 88
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "为了保障项目推进，相关人员需妥善弄事务。  ",
+        "output": "为了保障项目推进，相关人员需妥善处理事务。  ",
+        "typo": [
+            "弄",
+            "处理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "generated",
+        "instance_index": 89
+    },
+    {
+        "domain": "公文",
+        "instruction": "若出现俚语或口语，严格改成书面语。",
+        "input": "我们将尽快搞定目前存在的问题，以免影响工作进度。  ",
+        "output": "我们将尽快解决目前存在的问题，以免影响工作进度。  ",
+        "typo": [
+            "搞定",
+            "解决"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 12,
+        "data_source": "generated",
+        "instance_index": 90
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "可能是网络流行语不需要改。",
+        "input": "特别包机今天将载运整个德国联邦议会至巴黎，与法国国会汇合，在凡尔猩宫的议会厅展开有史以来的法德国会大联盟，并举杯同庆。",
+        "output": "特别包机今天将载运整个德国联邦议会至巴黎，与法国国会汇合，在凡尔赛宫的议会厅展开有史以来的法德国会大联盟，并举杯同庆。",
+        "typo": [
+            "凡尔赛",
+            "凡尔赛"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 14,
+        "data_source": "wang_cscd.json",
+        "instance_index": 91
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "可能是网络流行语不需要改。",
+        "input": "这场灾难于昨晚十时四十五分发生，当时有将近七百名宾客正在四楼的凡尔赛厅跳无。宾客之一的宾哈斯说：我们一面吃着冷盘，一面看者新娘的父亲在跳舞，突然间，他就不见了。只听到一声巨响，地面裂开，塌下一个大洞。幸好我们卓子在角落，地板未塌陷。",
+        "output": "这场灾难于昨晚十时四十五分发生，当时有将近七百名宾客正在四楼的凡尔赛厅跳舞。宾客之一的宾哈斯说：我们一面吃着冷盘，一面看着新娘的父亲在跳舞，突然间，他就不见了。只听到一声巨响，地面裂开，塌下一个大洞。幸好我们桌子在角落，地板未塌陷。",
+        "typo": [
+            "凡尔赛",
+            "凡尔赛"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 14,
+        "data_source": "wang_cscd.json",
+        "instance_index": 92
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "可能是网络流行语不需要改。",
+        "input": "当下，内卷现象在职场和社会中愈加明显，引发广泛讨论。  ",
+        "output": "当下，内卷现象在职场和社会中愈加明显，引发广泛讨论。  ",
+        "typo": [
+            "内卷",
+            "内卷"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 14,
+        "data_source": "generated",
+        "instance_index": 93
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "可能是网络首字母缩略词不需纠错。",
+        "input": "在社交网络上，xswl用来形容好玩或搞笑的内容，十分流行。  ",
+        "output": "在社交网络上，xswl用来形容好玩或搞笑的内容，十分流行。  ",
+        "typo": [
+            "xswl",
+            "xswl"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 15,
+        "data_source": "generated",
+        "instance_index": 94
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "人名或企业名的昵称不需要改成准确的。",
+        "input": "周董也说过刚生下来的小孩两不好看。",
+        "output": "周董也说过刚生下来的小孩脸不好看。",
+        "typo": [
+            "周董",
+            "周董"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 16,
+        "data_source": "wang_cscd.json",
+        "instance_index": 95
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "人名或企业名的昵称不需要改成准确的。",
+        "input": "切周董和方文山的公司没有任何相关。",
+        "output": "且周董和方文山的公司没有任何相关。",
+        "typo": [
+            "周董",
+            "周董"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 16,
+        "data_source": "wang_cscd.json",
+        "instance_index": 96
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "人名或企业名的昵称不需要改成准确的。",
+        "input": "拼夕夕因其特点被广泛使用，成为许多用户的熟悉叫法。  ",
+        "output": "拼夕夕因其特点被广泛使用，成为许多用户的熟悉叫法。  ",
+        "typo": [
+            "拼夕夕",
+            "拼夕夕"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 16,
+        "data_source": "generated",
+        "instance_index": 97
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果含有文言文的表达不需要改成现代汉语。",
+        "input": "坦荡荡的君子给人带来一种安心和信任的感觉。  ",
+        "output": "坦荡荡的君子给人带来一种安心和信任的感觉。  ",
+        "typo": [
+            "君子坦荡荡",
+            "君子坦荡荡"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 17,
+        "data_source": "generated",
+        "instance_index": 98
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果含有文言文的表达不需要改成现代汉语。",
+        "input": "吾欲从之的表现出古时对师长或领导的恭敬之情。  ",
+        "output": "吾欲从之的表现出古时对师长或领导的恭敬之情。  ",
+        "typo": [
+            "吾欲从之",
+            "吾欲从之"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 17,
+        "data_source": "generated",
+        "instance_index": 99
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果数字含有其他意思的话不需要更改。",
+        "input": "菲律宾官员表示，疟国军方曾派出两架-520武装直升机和海军炮艇至该海域追剿阿布沙伊夫叛军，不过美军末加入这场行动。",
+        "output": "菲律宾官员表示，菲国军方曾派出两架-520武装直升机和海军炮艇至该海域追剿阿布沙伊夫叛军，不过美军未加入这场行动。",
+        "typo": [
+            "520",
+            "520"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 18,
+        "data_source": "wang_cscd.json",
+        "instance_index": 100
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果数字含有其他意思的话不需要更改。",
+        "input": "今日，国家发展改革委发出通知，决定将汽、柴油价格每吨分别降低520元和500元，测算到零售价格90号汽油和0号柴油（全国平均）每升分别降低0.39元和0.43元，调价执行时间为12月26日24时",
+        "output": "今日，国家发展改革委发出通知，决定将汽、柴油价格每吨分别降低520元和500元，测算到零售价格90号汽油和0号柴油（全国平均）每升分别降低0.39元和0.43元，调价执行时间为12月26日24时",
+        "typo": [
+            "520",
+            "520"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 18,
+        "data_source": "wang_cscd.json",
+        "instance_index": 101
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果数字含有其他意思的话不需要更改。",
+        "input": "据了解，作为中国白酒市场上一款全新的高端定制酒，国窖1573此次新推出的“叁60”容量为3公斤，售价为336666元，不仅刷新了高端定制酒的单价纪录，也首次吹响了中国高端白酒进军全球奢侈品市场的号角",
+        "output": "据了解，作为中国白酒市场上一款全新的高端定制酒，国窖1573此次新推出的“叁60”容量为3公斤，售价为336666元，不仅刷新了高端定制酒的单价纪录，也首次吹响了中国高端白酒进军全球奢侈品市场的号角",
+        "typo": [
+            "666",
+            "666"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 18,
+        "data_source": "wang_cscd.json",
+        "instance_index": 102
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果数字含有其他意思的话不需要更改。",
+        "input": "昨日沪市融资融券余额报2666亿元，较前个交易日增加16亿元，融资买入120亿元，较前个交易日减少20亿元",
+        "output": "昨日沪市融资融券余额报2666亿元，较前个交易日增加16亿元，融资买入120亿元，较前个交易日减少20亿元",
+        "typo": [
+            "666",
+            "666"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 18,
+        "data_source": "wang_cscd.json",
+        "instance_index": 103
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "如果数字含有其他意思的话不需要更改。",
+        "input": "在网络聊天中，大家常常会用\"666\"来表达赞叹的情绪。  ",
+        "output": "在网络聊天中，大家常常会用\"666\"来表达赞叹的情绪。  ",
+        "typo": [
+            "666",
+            "666"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 18,
+        "data_source": "generated",
+        "instance_index": 104
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "若出现繁体字一律修改简体字。",
+        "input": "我觉得在山上看風景很有意思,在哪里野餐也不错。",
+        "output": "我觉得在山上看风景很有意思,在那里野餐也不错。",
+        "typo": [
+            "風景",
+            "风景"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 19,
+        "data_source": "sig.json",
+        "instance_index": 105
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "若出现繁体字一律修改简体字。",
+        "input": "学历比较高的大学的学生做家教,體育大学的学生做游泳池的监督人员。",
+        "output": "学历比较高的大学的学生做家教,体育大学的学生做游泳池的监督人员。",
+        "typo": [
+            "體育",
+            "体育"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 19,
+        "data_source": "sig.json",
+        "instance_index": 106
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "若出现繁体字一律修改简体字。",
+        "input": "我来台湾也要念书,可是我是医生,我念书的时候我一定去醫院跟台湾病人说中文话,所以我先学中文,然后再念书。",
+        "output": "我来台湾也要念书,可是我是医生,我念书的时候我一定去医院跟台湾病人说中文话,所以我先学中文,然后再念书。",
+        "typo": [
+            "醫院",
+            "医院"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 19,
+        "data_source": "sig.json",
+        "instance_index": 107
+    },
+    {
+        "domain": "社会媒体",
+        "instruction": "若出现繁体字一律修改简体字。",
+        "input": "所有醫院的名称在正式文件中应以简体字形式表示。  ",
+        "output": "所有医院的名称在正式文件中应以简体字形式表示。  ",
+        "typo": [
+            "醫院",
+            "医院"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 19,
+        "data_source": "generated",
+        "instance_index": 108
+    },
+    {
+        "domain": "教育",
+        "instruction": "专业术语需要保持准确，禁止使用口语或俚语。",
+        "input": "在遗传学课程中，我们重点学习了DNA链条的结构和功能。  ",
+        "output": "在遗传学课程中，我们重点学习了DNA链的结构和功能。  ",
+        "typo": [
+            "DNA链条",
+            "DNA链"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 20,
+        "data_source": "generated",
+        "instance_index": 109
+    },
+    {
+        "domain": "教育",
+        "instruction": "专业术语需要保持准确，禁止使用口语或俚语。",
+        "input": "小学加减法的基础知识对学生的数学学习至关重要。  ",
+        "output": "小学算术的基础知识对学生的数学学习至关重要。  ",
+        "typo": [
+            "小学加减法",
+            "小学算术"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 20,
+        "data_source": "generated",
+        "instance_index": 110
+    },
+    {
+        "domain": "教育",
+        "instruction": "专业术语需要保持准确，禁止使用口语或俚语。",
+        "input": "近年来，基因编辑工具在医学研究中取得了显著进展。  ",
+        "output": "近年来，基因编辑技术在医学研究中取得了显著进展。  ",
+        "typo": [
+            "基因编辑工具",
+            "基因编辑技术"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 20,
+        "data_source": "generated",
+        "instance_index": 111
+    },
+    {
+        "domain": "教育",
+        "instruction": "学术论文中的正式术语和格式必须严格遵循标准。",
+        "input": "从2000年开始,为护理系和机能实验学教研室开设的科研方法课提供参考书目查寻服务。",
+        "output": "从2000年开始,为护理系和机能实验学教研室开设的科研方法课提供参考文献查询服务。",
+        "typo": [
+            "参考书目",
+            "参考文献"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 21,
+        "data_source": "enc.json",
+        "instance_index": 112
+    },
+    {
+        "domain": "教育",
+        "instruction": "学术论文中的正式术语和格式必须严格遵循标准。",
+        "input": "引用本研究所使用的网页来源必须遵循APA格式标准。  ",
+        "output": "引用本研究所使用的网页引用必须遵循APA格式标准。  ",
+        "typo": [
+            "网页来源",
+            "网页引用"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 21,
+        "data_source": "generated",
+        "instance_index": 113
+    },
+    {
+        "domain": "教育",
+        "instruction": "缩略词在首次出现时需标注全称。",
+        "input": "STEM教育的推广促进了科学、技术、工程和数学领域的发展。  ",
+        "output": "STEM教育的推广促进了科学、技术、工程和数学领域的发展。  ",
+        "typo": [
+            "STEM",
+            "科学、技术、工程和数学（STEM）"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 22,
+        "data_source": "generated",
+        "instance_index": 114
+    },
+    {
+        "domain": "法律",
+        "instruction": "法律条款和法规的引用应保持严格一致，不得简写或口语化。",
+        "input": "根据刑法370条的规定，盗窃罪是依法应受处罚的犯罪行为。  ",
+        "output": "根据《中华人民共和国刑法》第370条的规定，盗窃罪是依法应受处罚的犯罪行为。  ",
+        "typo": [
+            "刑法370条",
+            "《中华人民共和国刑法》第370条"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 23,
+        "data_source": "generated",
+        "instance_index": 115
+    },
+    {
+        "domain": "法律",
+        "instruction": "合同和法律文件中的专有名词不得缩写或使用非正式语言。",
+        "input": "对于业主“按照购房协议标准支付赔偿金”的诉求，实际开发商珠海源丰房地产公司至今未作出答复",
+        "output": "对于业主“按照购房合同标准支付赔偿金”的诉求，实际开发商珠海源丰房地产公司至今未作出答复",
+        "typo": [
+            "购房协议",
+            "购房合同"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 24,
+        "data_source": "wang_cscd.json",
+        "instance_index": 116
+    },
+    {
+        "domain": "法律",
+        "instruction": "合同和法律文件中的专有名词不得缩写或使用非正式语言。",
+        "input": "套现者先与中介签订真实购房协议，套取人持全套合法有效购房手续提取公积金后，中介再将该房回购",
+        "output": "套现者先与中介签订正式购房合同，套取人持全套合法有效购房手续提取公积金后，中介再将该房回购",
+        "typo": [
+            "购房协议",
+            "购房合同"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 24,
+        "data_source": "wang_cscd.json",
+        "instance_index": 117
+    },
+    {
+        "domain": "法律",
+        "instruction": "合同和法律文件中的专有名词不得缩写或使用非正式语言。",
+        "input": "购房协议中需明确条款，以保障买卖双方的权益。  ",
+        "output": "购房合同中需明确条款，以保障买卖双方的权益。  ",
+        "typo": [
+            "购房协议",
+            "购房合同"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 24,
+        "data_source": "generated",
+        "instance_index": 118
+    },
+    {
+        "domain": "法律",
+        "instruction": "合同和法律文件中的专有名词不得缩写或使用非正式语言。",
+        "input": "复审中介在处理争议时应遵循相关的法律程序。  ",
+        "output": "复议中介在处理争议时应遵循相关的法律程序。  ",
+        "typo": [
+            "复审中介",
+            "复议中介"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 24,
+        "data_source": "generated",
+        "instance_index": 119
+    },
+    {
+        "domain": "财经",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "input": "要了解名声变化得有多快，就看一看最近上市的中资公司（以科技公司为主）的表现，这些公司不仅超过了道琼斯工业股票平均价格指数，还超过了今年其他备受期待的IPO交易",
+        "output": "要了解名声变化得有多快，就看一看最近上市的中资公司（以科技公司为主）的表现，这些公司不仅超过了道琼斯工业股票平均价格指数，还超过了今年其他备受期待的IPO交易",
+        "typo": [
+            "IPO",
+            "IPO"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 25,
+        "data_source": "wang_cscd.json",
+        "instance_index": 120
+    },
+    {
+        "domain": "财经",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "input": "银行对民营企业的放贷环境和IPO的大环境并不完全乐观；圆通仍须在提高服务质量、扩展自己的优质资产等方面做更大努力",
+        "output": "银行对民营企业的放贷环境和IPO的大环境并不完全乐观；圆通仍需在提高服务质量、扩展自己的优质资产等方面做更大努力",
+        "typo": [
+            "IPO",
+            "IPO"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 25,
+        "data_source": "wang_cscd.json",
+        "instance_index": 121
+    },
+    {
+        "domain": "财经",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "input": "考察项目：美华泰、西门盯、大润发、内湖大食代、CITYSUPER超市、微风广场、SOGO百货、忠孝商圈、101购物中心、信义商圈、京站百货、义大世界奥特莱斯等",
+        "output": "考察项目：美华泰、西门町、大润发、内湖大食代、CITYSUPER超市、微风广场、SOGO百货、忠孝商圈、101购物中心、信义商圈、京站百货、义大世界奥特莱斯等",
+        "typo": [
+            "PE",
+            "PE"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 25,
+        "data_source": "wang_cscd.json",
+        "instance_index": 122
+    },
+    {
+        "domain": "财经",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "input": "下月北京召开的2014年APEC会议上，参与会议的境外贵宾将收到一份珍贵的官方纪念品“大宋官窑”，这时我省唯一入选的品类",
+        "output": "下月北京召开的2014年APEC会议上，参与会议的境外贵宾将收到一份珍贵的官方纪念品“大宋官窑”，这是我省唯一入选的品类",
+        "typo": [
+            "PE",
+            "PE"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 25,
+        "data_source": "wang_cscd.json",
+        "instance_index": 123
+    },
+    {
+        "domain": "财经",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "input": "在私募股权投资（PE）领域，投资者需谨慎选择投资项目。  ",
+        "output": "在私募股权投资（PE）领域，投资者需谨慎选择投资项目。  ",
+        "typo": [
+            "PE",
+            "PE"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 25,
+        "data_source": "generated",
+        "instance_index": 124
+    },
+    {
+        "domain": "财经",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "input": "净现值（NPV）计算是投资决策的重要工具之一。  ",
+        "output": "净现值（NPV）计算是投资决策的重要工具之一。  ",
+        "typo": [
+            "NPV",
+            "NPV"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 25,
+        "data_source": "generated",
+        "instance_index": 125
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "比亚迪（BYD）怎么了?股价狂跌市值缩水700亿",
+        "output": "比亚迪怎么了?股价狂跌市值缩水700亿",
+        "typo": [
+            "比亚迪（BYD）",
+            "比亚迪"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "new.json",
+        "instance_index": 126
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "比亚迪（BYD）汉!预告图发布,将于上海车展首次亮相",
+        "output": "比亚迪汉!预告图发布,将于上海车展首次亮相",
+        "typo": [
+            "比亚迪（BYD）",
+            "比亚迪"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "new.json",
+        "instance_index": 127
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "据上证报，由阿里巴巴的马爸爸、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布同意批文",
+        "output": "据上证报，由阿里巴巴的马云、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布统一批文",
+        "typo": [
+            "马爸爸",
+            "马云"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "wang_cscd.json",
+        "instance_index": 128
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "比亚迪（BYD）次钱依然坚守磷酸铁锂电池技术。",
+        "output": "比亚迪此前依然坚守磷酸铁锂电池技术。",
+        "typo": [
+            "比亚迪（BYD）",
+            "比亚迪"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "wang_cscd.json",
+        "instance_index": 129
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "做为白酒业龙头的茅台酒厂(600519.SH)，亦受到了波及，3个交易日内总市值蒸发了59.68亿元",
+        "output": "作为白酒业龙头的贵州茅台(600519.SH)，亦受到了波及，3个交易日内总市值蒸发了59.68亿元",
+        "typo": [
+            "茅台酒厂",
+            "贵州茅台"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "wang_cscd.json",
+        "instance_index": 130
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "马爸爸在中国的电商行业中发挥了巨大影响力。  ",
+        "output": "马云在中国的电商行业中发挥了巨大影响力。  ",
+        "typo": [
+            "马爸爸",
+            "马云"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "generated",
+        "instance_index": 131
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "比亚迪（BYD）在新能源汽车领域处于行业领先地位。  ",
+        "output": "比亚迪在新能源汽车领域处于行业领先地位。  ",
+        "typo": [
+            "比亚迪（BYD）",
+            "比亚迪"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "generated",
+        "instance_index": 132
+    },
+    {
+        "domain": "财经",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "input": "茅台酒厂酒以其独特的风味享誉全球。  ",
+        "output": "贵州茅台酒以其独特的风味享誉全球。  ",
+        "typo": [
+            "茅台酒厂",
+            "贵州茅台"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 26,
+        "data_source": "generated",
+        "instance_index": 133
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学报告中的专业术语保持准确，不得缩略。",
+        "input": "肠道问题可能导致多种健康问题，需及时进行调整。  ",
+        "output": "肠道菌群失调可能导致多种健康问题，需及时进行调整。  ",
+        "typo": [
+            "肠道问题",
+            "肠道菌群失调"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 27,
+        "data_source": "generated",
+        "instance_index": 134
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学报告中的专业术语保持准确，不得缩略。",
+        "input": "血糖调节的患者应遵循医生的饮食建议，以控制血糖水平。  ",
+        "output": "高血糖症的患者应遵循医生的饮食建议，以控制血糖水平。  ",
+        "typo": [
+            "血糖调节",
+            "高血糖症"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 27,
+        "data_source": "generated",
+        "instance_index": 135
+    },
+    {
+        "domain": "科技",
+        "instruction": "技术术语和专有名词必须准确，且不得使用俚语或简化。",
+        "input": "电池耗能的管理是提升电子设备性能的重要因素。  ",
+        "output": "电池能量消耗的管理是提升电子设备性能的重要因素。  ",
+        "typo": [
+            "电池耗能",
+            "电池能量消耗"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 28,
+        "data_source": "generated",
+        "instance_index": 136
+    },
+    {
+        "domain": "科技",
+        "instruction": "技术术语和专有名词必须准确，且不得使用俚语或简化。",
+        "input": "大数据解决方案为企业提供了深入的市场洞察。  ",
+        "output": "大数据分析解决方案为企业提供了深入的市场洞察。  ",
+        "typo": [
+            "大数据解决方案",
+            "大数据分析解决方案"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 28,
+        "data_source": "generated",
+        "instance_index": 137
+    },
+    {
+        "domain": "科技",
+        "instruction": "技术术语和专有名词必须准确，且不得使用俚语或简化。",
+        "input": "黑客防护是保护信息系统免受攻击的关键措施。  ",
+        "output": "网络安全防护是保护信息系统免受攻击的关键措施。  ",
+        "typo": [
+            "黑客防护",
+            "网络安全防护"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 28,
+        "data_source": "generated",
+        "instance_index": 138
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "AIRCROSS,将会进行加长,尺寸加大之后,这款车的级别也将跨如入门级的紧凑级SUV,所以东风雪铁龙才会在名字上进行调整。",
+        "output": "AIRCROSS,将会进行加长,尺寸加大之后,这款车的级别也将跨入入门级的紧凑级SUV,所以东风雪铁龙才会在名字上进行调整。",
+        "typo": [
+            "AI",
+            "AI"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "car.json",
+        "instance_index": 139
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "车内搭载了双10.25英寸高清触摸屏、国产AI芯片,系统可识别驾驶者疲劳驾驶等级,进行相关提醒。",
+        "output": "车内搭载了双10.25英寸高清触摸屏、国产AI芯片,系统可识别驾驶者疲劳驾驶等级,进行相关提醒。",
+        "typo": [
+            "AI",
+            "AI"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "car.json",
+        "instance_index": 140
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "一切为了用户舒适、安全、便捷用车数字化、新四化的浪潮席卷全球,汽车产业正在经历互联网、大数据、5G、云计算等新技术的崛起带来的深刻变革,汽车不仅仅是出行工具,已经成为人们生活方式的重要载体,更是智能终端,车企与之间的关系也更加紧密,这样变局之下谁能够感知用户和用户需求,谁就能赢得用户。",
+        "output": "一切为了用户舒适、安全、便捷用车数字化、新四化的浪潮席卷全球,汽车产业正在经历互联网、大数据、5G、云计算等新技术的崛起带来的深刻变革,汽车不仅仅是出行工具,已经成为人们生活方式的重要载体,更是智能终端,车企与之间的关系也更加紧密,这样变局之下谁能够感知用户和用户需求,谁就能赢得用户。",
+        "typo": [
+            "云计算",
+            "云计算"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "car.json",
+        "instance_index": 141
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "1999年,他先后考取了拳艺教练资格证,AIBA国际拳击总会二星级教练、WMC国际泰拳总会A级教练。",
+        "output": "1999年,他先后考取了拳击教练资格证,AIBA国际拳击总会二星级教练、WMC国际泰拳总会A级教练。",
+        "typo": [
+            "AI",
+            "AI"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "enc.json",
+        "instance_index": 142
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "美国国际钢铁协会（AIIS）会长大卫·菲尔普斯，也在会议中表达了对当前美国政府设置贸易保护壁垒的担忧，“美国的某些贸易保护政客不断宣称，贸易保护政策时拯救美国制造业免于完全死亡的唯一解决方案，其实他们错了”",
+        "output": "美国国际钢铁协会（AIIS）会长大卫·菲尔普斯，也在会议中表达了对当前美国政府设置贸易保护壁垒的担忧，“美国的某些贸易保护政客不断宣称，贸易保护政策是拯救美国制造业免于完全死亡的唯一解决方案，其实他们错了”",
+        "typo": [
+            "AI",
+            "AI"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "wang_cscd.json",
+        "instance_index": 143
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "该章程修改专利案件审理中的实践规则，实施莱希-史密斯美国发明法（AIA）中的“发明人先申请”条款",
+        "output": "该章程修改专利案件审理中的实践规则，实施莱希-史密斯美国发明法（AIA）中的“发明人先申请”条款",
+        "typo": [
+            "AI",
+            "AI"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "wang_cscd.json",
+        "instance_index": 144
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "近日，知乎上一位用户爆料称，12306网站已将75%的余票查询业务切换至阿里云计算平台上，以此帮助12306平稳渡过春运购票高峰",
+        "output": "近日，知乎上一位用户爆料称，12306网站已将75%的余票查询业务切换至阿里云计算平台上，以此帮助12306平稳度过春运购票高峰",
+        "typo": [
+            "云计算",
+            "云计算"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "wang_cscd.json",
+        "instance_index": 145
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "在第六届云计算大会期间七牛云存储的首席布道师徐立接受了ZDnet独家访谈，在专访中徐立对骑牛云存储的技术，尤其是上传技术做了更好的解读，并且未来看好云存储在互联网、教育、安防、金融行业的发展",
+        "output": "在第六届云计算大会期间七牛云存储的首席布道师徐立接受了ZDnet独家访谈，在专访中徐立对七牛云存储的技术，尤其是上传技术做了更好的解读，并且未来看好云存储在互联网、教育、安防、金融行业的发展",
+        "typo": [
+            "云计算",
+            "云计算"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "wang_cscd.json",
+        "instance_index": 146
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "AI技术在各行各业的应用正在改变传统工作方式。  ",
+        "output": "AI技术在各行各业的应用正在改变传统工作方式。  ",
+        "typo": [
+            "AI",
+            "AI"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "generated",
+        "instance_index": 147
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "云计算的发展推动了企业服务模式的转变。  ",
+        "output": "云计算的发展推动了企业服务模式的转变。  ",
+        "typo": [
+            "云计算",
+            "云计算"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "generated",
+        "instance_index": 148
+    },
+    {
+        "domain": "科技",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "input": "VR技术在虚拟现实体验中为用户提供了沉浸式感受。  ",
+        "output": "VR技术在虚拟现实体验中为用户提供了沉浸式感受。  ",
+        "typo": [
+            "VR",
+            "VR"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 29,
+        "data_source": "generated",
+        "instance_index": 149
+    },
+    {
+        "domain": "文学",
+        "instruction": "古典汉语表达不需要修改为现代汉语。",
+        "input": "第五步天涯若比邻不得不临时取消。",
+        "output": "第五部天涯若比邻不得不临时取消。",
+        "typo": [
+            "天涯若比邻",
+            "天涯若比邻"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 30,
+        "data_source": "wang_cscd.json",
+        "instance_index": 150
+    },
+    {
+        "domain": "文学",
+        "instruction": "诗词中的对仗结构和韵律必须保持，不得随意更改。",
+        "input": "明月几时有，把酒问青天，这是李白经典诗句中的美好意境。  ",
+        "output": "明月几时有，把酒问青天，这是李白经典诗句中的美好意境。  ",
+        "typo": [
+            "明月几时有，问君能有几多愁。",
+            "明月几时有，把酒问青天。"
+        ],
+        "label": 0,
+        "instruction_type": "neutural",
+        "instruction_index": 31,
+        "data_source": "generated",
+        "instance_index": 151
+    },
+    {
+        "domain": "文学",
+        "instruction": "诗词中的对仗结构和韵律必须保持，不得随意更改。",
+        "input": "白日依山尽，黄河入海流，体现了自然景观的壮丽。  ",
+        "output": "白日依山尽，黄河入海流，体现了自然景观的壮丽。  ",
+        "typo": [
+            "白日依山尽，黄河入海流",
+            "白日依山尽，黄河入海流"
+        ],
+        "label": 0,
+        "instruction_type": "neutural",
+        "instruction_index": 31,
+        "data_source": "generated",
+        "instance_index": 152
+    },
+    {
+        "domain": "文学",
+        "instruction": "象征性或隐喻性表达不要修改。",
+        "input": "心如死灰，形容一种极度失望和绝望的情感状态。  ",
+        "output": "心如死灰，形容一种极度失望和绝望的情感状态。  ",
+        "typo": [
+            "心如死灰",
+            "心如死灰"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 32,
+        "data_source": "generated",
+        "instance_index": 153
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "可喜可贺!吴磊收获西甲首球,中国球员时隔3731天的五大联赛进球",
+        "output": "可喜可贺!武磊收获西甲首球,中国球员时隔3731天的五大联赛进球",
+        "typo": [
+            "进球",
+            "进球"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "new.json",
+        "instance_index": 154
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "上半场米兰玫势凌厉，第七度参加欧洲冠军杯决赛的老将马尔迪尼，开疆五十秒快速进球。",
+        "output": "上半场米兰攻势凌厉，第七度参加欧洲冠军杯决赛的老将马尔迪尼，开赛五十秒快速进球。",
+        "typo": [
+            "进球",
+            "进球"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "wang_cscd.json",
+        "instance_index": 155
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "终场前1分48秒时，公鹿队靠着艾伦适时投进三分弹，卡塞尔也罚进三球，将比数追成83比85只落后两分，艾佛森随即还以杨色，也罚进三球和投进一记三分弹，在剩下1分10秒时将比数再拉开，底定胜局。",
+        "output": "终场前1分48秒时，公鹿队靠着艾伦适时投进三分球，卡塞尔也罚进三球，将比数追成83比85只落后两分，艾佛森随即还以颜色，也罚进三球和投进一记三分球，在剩下1分10秒时将比数再拉开，底定胜局。",
+        "typo": [
+            "三分弹",
+            "三分球"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "wang_cscd.json",
+        "instance_index": 156
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "史普利威尔在延长赛进行至三十二秒时从左翼投进一个三分弹，使尼克队以兀十七比九十四取得领先，并一路领先。",
+        "output": "史普利威尔在延长赛进行至三十二秒时从左翼投进一个三分球，使尼克队以九十七比九十四取得领先，并一路领先。",
+        "typo": [
+            "三分弹",
+            "三分球"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "wang_cscd.json",
+        "instance_index": 157
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "在斩停之后，乔丹获得空档，从罚球区跳投得分。",
+        "output": "在暂停之后，乔丹获得空档，从罚球线跳投得分。",
+        "typo": [
+            "罚球区",
+            "罚球线"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "wang_cscd.json",
+        "instance_index": 158
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "季德在终场前约三十四秒，站在罚球区上稳稳拿下两分，把比数拉开为九十六比八十八，也底定了痘后胜利江山。",
+        "output": "季德在终场前约三十四秒，站在罚球线上稳稳拿下两分，把比数拉开为九十六比八十八，也底定了最后胜利江山。",
+        "typo": [
+            "罚球区",
+            "罚球线"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "wang_cscd.json",
+        "instance_index": 159
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "在比赛中，三分弹的得分往往能改变球队的形势。  ",
+        "output": "在比赛中，三分球的得分往往能改变球队的形势。  ",
+        "typo": [
+            "三分弹",
+            "三分球"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "generated",
+        "instance_index": 160
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "input": "罚球区不仅是篮球比赛中的一个重要标记，还影响着比赛的走势。  ",
+        "output": "罚球线不仅是篮球比赛中的一个重要标记，还影响着比赛的走势。  ",
+        "typo": [
+            "罚球区",
+            "罚球线"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 33,
+        "data_source": "generated",
+        "instance_index": 161
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育比赛中使用的特定术语和缩写不需要修改。",
+        "input": "詹姆斯37分12篮板4助攻，蝉联总决赛MVP，韦德23分10篮板，巴蒂尔三分8中6得到18分，钱莫斯14分",
+        "output": "詹姆斯37分12篮板4助攻，蝉联总决赛MVP，韦德23分10篮板，巴蒂尔三分8中6得到18分，钱莫斯14分",
+        "typo": [
+            "MVP",
+            "MVP"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 34,
+        "data_source": "wang_cscd.json",
+        "instance_index": 162
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育比赛中使用的特定术语和缩写不需要修改。",
+        "input": "MVP是体育比赛中被评选出最有价值球员的缩写。  ",
+        "output": "MVP是体育比赛中被评选出最有价值球员的缩写。  ",
+        "typo": [
+            "MVP",
+            "MVP"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 34,
+        "data_source": "generated",
+        "instance_index": 163
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育比赛中使用的特定术语和缩写不需要修改。",
+        "input": "PPG代表每场比赛平均得分，是评估球员表现的重要指标。  ",
+        "output": "PPG代表每场比赛平均得分，是评估球员表现的重要指标。  ",
+        "typo": [
+            "PPG",
+            "PPG"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 34,
+        "data_source": "generated",
+        "instance_index": 164
+    },
+    {
+        "domain": "体育",
+        "instruction": "体育比赛中使用的特定术语和缩写不需要修改。",
+        "input": "在篮球比赛中，球员的FT%将直接影响球队的胜率。",
+        "output": "在篮球比赛中，球员的FT%将直接影响球队的胜率。",
+        "typo": [
+            "FT%",
+            "FT%"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 34,
+        "data_source": "generated",
+        "instance_index": 165
+    },
+    {
+        "domain": "体育",
+        "instruction": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "input": "红魔衰神附体?本赛季7场乌龙助攻断送争冠大业!本可反超2分!",
+        "output": "曼联衰神附体?本赛季7场乌龙助攻断送争冠大业!本可反超2分!",
+        "typo": [
+            "红魔",
+            "曼联"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 35,
+        "data_source": "new.json",
+        "instance_index": 166
+    },
+    {
+        "domain": "体育",
+        "instruction": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "input": "看看英超豪门近五年花的钱!红魔花钱还真前不了前四",
+        "output": "看看英超豪门近五年花的钱!曼联花钱还真进不了前四",
+        "typo": [
+            "红魔",
+            "曼联"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 35,
+        "data_source": "new.json",
+        "instance_index": 167
+    },
+    {
+        "domain": "体育",
+        "instruction": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "input": "红魔队教练佛格森过去几周甚至让顶尖球员休息，显然想保留实力争驭其他大赛王座。",
+        "output": "曼联队教练佛格森过去几周甚至让顶尖球员休息，显然想保留实力争取其他大赛王座。",
+        "typo": [
+            "红魔",
+            "曼联"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 35,
+        "data_source": "wang_cscd.json",
+        "instance_index": 168
+    },
+    {
+        "domain": "体育",
+        "instruction": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "input": "这是切尔西队自俄罗斯石涠大亨亚伯拉莫维奇接掌以来，首次在主场遭遐挫败，也使得红魔队跃居联赛的首位。",
+        "output": "这是切尔西队自俄罗斯石油大亨亚伯拉莫维奇接掌以来，首次在主场遭遇挫败，也使得曼联队跃居联赛的首位。",
+        "typo": [
+            "红魔",
+            "曼联"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 35,
+        "data_source": "wang_cscd.json",
+        "instance_index": 169
+    },
+    {
+        "domain": "体育",
+        "instruction": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "input": "曼联17日在主场遭到重大拙败，输给利物浦队，在全队亟思反攻振作的同时，曼联经理福格森爵士却苦不堪言，因为眼前还有一项重大危机：曼联目前严重短缺第一线的射手。",
+        "output": "曼彻斯特联队17日在主场遭到重大挫败，输给利物浦队，在全队亟思反攻振作的同时，曼联经理福格森爵士却苦不堪言，因为眼前还有一项重大危机：曼联目前严重短缺第一线的射手。",
+        "typo": [
+            "曼联",
+            "曼彻斯特联队"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 35,
+        "data_source": "wang_cscd.json",
+        "instance_index": 170
+    },
+    {
+        "domain": "体育",
+        "instruction": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "input": "詹皇在NBA历史上被誉为最伟大的篮球运动员之一。",
+        "output": "勒布朗·詹姆斯在NBA历史上被誉为最伟大的篮球运动员之一。",
+        "typo": [
+            "詹皇",
+            "勒布朗·詹姆斯"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 35,
+        "data_source": "generated",
+        "instance_index": 171
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "赵文卓做客节目师范太极拳通臂拳,一代宗师既飘逸潇洒,刚劲有力",
+        "output": "赵文卓做客节目示范太极拳通臂拳,一代宗师既飘逸潇洒,刚劲有力",
+        "typo": [
+            "太极",
+            "太极"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "new.json",
+        "instance_index": 172
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "夏宗寺原来的主要建筑有经堂寺、噶玛寺、汝贝多杰堂、八挂楼、笨康等,最兴盛时期建筑房屋有400多间,僧人40多人。",
+        "output": "夏宗寺原来的主要建筑有经堂寺、噶玛寺、汝贝多杰堂、八卦楼、笨康等,最兴盛时期建筑房屋有400多间,僧人40多人。",
+        "typo": [
+            "八卦",
+            "八卦"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "enc.json",
+        "instance_index": 173
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "他们醉心于阴阳八卦之道,手持灌注灵力的法器或法杖,以火、冰、雷三味道法伤敌于十步之外。",
+        "output": "他们醉心于阴阳八卦之道,手持灌注灵力的法器或法杖,以火、冰、雷三味道法伤敌于十步之外。",
+        "typo": [
+            "八卦",
+            "八卦"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "enc.json",
+        "instance_index": 174
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "老伯伯们的念头是可以出院,跟朋友们打太极拳,喝喝茶,聊聊天,照顾自己的家园,开开心心地看小孙子下课回来叫一声\"爷爷\"。",
+        "output": "老伯伯们的念头是可以出院,跟朋友们打太极拳,喝喝茶,聊聊天,照顾自己的家园,开开心心地看小孙子下课回来叫一声\"爷爷\"。",
+        "typo": [
+            "太极",
+            "太极"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "sig.json",
+        "instance_index": 175
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "目击者指出，约五千名巴勒斯坦人和信奉回教的阿拉伯裔以色列人聚锭在大道上，誓言不惜拚死捍卫圣地，阻止犹太极端团体万人会入侵。",
+        "output": "目击者指出，约五千名巴勒斯坦人和信奉回教的阿拉伯裔以色列人聚集在大道上，誓言不惜拚死捍卫圣地，阻止犹太极端团体万人会入侵。",
+        "typo": [
+            "太极",
+            "太极"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "wang_cscd.json",
+        "instance_index": 176
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "值得主意的是，此次越狱不仅支持目前苹果推出的全部移动设备，而且继91后新越狱工具太极助手也加入了越狱行列，并成为时下关注的焦点",
+        "output": "值得注意的是，此次越狱不仅支持目前苹果推出的全部移动设备，而且继91后新越狱工具太极助手也加入了越狱行列，并成为时下关注的焦点",
+        "typo": [
+            "太极",
+            "太极"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "wang_cscd.json",
+        "instance_index": 177
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "当晚9时许，在上步路南行方向看到，一辆运载小轿车的平板货车正准备在八卦二路口掉头，但因车身超长，约10余米，横在那里，将南北双向共计八车道满满占据",
+        "output": "当晚9时许，在上步路南行方向看到，一辆运载小轿车的平板货车正准备在八卦二路口掉头，但因车身超长，约10余米，横在那里，将南北双向共计八车道满满占据",
+        "typo": [
+            "八卦",
+            "八卦"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "wang_cscd.json",
+        "instance_index": 178
+    },
+    {
+        "domain": "文化",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "input": "有些无情的英国八卦小报坚称，区桩王室丑闻一旦公开，将会毁掉王室。",
+        "output": "有些无情的英国八卦小报坚称，这桩王室丑闻一旦公开，将会毁掉王室。",
+        "typo": [
+            "八卦",
+            "八卦"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 36,
+        "data_source": "wang_cscd.json",
+        "instance_index": 179
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "棍扫一大片!世界功夫冠军棍术精彩表演视频分享",
+        "output": "棍扫一大片!世界武术冠军棍术精彩表演视频分享",
+        "typo": [
+            "功夫",
+            "武术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "new.json",
+        "instance_index": 180
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "老人练掌把大树打两个深坑获全国功夫冠军匾牌挂上树免费教学",
+        "output": "老人练掌把大树打两个深坑获全国武术冠军匾牌挂上树免费教学",
+        "typo": [
+            "功夫",
+            "武术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "new.json",
+        "instance_index": 181
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "房屋的左右两边那边高比较好,易经风水知识",
+        "output": "房屋的左右两边哪边高比较好,易经风水知识",
+        "typo": [
+            "风水",
+            "风水"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "new.json",
+        "instance_index": 182
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "晨读|父亲的大格局,母亲的好情绪,就是一个家最好的“风水”",
+        "output": "晨读|父亲的大格局,母亲的好情绪,就是一个家最好的“风水”",
+        "typo": [
+            "风水",
+            "风水"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "new.json",
+        "instance_index": 183
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "那么阳宅风水或坟暮风水是坐南向北,或坐东向西…",
+        "output": "那么阳宅风水或坟墓风水是坐南向北,或坐东向西…",
+        "typo": [
+            "风水",
+            "风水"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "enc.json",
+        "instance_index": 184
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "四十八岁的成龙表示：身为一名演员和功夫指导，获世界特技演员学会颁发动作片演员终身成就奖殊荣，就好朦是获得奥斯卡金像奖般。",
+        "output": "四十八岁的成龙表示：身为一名演员和武术指导，获世界特技演员学会颁发动作片演员终身成就奖殊荣，就好像是获得奥斯卡金像奖般。",
+        "typo": [
+            "功夫",
+            "武术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "wang_cscd.json",
+        "instance_index": 185
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "台前各大门派绝学展示精彩纷呈、目不暇接，幕后各门派争议不断，不禁要问：这到底是宏扬功夫的“论剑”盛会还是一场有模有样的大叔Cosplay秀，武侠小说中的神秘流派现实中真的存在",
+        "output": "台前各大门派绝学展示精彩纷呈、目不暇接，幕后各门派争议不断，不禁要问：这到底是弘扬武术的“论剑”盛会还是一场有模有样的大叔Cosplay秀，武侠小说中的神秘流派现实中真的存在",
+        "typo": [
+            "功夫",
+            "武术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "wang_cscd.json",
+        "instance_index": 186
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "台北市立浩然敬老院平日除提供院内八百多位老人温声舒适的生活环境外，为冲实院内老人的精神生活，特别成立了书画、茶道、园艺、手工艺、外丹功、歌咏、建走、土风舞、国剧、摄影、长青荣誉服务团、长生保健等十二个社团。",
+        "output": "台北市立浩然敬老院平日除提供院内八百多位老人温馨舒适的生活环境外，为充实院内老人的精神生活，特别成立了书画、茶艺、园艺、手工艺、外丹功、歌咏、健走、土风舞、国剧、摄影、长青荣誉服务团、长生保健等十二个社团。",
+        "typo": [
+            "茶道",
+            "茶艺"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "wang_cscd.json",
+        "instance_index": 187
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "阅览室、操场、摄影长廊、茶道室、烘培教室、大讲堂……从本周末起，金沙小学B区内的这些资源将在向社区居民开放",
+        "output": "阅览室、操场、摄影长廊、茶艺室、烘培教室、大讲堂……从本周末起，金沙小学B区内的这些资源将再向社区居民开放",
+        "typo": [
+            "茶道",
+            "茶艺"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "wang_cscd.json",
+        "instance_index": 188
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "中国的功夫不仅是一种体育运动，更是一种传承千年的文化精髓。",
+        "output": "中国的武术不仅是一种体育运动，更是一种传承千年的文化精髓。",
+        "typo": [
+            "功夫",
+            "武术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "generated",
+        "instance_index": 189
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "input": "风水在中国传统文化中被视为影响人们生活与命运的重要因素。",
+        "output": "风水在中国传统文化中被视为影响人们生活与命运的重要因素。",
+        "typo": [
+            "风水",
+            "风水"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 37,
+        "data_source": "generated",
+        "instance_index": 190
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "悉达多王子人生的最后时刻,涅槃后成为佛祖佛祖",
+        "output": "悉达多王子人生的最后时刻,涅槃后成为释迦牟尼佛祖",
+        "typo": [
+            "佛祖",
+            "释迦牟尼"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "new.json",
+        "instance_index": 191
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "河南这座世界第一高铸铜立上帝,12年建成耗资12亿,耗用黄金108吨",
+        "output": "河南这座世界第一高铸铜立佛,12年建成耗资12亿,耗用黄金108吨",
+        "typo": [
+            "上帝",
+            "佛"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "new.json",
+        "instance_index": 192
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "元和十四年(819年)正月,唐宪宗派宦官到凤翔法门寺,把佛祖佛的遗骨迎人宫,供奉三日,又送回寺院。",
+        "output": "元和十四年(819年)正月,唐宪宗派宦官到凤翔法门寺,把释迦牟尼佛的遗骨迎入宫,供奉三日,又送回寺院。",
+        "typo": [
+            "佛祖",
+            "释迦牟尼"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "enc.json",
+        "instance_index": 193
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "粗狂而不失细腻唯美的风格,使玩家仿上帝置身于小说世界之中。",
+        "output": "粗犷而不失细腻唯美的风格,使玩家仿佛置身于小说世界之中。",
+        "typo": [
+            "上帝",
+            "佛"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "enc.json",
+        "instance_index": 194
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "简介仗八上帝石造像,位于寨郝乡寨高村西北角。",
+        "output": "简介丈八佛石造像,位于寨郝乡寨高村西北角。",
+        "typo": [
+            "上帝",
+            "佛"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "enc.json",
+        "instance_index": 195
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "在高雄县政府的登记资料中，龙凤寺登记供奉的是天上圣母事实上庙中另供奉有佛祖、药师佛、阿弥达佛三宝佛，是道佛同奉的庙宇。",
+        "output": "在高雄县政府的登记资料中，龙凤寺登记供奉的是天上圣母事实上庙中另供奉有释迦牟尼、药师佛、阿弥陀佛三宝佛，是道佛同奉的庙宇。",
+        "typo": [
+            "佛祖",
+            "释迦牟尼"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "wang_cscd.json",
+        "instance_index": 196
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "政府军今天上午曾停止攻击，希望在马泰斯北方受叛民控制下的利菖科上帝的人民能撤离。",
+        "output": "政府军今天上午曾停止攻击，希望在马泰斯北方受叛民控制下的利普科佛的人民能撤离。",
+        "typo": [
+            "上帝",
+            "佛"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "wang_cscd.json",
+        "instance_index": 197
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "尽管屠图总主教曾经说过：妇女罡轮回所创造最美好的事物。",
+        "output": "尽管屠图总主教曾经说过：妇女是上帝所创造最美好的事物。",
+        "typo": [
+            "轮回",
+            "上帝"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "wang_cscd.json",
+        "instance_index": 198
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "巴格达的阿克提沙迪周报以九一一轮回的惩罚为题，在封面上刊出燃虎中的纽约世界贸易中心的照片。",
+        "output": "巴格达的阿克提沙迪周报以九一一上帝的惩罚为题，在封面上刊出燃烧中的纽约世界贸易中心的照片。",
+        "typo": [
+            "轮回",
+            "上帝"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "wang_cscd.json",
+        "instance_index": 199
+    },
+    {
+        "domain": "文化",
+        "instruction": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "input": "在佛教中，轮回的概念对理解生命的意义有着深远的影响。",
+        "output": "在佛教中，轮回的概念对理解生命的意义有着深远的影响。",
+        "typo": [
+            "轮回",
+            "轮回"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 38,
+        "data_source": "generated",
+        "instance_index": 200
+    },
+    {
+        "domain": "文化",
+        "instruction": "非中文的文化专有名词应保留原文或公认翻译，不得随意翻译或改写。",
+        "input": "据日本《朝日新闻》报道，在日本福井县坂井市三国町崎的越前松岛水族馆，身背氧气瓶的水中圣诞老人连日来现身大型水槽",
+        "output": "据日本《朝日新闻》报道，在日本福井县坂井市三国町崎的越前松岛水族馆，身背氧气瓶的水中圣诞老人连日来现身大型水槽",
+        "typo": [
+            "圣诞老人",
+            "圣诞老人"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 39,
+        "data_source": "wang_cscd.json",
+        "instance_index": 201
+    },
+    {
+        "domain": "文化",
+        "instruction": "非中文的文化专有名词应保留原文或公认翻译，不得随意翻译或改写。",
+        "input": "圣诞老人如果要在三十一个小时内飞过一亿四千万公里到达在不同时区的世界各个角落，他的雪橇必须以每秒一干零四十公鳕的速度像西飞行，是音速的一万二千五百倍。",
+        "output": "圣诞老人如果要在三十一个小时内飞过一亿四千万公里到达在不同时区的世界各个角落，他的雪橇必须以每秒一千零四十公里的速度向西飞行，是音速的一万二千五百倍。",
+        "typo": [
+            "圣诞老人",
+            "圣诞老人"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 39,
+        "data_source": "wang_cscd.json",
+        "instance_index": 202
+    },
+    {
+        "domain": "文化",
+        "instruction": "非中文的文化专有名词应保留原文或公认翻译，不得随意翻译或改写。",
+        "input": "在西方，幽灵节（Halloween）是一个盛大而富有趣味的节日。",
+        "output": "在西方，万圣节（Halloween）是一个盛大而富有趣味的节日。",
+        "typo": [
+            "幽灵节（Halloween）",
+            "万圣节（Halloween）"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 39,
+        "data_source": "generated",
+        "instance_index": 203
+    },
+    {
+        "domain": "文化",
+        "instruction": "非中文的文化专有名词应保留原文或公认翻译，不得随意翻译或改写。",
+        "input": "圣诞老人每年都会在圣诞节期间给孩子们带来欢乐与礼物。",
+        "output": "圣诞老人每年都会在圣诞节期间给孩子们带来欢乐与礼物。",
+        "typo": [
+            "圣诞老人",
+            "圣诞老人"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 39,
+        "data_source": "generated",
+        "instance_index": 204
+    },
+    {
+        "domain": "艺术",
+        "instruction": "专业术语和表现形式需保持不变，不得随意改动。",
+        "input": "一九九九年过世的贝瑞斯夫人于一九五二年开设艺廊后不久，即米上日本画坛大肆对欧洲印象派画家的深远影响。",
+        "output": "一九九九年过世的贝瑞斯夫人于一九五二年开设艺廊后不久，即迷上日本画坛大师对欧洲印象派画家的深远影响。",
+        "typo": [
+            "印象派",
+            "印象派"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 40,
+        "data_source": "wang_cscd.json",
+        "instance_index": 205
+    },
+    {
+        "domain": "艺术",
+        "instruction": "专业术语和表现形式需保持不变，不得随意改动。",
+        "input": "李文斯顿说，这些印象派画家，前人如达文西，近人如克罗斯等，事实上都查觉这个根本真相，而科学家却皇至今才弄明白其中奥妙之处。",
+        "output": "李文斯顿说，这些印象派画家，前人如达文西，近人如克罗斯等，事实上都查觉这个根本真相，而科学家却是至今才弄明白其中奥妙之处。",
+        "typo": [
+            "印象派",
+            "印象派"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 40,
+        "data_source": "wang_cscd.json",
+        "instance_index": 206
+    },
+    {
+        "domain": "艺术",
+        "instruction": "专业术语和表现形式需保持不变，不得随意改动。",
+        "input": "印象派艺术以其独特的光影效果和强调绘画瞬间感而著称。",
+        "output": "印象派艺术以其独特的光影效果和强调绘画瞬间感而著称。",
+        "typo": [
+            "印象派",
+            "印象派"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 40,
+        "data_source": "generated",
+        "instance_index": 207
+    },
+    {
+        "domain": "艺术",
+        "instruction": "专业术语和表现形式需保持不变，不得随意改动。",
+        "input": "达达主义以其反传统的理念和艺术表现方式冲击了当时的艺术界。",
+        "output": "达达主义以其反传统的理念和艺术表现方式冲击了当时的艺术界。",
+        "typo": [
+            "达达主义",
+            "达达主义"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 40,
+        "data_source": "generated",
+        "instance_index": 208
+    },
+    {
+        "domain": "艺术",
+        "instruction": "外来术语或缩写不需修改。",
+        "input": "NFT技术正在改变我们对数字艺术作品的收藏和交易方式。",
+        "output": "NFT技术正在改变我们对数字艺术作品的收藏和交易方式。",
+        "typo": [
+            "NFT",
+            "NFT"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 41,
+        "data_source": "generated",
+        "instance_index": 209
+    },
+    {
+        "domain": "艺术",
+        "instruction": "外来术语或缩写不需修改。",
+        "input": "Graffiti作为一种街头艺术形式，表达了年轻人的文化与抗争精神。",
+        "output": "Graffiti作为一种街头艺术形式，表达了年轻人的文化与抗争精神。",
+        "typo": [
+            "Graffiti",
+            "Graffiti"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 41,
+        "data_source": "generated",
+        "instance_index": 210
+    },
+    {
+        "domain": "艺术",
+        "instruction": "象征性或隐喻性表达不需要改动。",
+        "input": "向日葵象征希望，常被用于表现积极向上的主题。",
+        "output": "向日葵象征希望，常被用于表现积极向上的主题。",
+        "typo": [
+            "向日葵象征希望",
+            "向日葵象征希望"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 42,
+        "data_source": "generated",
+        "instance_index": 211
+    },
+    {
+        "domain": "艺术",
+        "instruction": "象征性或隐喻性表达不需要改动。",
+        "input": "苍蝇寓意腐朽，在许多文学作品中象征着死亡与衰败。",
+        "output": "苍蝇寓意腐朽，在许多文学作品中象征着死亡与衰败。",
+        "typo": [
+            "苍蝇寓意腐朽",
+            "苍蝇寓意腐朽"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 42,
+        "data_source": "generated",
+        "instance_index": 212
+    },
+    {
+        "domain": "科技",
+        "instruction": "公式和符号必须准确，禁止随意更改。",
+        "input": "根据爱因斯坦的公式E=mc平方，能量和质量是可以相互转换的。",
+        "output": "根据爱因斯坦的公式E=mc²，能量和质量是可以相互转换的。",
+        "typo": [
+            "E=mc平方",
+            "E=mc²"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 43,
+        "data_source": "generated",
+        "instance_index": 213
+    },
+    {
+        "domain": "科技",
+        "instruction": "公式和符号必须准确，禁止随意更改。",
+        "input": "在经典物理学中，F=m*a是描述力与质量及加速度之间关系的重要公式。",
+        "output": "在经典物理学中，F=ma是描述力与质量及加速度之间关系的重要公式。",
+        "typo": [
+            "F=m*a",
+            "F=ma"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 43,
+        "data_source": "generated",
+        "instance_index": 214
+    },
+    {
+        "domain": "科技",
+        "instruction": "公式和符号必须准确，禁止随意更改。",
+        "input": "物理学中的公式ρ=m/V表明了物质的密度与其质量和体积的关系。",
+        "output": "物理学中的公式ρ=m/V表明了物质的密度与其质量和体积的关系。",
+        "typo": [
+            "ρ=m/V",
+            "ρ=m/V"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 43,
+        "data_source": "generated",
+        "instance_index": 215
+    },
+    {
+        "domain": "科技",
+        "instruction": "专利名称和技术术语应保持标准，不得简化。",
+        "input": "可折叠屏幕技术正在引领显示技术的创新方向。",
+        "output": "柔性可折叠显示屏技术正在引领显示技术的创新方向。",
+        "typo": [
+            "可折叠屏幕技术",
+            "柔性可折叠显示屏技术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 44,
+        "data_source": "generated",
+        "instance_index": 216
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游景点的名称和地理位置需保持准确，不得使用俗称或别名。",
+        "input": "今日大皇宫壁画前的一排栅栏被一群中国游客弄倒，好在没有倒向壁画，造成损失",
+        "output": "今日曼谷大皇宫壁画前的一排栅栏被一群中国游客弄倒，好在没有倒向壁画，造成损失",
+        "typo": [
+            "大皇宫",
+            "曼谷大皇宫"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 45,
+        "data_source": "wang_cscd.json",
+        "instance_index": 217
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游景点的名称和地理位置需保持准确，不得使用俗称或别名。",
+        "input": "据泰国星暹传媒14日消息，名为iamgooodview的推特曝出，今日大皇宫壁画前的一排栅栏被一群中国游客弄倒",
+        "output": "据泰国星暹传媒14日消息，名为iamgooodview的推特曝出，今日曼谷大皇宫壁画前的一排栅栏被一群中国游客弄倒",
+        "typo": [
+            "大皇宫",
+            "曼谷大皇宫"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 45,
+        "data_source": "wang_cscd.json",
+        "instance_index": 218
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游景点的名称和地理位置需保持准确，不得使用俗称或别名。",
+        "input": "香榭大道是巴黎著名的旅游景点，充满了历史和文化气息。",
+        "output": "香榭丽舍大街是巴黎著名的旅游景点，充满了历史和文化气息。",
+        "typo": [
+            "香榭大道",
+            "香榭丽舍大街"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 45,
+        "data_source": "generated",
+        "instance_index": 219
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游景点的名称和地理位置需保持准确，不得使用俗称或别名。",
+        "input": "大皇宫是泰国最重要的文化遗产之一，吸引着世界各地的游客。",
+        "output": "曼谷大皇宫是泰国最重要的文化遗产之一，吸引着世界各地的游客。",
+        "typo": [
+            "大皇宫",
+            "曼谷大皇宫"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 45,
+        "data_source": "generated",
+        "instance_index": 220
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游行业的术语应保持原样，不需要现代化或非正式表达。",
+        "input": "他说：我正在环游世界，参加比赛我正在做我自己喜爱的事，那就是污杆打高尔夫球。",
+        "output": "他说：我正在环球旅行，参加比赛我正在做我自己喜爱的事，那就是挥杆打高尔夫球。",
+        "typo": [
+            "环游世界",
+            "环球旅行"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 46,
+        "data_source": "wang_cscd.json",
+        "instance_index": 221
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游行业的术语应保持原样，不需要现代化或非正式表达。",
+        "input": "两位法国环游世界家开设了一处教育网站55，和全球儿童分后他们旅行各地的经验。",
+        "output": "两位法国环球旅行家开设了一处教育网站55，和全球儿童分享他们旅行各地的经验。",
+        "typo": [
+            "环游世界",
+            "环球旅行"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 46,
+        "data_source": "wang_cscd.json",
+        "instance_index": 222
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游行业的术语应保持原样，不需要现代化或非正式表达。",
+        "input": "环游世界作为一种旅游方式，让人们体验全球各地的风土人情。",
+        "output": "环球旅行作为一种旅游方式，让人们体验全球各地的风土人情。",
+        "typo": [
+            "环游世界",
+            "环球旅行"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 46,
+        "data_source": "generated",
+        "instance_index": 223
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "input": "并以中英双语圣赞小鲜肉所取得的成绩。",
+        "output": "并以中英双语盛赞小鲜肉所取得的成绩。",
+        "typo": [
+            "小鲜肉",
+            "小鲜肉"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 47,
+        "data_source": "wang_cscd.json",
+        "instance_index": 224
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "input": "中国拥军小鲜肉宁泽涛再次亮相了她的态度。",
+        "output": "中国泳军小鲜肉宁泽涛再次亮相了他的态度。",
+        "typo": [
+            "小鲜肉",
+            "小鲜肉"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 47,
+        "data_source": "wang_cscd.json",
+        "instance_index": 225
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "input": "而主题从萌娃到蒙宠各不相同。",
+        "output": "而主题从萌娃到萌宠各不相同。",
+        "typo": [
+            "萌宠",
+            "萌宠"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 47,
+        "data_source": "wang_cscd.json",
+        "instance_index": 226
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "input": "为了吸引特定的受众群体，广告商锁定动物作为广告画面的主角，因为动物在被赋予了情感和行为之后，能产生新奇的幽默感，带给消费者的是轻松愉悦的心理体验，这就是萌宠对消费者最大的新引力",
+        "output": "为了吸引特定的受众群体，广告商锁定动物作为广告画面的主角，因为动物在被赋予了情感和行为之后，能产生新奇的幽默感，带给消费者的是轻松愉悦的心理体验，这就是萌宠对消费者最大的吸引力",
+        "typo": [
+            "萌宠",
+            "萌宠"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 47,
+        "data_source": "wang_cscd.json",
+        "instance_index": 227
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "input": "在娱乐圈中，萌宠已经成为明星们生活中的一部分，吸引了无数粉丝的关注。",
+        "output": "在娱乐圈中，萌宠已经成为明星们生活中的一部分，吸引了无数粉丝的关注。",
+        "typo": [
+            "萌宠",
+            "萌宠"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 47,
+        "data_source": "generated",
+        "instance_index": 228
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "input": "在讨论偶像组合时，我们常常用CP来指代他们之间的关系。",
+        "output": "在讨论偶像组合时，我们常常用CP来指代他们之间的关系。",
+        "typo": [
+            "CP",
+            "CP"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 47,
+        "data_source": "generated",
+        "instance_index": 229
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐节目中的流行语或俏皮话不需要纠正。",
+        "input": "据台湾媒体报道，意大利米兰街头近来出现一颗“性诞树”，上头挂着超过百个包括按摩棒、阳具形状的情趣玩具，引不少民众围观拍照，然而市议会认为，圣诞节对孩童及家庭是个有意义的传统节庆，不适合摆放“有碍观瞻”的装饰，因此下令拆除",
+        "output": "据台湾媒体报道，意大利米兰街头近来出现一棵“性诞树”，上头挂着超过百个包括按摩棒、阳具形状的情趣玩具，引不少民众围观拍照，然而市议会认为，圣诞节对孩童及家庭是个有意义的传统节庆，不适合摆放“有碍观瞻”的装饰，因此下令拆除",
+        "typo": [
+            "上头",
+            "上头"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 48,
+        "data_source": "wang_cscd.json",
+        "instance_index": 230
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐节目中的流行语或俏皮话不需要纠正。",
+        "input": "在音乐节目中，观众们总是忍不住打call，为他们喜欢的选手加油。",
+        "output": "在音乐节目中，观众们总是忍不住打call，为他们喜欢的选手加油。",
+        "typo": [
+            "打call",
+            "打call"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 48,
+        "data_source": "generated",
+        "instance_index": 231
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "娱乐节目中的流行语或俏皮话不需要纠正。",
+        "input": "有些观众会在节目中“上头”，表现出强烈的喜爱和投入。",
+        "output": "有些观众会在节目中“上头”，表现出强烈的喜爱和投入。",
+        "typo": [
+            "上头",
+            "上头"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 48,
+        "data_source": "generated",
+        "instance_index": 232
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游类的俚语或网络用语不需要纠正。",
+        "input": "套路揭秘:早期打卡,跑步打卡,原来这么赚钱!简直暴利!",
+        "output": "套路揭秘:早起打卡,跑步打卡,原来这么赚钱!简直暴利!",
+        "typo": [
+            "打卡",
+            "打卡"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 49,
+        "data_source": "new.json",
+        "instance_index": 233
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游类的俚语或网络用语不需要纠正。",
+        "input": "竟然是汽车去单位打卡。",
+        "output": "竟然是弃车去单位打卡。",
+        "typo": [
+            "打卡",
+            "打卡"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 49,
+        "data_source": "wang_cscd.json",
+        "instance_index": 234
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅游类的俚语或网络用语不需要纠正。",
+        "input": "据台湾媒体报道，吴奇隆趁春节假期带女友刘诗诗回台湾过年，他们刻意不po照打卡仍泄漏行踪，被目击年初二晚上现身淡水逛老街、买小吃，互动有如老夫老妻般自然，他护着女友不让民众拍照，但背影还是失守，被路人偷拍上传网路",
+        "output": "据台湾媒体报道，吴奇隆趁春节假期带女友刘诗诗回台湾过年，他们刻意不po照打卡仍泄露行踪，被目击年初二晚上现身淡水逛老街、买小吃，互动有如老夫老妻般自然，他护着女友不让民众拍照，但背影还是失守，被路人偷拍上传网路",
+        "typo": [
+            "打卡",
+            "打卡"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 49,
+        "data_source": "wang_cscd.json",
+        "instance_index": 235
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "新兴网络流行语不需要修改。",
+        "input": "在网络文化中，凡尔赛用来形容一种展示生活方式的自我陶醉。",
+        "output": "在网络文化中，凡尔赛用来形容一种展示生活方式的自我陶醉。",
+        "typo": [
+            "凡尔赛",
+            "凡尔赛"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 50,
+        "data_source": "generated",
+        "instance_index": 236
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "新兴网络流行语不需要修改。",
+        "input": "内娱因其丰富多样的娱乐内容，成为了网络用户最喜欢的讨论话题之一。",
+        "output": "内娱因其丰富多样的娱乐内容，成为了网络用户最喜欢的讨论话题之一。",
+        "typo": [
+            "内娱",
+            "内娱"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 50,
+        "data_source": "generated",
+        "instance_index": 237
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "新兴网络流行语不需要修改。",
+        "input": "拉踩在当代娱乐圈中，通常用于描述人们对竞争者的负面评价。",
+        "output": "拉踩在当代娱乐圈中，通常用于描述人们对竞争者的负面评价。",
+        "typo": [
+            "拉踩",
+            "拉踩"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 50,
+        "data_source": "generated",
+        "instance_index": 238
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "input": "风靡全球的钢铁侠、蜘蛛侠、绿巨人浩克、雷神索尔、美国队长等5款超级英雄将震憾登场",
+        "output": "风靡全球的钢铁侠、蜘蛛侠、绿巨人浩克、雷神索尔、美国队长等5款超级英雄将震撼登场",
+        "typo": [
+            "钢铁侠",
+            "钢铁侠"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 51,
+        "data_source": "wang_cscd.json",
+        "instance_index": 239
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "input": "内地版《钢铁侠3》比国际版长了三分钟，王学圻和范冰冰作全程中文对白表演但戏份不多",
+        "output": "内地版《钢铁侠3》比国际版长了三分钟，王学圻和范冰冰做全程中文对白表演但戏份不多",
+        "typo": [
+            "钢铁侠",
+            "钢铁侠"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 51,
+        "data_source": "wang_cscd.json",
+        "instance_index": 240
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "input": "此次扮演奇异博士的师父古意。",
+        "output": "此次扮演奇异博士的师父古一。",
+        "typo": [
+            "奇异博士",
+            "奇异博士"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 51,
+        "data_source": "wang_cscd.json",
+        "instance_index": 241
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "input": "古意是奇异博士的师父。",
+        "output": "古一是奇异博士的师父。",
+        "typo": [
+            "奇异博士",
+            "奇异博士"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 51,
+        "data_source": "wang_cscd.json",
+        "instance_index": 242
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "input": "钢铁侠在漫威宇宙中的角色设定深受观众喜爱，成为超级英雄的代表之一。",
+        "output": "钢铁侠在漫威宇宙中的角色设定深受观众喜爱，成为超级英雄的代表之一。",
+        "typo": [
+            "钢铁侠",
+            "钢铁侠"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 51,
+        "data_source": "generated",
+        "instance_index": 243
+    },
+    {
+        "domain": "娱乐",
+        "instruction": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "input": "黑豹作为 Marvel 电影中的关键角色，其故事背景和设定都备受瞩目。",
+        "output": "黑豹作为 Marvel 电影中的关键角色，其故事背景和设定都备受瞩目。",
+        "typo": [
+            "黑豹",
+            "黑豹"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 51,
+        "data_source": "generated",
+        "instance_index": 244
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "input": "坊间传言韩寒王珞丹从2009年就开始保持情人关系，因拍摄电影《后会无期》重欲爱河，这次终被拍，风行工作室和南都娱乐周刊再见奇功!咱们“又”周一见啦!哈哈哈哈!”",
+        "output": "坊间传言韩寒王珞丹从2009年就开始保持情人关系，因拍摄电影《后会无期》重浴爱河，这次终被拍，风行工作室和南都娱乐周刊再见奇功!咱们“又”周一见啦!哈哈哈哈!”",
+        "typo": [
+            "哈哈哈哈",
+            "哈哈哈哈"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 52,
+        "data_source": "wang_cscd.json",
+        "instance_index": 245
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "input": "这一届新生可是老生们羡慕嫉妒恨的对象，因为焕然一新的校舍，因为4人间，还因为空调，热水器也已经全部配备到位",
+        "output": "这一届新生可是老生们羡慕嫉妒恨的对象，因为焕然一新的校舍，因为4人间，还因为空调，热水器也已经全部配备到位",
+        "typo": [
+            "羡慕嫉妒恨",
+            "羡慕嫉妒恨"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 52,
+        "data_source": "wang_cscd.json",
+        "instance_index": 246
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "input": "最近，东北农业大学里的逆天早餐一起了网友们的羡慕嫉妒恨，据悉，食堂大妈们把馒头做成各种小动物的形象，看起来就萌，这些可爱的小馒头受到了学生们的欢迎，如果起晚了就卖光了",
+        "output": "最近，东北农业大学里的逆天早餐引起了网友们的羡慕嫉妒恨，据悉，食堂大妈们把馒头做成各种小动物的形象，看起来就萌，这些可爱的小馒头受到了学生们的欢迎，如果起晚了就卖光了",
+        "typo": [
+            "羡慕嫉妒恨",
+            "羡慕嫉妒恨"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 52,
+        "data_source": "wang_cscd.json",
+        "instance_index": 247
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "input": "哈哈哈哈是社交媒体上人们常用的幽默表达，传达着轻松的氛围。",
+        "output": "哈哈哈哈是社交媒体上人们常用的幽默表达，传达着轻松的氛围。",
+        "typo": [
+            "哈哈哈哈",
+            "哈哈哈哈"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 52,
+        "data_source": "generated",
+        "instance_index": 248
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "input": "在社交媒体上，看到朋友的成功，我真是感到羡慕嫉妒恨。  ",
+        "output": "在社交媒体上，看到朋友的成功，我真是感到羡慕嫉妒恨。  ",
+        "typo": [
+            "羡慕嫉妒恨",
+            "羡慕嫉妒恨"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 52,
+        "data_source": "generated",
+        "instance_index": 249
+    },
+    {
+        "domain": "文学",
+        "instruction": "方言表达不需要更正为普通话。",
+        "input": "这部小说中的角色总是说“嘎嘎好”，别具一番乡土气息。  ",
+        "output": "这部小说中的角色总是说“嘎嘎好”，别具一番乡土气息。  ",
+        "typo": [
+            "嘎嘎好",
+            "嘎嘎好"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 53,
+        "data_source": "generated",
+        "instance_index": 250
+    },
+    {
+        "domain": "文学",
+        "instruction": "方言表达不需要更正为普通话。",
+        "input": "在这首地方民谣中，歌手唱道“侬好”，充满了乡音的温暖。  ",
+        "output": "在这首地方民谣中，歌手唱道“侬好”，充满了乡音的温暖。  ",
+        "typo": [
+            "侬好",
+            "侬好"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 53,
+        "data_source": "generated",
+        "instance_index": 251
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "焦虑病的中医治疗有中药治疗,包括疏肝、理气、利肺,通过调理气血,来达到辩证治疗的目的。",
+        "output": "焦虑症的中医治疗有中药治疗,包括疏肝、理气、利肺,通过调理气血,来达到辨证治疗的目的。",
+        "typo": [
+            "焦虑病",
+            "焦虑症"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "mec.json",
+        "instance_index": 252
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "焦虑病出现心动过速或颤抖的情况时,可使用普奈洛尔进行治疗。",
+        "output": "焦虑症出现心动过速或颤抖的情况时,可使用普萘洛尔进行治疗。",
+        "typo": [
+            "焦虑病",
+            "焦虑症"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "mec.json",
+        "instance_index": 253
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "据市场调查机构奥美公司在亚洲十四个国家对六千多人所作的一项研究调查结果发现，一系列实物的改变是焦虑病日益增加的原因。",
+        "output": "据市场调查机构奥美公司在亚洲十四个国家对六千多人所作的一项研究调查结果发现，一系列食物的改变是焦虑症日益增加的原因。",
+        "typo": [
+            "焦虑病",
+            "焦虑症"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "wang_cscd.json",
+        "instance_index": 254
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "法官采信心理学证据，相信暴凌为引发这名青少年出现目前状况的因素有人说他罹患分离焦虑病，也有人说他罹患创伤后压力症或忧钰症。",
+        "output": "法官采信心理学证据，相信霸凌为引发这名青少年出现目前状况的因素有人说他罹患分离焦虑症，也有人说他罹患创伤后压力症或忧郁症。",
+        "typo": [
+            "焦虑病",
+            "焦虑症"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "wang_cscd.json",
+        "instance_index": 255
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "山形说：正值青春期年龄的孩子饱受各种毛病之苦，他们正忙着应付高中入学考事，且自我认知也开始逐渐抬头。",
+        "output": "山形说：正值青春期年龄的孩子饱受各种毛病之苦，他们正忙着应付高中入学考试，且自我意识也开始逐渐抬头。",
+        "typo": [
+            "自我认知",
+            "自我意识"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "wang_cscd.json",
+        "instance_index": 256
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "情感障碍的治疗方法需要专业的心理辅导和支持。  ",
+        "output": "情感障碍的治疗方法需要专业的心理辅导和支持。  ",
+        "typo": [
+            "情感障碍",
+            "情感障碍"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "generated",
+        "instance_index": 257
+    },
+    {
+        "domain": "心理学",
+        "instruction": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "input": "提高自我认知是心理健康和个人成长的重要一步。  ",
+        "output": "提高自我意识是心理健康和个人成长的重要一步。  ",
+        "typo": [
+            "自我认知",
+            "自我意识"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 56,
+        "data_source": "generated",
+        "instance_index": 258
+    },
+    {
+        "domain": "心理学",
+        "instruction": "心理测试中的术语和缩写应保持准确。",
+        "input": "IQ测试是评估智力的重要工具，很多机构都会使用这一术语。  ",
+        "output": "IQ测试是评估智力的重要工具，很多机构都会使用这一术语。  ",
+        "typo": [
+            "IQ",
+            "IQ"
+        ],
+        "label": 0,
+        "instruction_type": "neutural",
+        "instruction_index": 57,
+        "data_source": "generated",
+        "instance_index": 259
+    },
+    {
+        "domain": "心理学",
+        "instruction": "心理测试中的术语和缩写应保持准确。",
+        "input": "PTDS通常指的是创伤后压力症候群，这是心理学中的专业术语。  ",
+        "output": "PTSD通常指的是创伤后压力症候群，这是心理学中的专业术语。  ",
+        "typo": [
+            "PTDS",
+            "PTSD"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 57,
+        "data_source": "generated",
+        "instance_index": 260
+    },
+    {
+        "domain": "广告",
+        "instruction": "广告文案中的创意表达和口语化词汇不需要更改。",
+        "input": "近日有文章称爽歪歪风干后会变成胶装物质，专家说这些风干物是增稠剂，从配料上看对孩子身体没影响；但这些乳饮品含糖高，孩子饭前喝会造成饱腹感，其中的增稠剂也会让消化变慢，都会让孩子不爱吃饭",
+        "output": "近日有文章称爽歪歪风干后会变成胶状物质，专家说这些风干物是增稠剂，从配料上看对孩子身体没影响；但这些乳饮品含糖高，孩子饭前喝会造成饱腹感，其中的增稠剂也会让消化变慢，都会让孩子不爱吃饭",
+        "typo": [
+            "爽歪歪",
+            "爽歪歪"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 58,
+        "data_source": "wang_cscd.json",
+        "instance_index": 261
+    },
+    {
+        "domain": "广告",
+        "instruction": "广告文案中的创意表达和口语化词汇不需要更改。",
+        "input": "据哇哈哈集团官网消息，今日，哇哈哈集团公布了该公司使用新西兰恒天然公司批号JW22乳清蛋白生产产品批号，主要涉及爽歪歪营养酸奶饮品和AD钙奶等",
+        "output": "据娃哈哈集团官网消息，今日，娃哈哈集团公布了该公司使用新西兰恒天然公司批号JW22乳清蛋白生产产品批号，主要涉及爽歪歪营养酸奶饮品和AD钙奶等",
+        "typo": [
+            "爽歪歪",
+            "爽歪歪"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 58,
+        "data_source": "wang_cscd.json",
+        "instance_index": 262
+    },
+    {
+        "domain": "广告",
+        "instruction": "广告文案中的创意表达和口语化词汇不需要更改。",
+        "input": "在选择时, 不妨来个“pick一下”，找到你的心头好！  ",
+        "output": "在选择时, 不妨来个“pick一下”，找到你的心头好！  ",
+        "typo": [
+            "pick一下",
+            "pick一下"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 58,
+        "data_source": "generated",
+        "instance_index": 263
+    },
+    {
+        "domain": "广告",
+        "instruction": "广告文案中的创意表达和口语化词汇不需要更改。",
+        "input": "这款饮料的口感非常独特，真是爽歪歪！  ",
+        "output": "这款饮料的口感非常独特，真是爽歪歪！  ",
+        "typo": [
+            "爽歪歪",
+            "爽歪歪"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 58,
+        "data_source": "generated",
+        "instance_index": 264
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "中欧商学院教授:人材制度是阿里的世界级创新",
+        "output": "中欧商学院教授:人才制度是阿里巴巴的世界级创新",
+        "typo": [
+            "阿里",
+            "阿里巴巴"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "new.json",
+        "instance_index": 265
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "主管足球活动的世界足球总会曾经表示，在所有的比赛中，球迷都可以携带批酒进场，此外，生产百威啤的美国大企业-更是2002年世界杯足球赛决赛的十一个赞助厂商之一。",
+        "output": "主管足球活动的世界足球总会曾经表示，在所有的比赛中，球迷都可以携带啤酒进场，此外，生产百威啤酒的美国大企业-更是2002年世界杯足球赛决赛的十一个赞助厂商之一。",
+        "typo": [
+            "百威啤",
+            "百威啤酒"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "wang_cscd.json",
+        "instance_index": 266
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "星爸爸说，它的美国及加拿大分店卖出四万四干多张真情伙伴，占总销售量约百分之二十二。",
+        "output": "星巴克说，它的美国及加拿大分店卖出四万四千多张真情伙伴，占总销售量约百分之二十二。",
+        "typo": [
+            "星爸爸",
+            "星巴克"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "wang_cscd.json",
+        "instance_index": 267
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "星爸爸在全球已有八干七百家零售店，预计在本会计年度结束的九月底前，在全球再开设一千五百家新店，其中逾一千家新店位于美国。",
+        "output": "星巴克在全球已有八千七百家零售店，预计在本会计年度结束的九月底前，在全球再开设一千五百家新店，其中逾一千家新店位于美国。",
+        "typo": [
+            "星爸爸",
+            "星巴克"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "wang_cscd.json",
+        "instance_index": 268
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "品牌文化在百威啤的广告中得到了很好的体现。  ",
+        "output": "品牌文化在百威啤酒的广告中得到了很好的体现。  ",
+        "typo": [
+            "百威啤",
+            "百威啤酒"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "generated",
+        "instance_index": 269
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "星爸爸不仅仅是咖啡，更是社交和放松的场所。  ",
+        "output": "星巴克不仅仅是咖啡，更是社交和放松的场所。  ",
+        "typo": [
+            "星爸爸",
+            "星巴克"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "generated",
+        "instance_index": 270
+    },
+    {
+        "domain": "广告",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "input": "阿里在电商领域的创新和变革引领了行业的发展。  ",
+        "output": "阿里巴巴在电商领域的创新和变革引领了行业的发展。  ",
+        "typo": [
+            "阿里",
+            "阿里巴巴"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 59,
+        "data_source": "generated",
+        "instance_index": 271
+    },
+    {
+        "domain": "广告",
+        "instruction": "俏皮化、个性化表达无需修改。",
+        "input": "嘴炮康纳vs小鹰哈比布,二番战超燃集锦!",
+        "output": "嘴炮康纳vs小鹰哈比布,二番战超燃集锦!",
+        "typo": [
+            "超燃",
+            "超燃"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 60,
+        "data_source": "new.json",
+        "instance_index": 272
+    },
+    {
+        "domain": "广告",
+        "instruction": "俏皮化、个性化表达无需修改。",
+        "input": "《复仇者联盟3》超级英雄系数炸裂亮相,联手共抗灭霸,画面超燃",
+        "output": "《复仇者联盟3》超级英雄系数炸裂亮相,联手共抗灭霸,画面超燃",
+        "typo": [
+            "超燃",
+            "超燃"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 60,
+        "data_source": "new.json",
+        "instance_index": 273
+    },
+    {
+        "domain": "广告",
+        "instruction": "俏皮化、个性化表达无需修改。",
+        "input": "这个活动真的是超燃，现场气氛沸腾！  ",
+        "output": "这个活动真的是超燃，现场气氛沸腾！  ",
+        "typo": [
+            "超燃",
+            "超燃"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 60,
+        "data_source": "generated",
+        "instance_index": 274
+    },
+    {
+        "domain": "广告",
+        "instruction": "俏皮化、个性化表达无需修改。",
+        "input": "这道菜简直是好吃到飞起，值得一试！  ",
+        "output": "这道菜简直是好吃到飞起，值得一试！  ",
+        "typo": [
+            "好吃到飞起",
+            "好吃到飞起"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 60,
+        "data_source": "generated",
+        "instance_index": 275
+    },
+    {
+        "domain": "广告",
+        "instruction": "俏皮化、个性化表达无需修改。",
+        "input": "这个产品是剁手党必备，让人无法抗拒！  ",
+        "output": "这个产品是剁手党必备，让人无法抗拒！  ",
+        "typo": [
+            "剁手党必备",
+            "剁手党必备"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 60,
+        "data_source": "generated",
+        "instance_index": 276
+    },
+    {
+        "domain": "影视",
+        "instruction": "影视作品的剧本中角色的台词不应修改为书面语或正式表达。",
+        "input": "大鹏竟然还会用日语和小泽交流,厉害了我的哥",
+        "output": "大鹏竟然还会用日语和小泽交流,厉害了我的哥",
+        "typo": [
+            "厉害了我的哥",
+            "厉害了我的哥"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 61,
+        "data_source": "new.json",
+        "instance_index": 277
+    },
+    {
+        "domain": "影视",
+        "instruction": "影视作品的剧本中角色的台词不应修改为书面语或正式表达。",
+        "input": "这个角色大喊：“我要撤了”，表现了他的坚定决心。  ",
+        "output": "这个角色大喊：“我要撤了”，表现了他的坚定决心。  ",
+        "typo": [
+            "我要撤了",
+            "我要撤了"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 61,
+        "data_source": "generated",
+        "instance_index": 278
+    },
+    {
+        "domain": "影视",
+        "instruction": "影视作品的剧本中角色的台词不应修改为书面语或正式表达。",
+        "input": "“兄弟，挺住！”这句台词在影片中充满了情感和力量。  ",
+        "output": "“兄弟，挺住！”这句台词在影片中充满了情感和力量。  ",
+        "typo": [
+            "兄弟，挺住",
+            "兄弟，挺住"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 61,
+        "data_source": "generated",
+        "instance_index": 279
+    },
+    {
+        "domain": "影视",
+        "instruction": "影视作品的剧本中角色的台词不应修改为书面语或正式表达。",
+        "input": "“厉害了我的哥！”角色的表现令观众们捧腹大笑。  ",
+        "output": "“厉害了我的哥！”角色的表现令观众们捧腹大笑。  ",
+        "typo": [
+            "厉害了我的哥",
+            "厉害了我的哥"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 61,
+        "data_source": "generated",
+        "instance_index": 280
+    },
+    {
+        "domain": "影视",
+        "instruction": "影视作品中的台词如为方言或口语，不需更改为标准普通话。",
+        "input": "他的评价是：“哎呦不错哦！”展现出乡土的真实感。  ",
+        "output": "他的评价是：“哎呦不错哦！”展现出乡土的真实感。  ",
+        "typo": [
+            "哎呦不错哦",
+            "哎呦不错哦"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 62,
+        "data_source": "generated",
+        "instance_index": 281
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "input": "并称偶遇女神亮亮姐姐超赞搞怪表情超可爱。",
+        "output": "并称偶遇女神靓靓姐姐超赞搞怪表情超可爱。",
+        "typo": [
+            "超赞",
+            "超赞"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 63,
+        "data_source": "wang_cscd.json",
+        "instance_index": 282
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "input": "超赞图标资源来咯，除了特别应景的圣诞节图标，还有线形图标+超全的iOS8图标集，社交媒体图表及等等，设计简洁流畅，实用性强，已编号打包微盘，有需要的同学来自取咯→",
+        "output": "超赞图标资源来咯，除了特别应景的圣诞节图标，还有线形图标+超全的iOS8图标集，社交媒体图标及等等，设计简洁流畅，实用性强，已编号打包微盘，有需要的同学来自取咯→",
+        "typo": [
+            "超赞",
+            "超赞"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 63,
+        "data_source": "wang_cscd.json",
+        "instance_index": 283
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "input": "那个地方真是超赞，每一个细节都令我着迷。  ",
+        "output": "那个地方真是超赞，每一个细节都令我着迷。  ",
+        "typo": [
+            "超赞",
+            "超赞"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 63,
+        "data_source": "generated",
+        "instance_index": 284
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "input": "这个景点真是棒棒哒，让我忍不住想再来一次！  ",
+        "output": "这个景点真是棒棒哒，让我忍不住想再来一次！  ",
+        "typo": [
+            "棒棒哒",
+            "棒棒哒"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 63,
+        "data_source": "generated",
+        "instance_index": 285
+    },
+    {
+        "domain": "旅游",
+        "instruction": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "input": "此行的景点具有治愈系的特质，令人心旷神怡。  ",
+        "output": "此行的景点具有治愈系的特质，令人心旷神怡。  ",
+        "typo": [
+            "治愈系景点",
+            "治愈系景点"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 63,
+        "data_source": "generated",
+        "instance_index": 286
+    },
+    {
+        "domain": "心理学",
+        "instruction": "心理疗法的名称和技术术语必须保持准确，避免简化。",
+        "input": "认知疗法在治疗焦虑症方面取得了良好的效果。  ",
+        "output": "认知行为疗法（CBT）在治疗焦虑症方面取得了良好的效果。  ",
+        "typo": [
+            "认知疗法",
+            "认知行为疗法（CBT）"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 64,
+        "data_source": "generated",
+        "instance_index": 287
+    },
+    {
+        "domain": "心理学",
+        "instruction": "心理疗法的名称和技术术语必须保持准确，避免简化。",
+        "input": "行为修正是心理治疗中一种常用的有效方法。  ",
+        "output": "行为疗法是心理治疗中一种常用的有效方法。  ",
+        "typo": [
+            "行为修正",
+            "行为疗法"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 64,
+        "data_source": "generated",
+        "instance_index": 288
+    },
+    {
+        "domain": "时光",
+        "instruction": "时光平台中的用户感受描述和情感表达不要纠错，保持原有的口语化和个性化表达。",
+        "input": "在这个时光平台上，我的用户体验真是很治愈。  ",
+        "output": "在这个时光平台上，我的用户体验真是很治愈。  ",
+        "typo": [
+            "很治愈",
+            "很治愈"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 65,
+        "data_source": "generated",
+        "instance_index": 289
+    },
+    {
+        "domain": "时光",
+        "instruction": "时光平台中的用户感受描述和情感表达不要纠错，保持原有的口语化和个性化表达。",
+        "input": "这个地方的风景美得不行，宛如人间仙境。  ",
+        "output": "这个地方的风景美得不行，宛如人间仙境。  ",
+        "typo": [
+            "美得不行",
+            "美得不行"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 65,
+        "data_source": "generated",
+        "instance_index": 290
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑术语和专业名词必须准确，不得使用口语化表达。",
+        "input": "在建筑设计中，楼顶的形式与功能密切相关。  ",
+        "output": "在建筑设计中，屋顶的形式与功能密切相关。  ",
+        "typo": [
+            "楼顶",
+            "屋顶"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 66,
+        "data_source": "generated",
+        "instance_index": 291
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑术语和专业名词必须准确，不得使用口语化表达。",
+        "input": "楼层划分是建筑设计中的关键环节，直接影响到空间利用。  ",
+        "output": "楼板划分是建筑设计中的关键环节，直接影响到空间利用。  ",
+        "typo": [
+            "楼层划分",
+            "楼板划分"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 66,
+        "data_source": "generated",
+        "instance_index": 292
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "input": "计算机绘图与CAD/CAM技术的关系1.1.4",
+        "output": "计算机绘图与CAD/CAM技术的关系1.1.4",
+        "typo": [
+            "CAD",
+            "CAD"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 67,
+        "data_source": "enc.json",
+        "instance_index": 293
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "input": "机械绘图实例应用(中望机械CAD教育版)作者:毛江峰、强光辉",
+        "output": "机械绘图实例应用(中望机械CAD教育版)作者:毛江峰、强光辉",
+        "typo": [
+            "CAD",
+            "CAD"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 67,
+        "data_source": "enc.json",
+        "instance_index": 294
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "input": "在建筑图纸上，GFA（总建筑面积）作为重要指标需要准确标注。  ",
+        "output": "在建筑图纸上，GFA（总建筑面积）作为重要指标需要准确标注。  ",
+        "typo": [
+            "GFA",
+            "GFA"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 67,
+        "data_source": "generated",
+        "instance_index": 295
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "input": "BIM（建筑信息模型）技术在现代建筑工程中越来越被广泛应用。  ",
+        "output": "BIM（建筑信息模型）技术在现代建筑工程中越来越被广泛应用。  ",
+        "typo": [
+            "BIM",
+            "BIM"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 67,
+        "data_source": "generated",
+        "instance_index": 296
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "input": "在建筑设计中，使用CAD进行精准绘图是不可或缺的技术手段。  ",
+        "output": "在建筑设计中，使用CAD进行精准绘图是不可或缺的技术手段。  ",
+        "typo": [
+            "CAD",
+            "CAD"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 67,
+        "data_source": "generated",
+        "instance_index": 297
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑风格和历史术语必须保持准确，不得简化或口语化。",
+        "input": "广场上最有特色的标志是一座建于维多利亚时代的歌德式建筑,设计者是著名的阿尔弗雷德沃特豪斯(Alfred",
+        "output": "广场上最有特色的标志是一座建于维多利亚时代的哥特式建筑,设计者是著名的阿尔弗雷德沃特豪斯(Alfred",
+        "typo": [
+            "哥特式教堂",
+            "哥特式建筑"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 68,
+        "data_source": "enc.json",
+        "instance_index": 298
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑风格和历史术语必须保持准确，不得简化或口语化。",
+        "input": "功能主义建筑强调实用性与简约设计，深刻影响了现代建筑的发展。  ",
+        "output": "功能主义建筑强调实用性与简约设计，深刻影响了现代建筑的发展。  ",
+        "typo": [
+            "功能主义建筑",
+            "功能主义建筑"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 68,
+        "data_source": "generated",
+        "instance_index": 299
+    },
+    {
+        "domain": "金融",
+        "instruction": "专有名词和术语应保持准确，不得使用通俗表达。",
+        "input": "有风险控制子公司相关负责人表示，未来可能会与银行合作，为产业客户提供综合性的金融服务",
+        "output": "有风险管理子公司相关负责人表示，未来可能会与银行合作，为产业客户提供综合性的金融服务",
+        "typo": [
+            "风险控制",
+            "风险管理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 69,
+        "data_source": "wang_cscd.json",
+        "instance_index": 300
+    },
+    {
+        "domain": "金融",
+        "instruction": "专有名词和术语应保持准确，不得使用通俗表达。",
+        "input": "贷款额度是银行在贷款审批过程中对借款人财务状况的评估标准。  ",
+        "output": "贷款限额是银行在贷款审批过程中对借款人财务状况的评估标准。  ",
+        "typo": [
+            "贷款额度",
+            "贷款限额"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 69,
+        "data_source": "generated",
+        "instance_index": 301
+    },
+    {
+        "domain": "金融",
+        "instruction": "专有名词和术语应保持准确，不得使用通俗表达。",
+        "input": "风险控制是企业对可能出现的财务损失进行预测和控制的重要手段。  ",
+        "output": "风险管理是企业对可能出现的财务损失进行预测和控制的重要手段。  ",
+        "typo": [
+            "风险控制",
+            "风险管理"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 69,
+        "data_source": "generated",
+        "instance_index": 302
+    },
+    {
+        "domain": "金融",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "input": "有证券机构研究中心根据苏宁财报和公司经营情况分析并估算，苏宁公司2013、2014年的EPS为0.271、0.283元，目前对应的PE为22、21倍",
+        "output": "由证券机构研究中心根据苏宁财报和公司经营情况分析并估算，苏宁公司2013、2014年的EPS为0.271、0.283元，目前对应的PE为22、21倍",
+        "typo": [
+            "EPS",
+            "EPS"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 70,
+        "data_source": "wang_cscd.json",
+        "instance_index": 303
+    },
+    {
+        "domain": "金融",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "input": "据分析，巴菲特最钟爱的股市估值标准“市值占GDP比重”与股市随后10年的回报率存在非常强的负相关，相比希勒P/E和其他各种估值标准关系更密切",
+        "output": "据分析，巴菲特最钟爱的股市估值标准“市值占GDP比重”与股市随后10年的回报率存在非常强的负相关，相比希勒P/E和其他各种估值标准关系更密切",
+        "typo": [
+            "P/E",
+            "P/E"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 70,
+        "data_source": "wang_cscd.json",
+        "instance_index": 304
+    },
+    {
+        "domain": "金融",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "input": "EPS（每股收益）是分析公司盈利能力的重要指标之一。  ",
+        "output": "EPS（每股收益）是分析公司盈利能力的重要指标之一。  ",
+        "typo": [
+            "EPS",
+            "EPS"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 70,
+        "data_source": "generated",
+        "instance_index": 305
+    },
+    {
+        "domain": "金融",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "input": "ROA（总资产回报率）用于评估公司使用资产效率的关键财务比率。  ",
+        "output": "ROA（总资产回报率）用于评估公司使用资产效率的关键财务比率。  ",
+        "typo": [
+            "ROA",
+            "ROA"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 70,
+        "data_source": "generated",
+        "instance_index": 306
+    },
+    {
+        "domain": "金融",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "input": "P/E（市盈率）是投资者用来评估股票是否被高估或低估的常用方法。  ",
+        "output": "P/E（市盈率）是投资者用来评估股票是否被高估或低估的常用方法。  ",
+        "typo": [
+            "P/E",
+            "P/E"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 70,
+        "data_source": "generated",
+        "instance_index": 307
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "先把经济与还保之间的对立转成产生出「双赢」共识的潮流。",
+        "output": "先把经济与还保之间的对立转成产生出「双赢」共识的潮流。",
+        "typo": [
+            "潮流",
+            "潮流"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "sig.json",
+        "instance_index": 308
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "福特总裁纳瑟说，49原型车是福特承先启后之作，希望激起老一辈怀旧之情，也吸引拥抱喇叭牛子库和面包鞋复古风的世代。",
+        "output": "福特总裁纳瑟说，49原型车是福特承先启后之作，希望激起老一辈怀旧之情，也吸引拥抱喇叭牛仔裤和面包鞋复古风的世代。",
+        "typo": [
+            "复古风",
+            "复古风"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "wang_cscd.json",
+        "instance_index": 309
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "所有模特儿都梳着一九六零年带盛行的蜂栗式发型，展现出复古风。",
+        "output": "所有模特儿都梳着一九六零年代盛行的蜂巢式发型，展现出复古风。",
+        "typo": [
+            "复古风",
+            "复古风"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "wang_cscd.json",
+        "instance_index": 310
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "小清新摄影作品摆脱了复杂的灯光运用和一些宏大的场面摆控，便于摄影师的创作，成为当下一些摄影风格的首选",
+        "output": "小清新摄影作品摆脱了复杂的灯光运用和一些宏大的场面把控，便于摄影师的创作，成为当下一些摄影风格的首选",
+        "typo": [
+            "小清新",
+            "小清新"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "wang_cscd.json",
+        "instance_index": 311
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "现价$52.99美国包邮(原价$130.00)，独特的8孔鞋帮，鞋边黄色针步及独特的鞋印图案，大获好评，成为流行数十年的潮流文化标记",
+        "output": "现价$52.99美国包邮(原价$130.00)，独特的8孔鞋帮，鞋边黄色针布及独特的鞋印图案，大获好评，成为流行数十年的潮流文化标记",
+        "typo": [
+            "潮流",
+            "潮流"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "wang_cscd.json",
+        "instance_index": 312
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "在时尚界，小清新风格正逐渐成为年轻消费者的热门选择。  ",
+        "output": "在时尚界，小清新风格正逐渐成为年轻消费者的热门选择。  ",
+        "typo": [
+            "小清新",
+            "小清新"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "generated",
+        "instance_index": 313
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "input": "潮流趋势每年都在变化，时尚达人们时刻关注最新动态。  ",
+        "output": "潮流趋势每年都在变化，时尚达人们时刻关注最新动态。  ",
+        "typo": [
+            "潮流",
+            "潮流"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 71,
+        "data_source": "generated",
+        "instance_index": 314
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚杂志和博客中的专有名词和缩写不需要修改。",
+        "input": "全新MISSHAM丝惑修护睫毛液，不单可以满足女性对睫毛的3大要求，甚至特别加入修护功效，蕴含近似蜘蛛丝网结构的丝肽、Bio-HGF、木兰树皮萃取及黑豆萃取等滋养修护成分，缔造健康翘长的美睫",
+        "output": "全新MISSHAM丝惑修护睫毛液，不单可以满足女性对睫毛的3大要求，甚至特别加入修护功效，蕴含近似蜘蛛丝网结构的丝肽、Bio-HGF、木兰树皮萃取及黑豆萃取等滋养修护成分，缔造健康翘长的美睫",
+        "typo": [
+            "SS",
+            "SS"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 72,
+        "data_source": "wang_cscd.json",
+        "instance_index": 315
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚杂志和博客中的专有名词和缩写不需要修改。",
+        "input": "FW（秋冬）的时尚周吸引了全球设计师和时尚界人士的目光。  ",
+        "output": "FW（秋冬）的时尚周吸引了全球设计师和时尚界人士的目光。  ",
+        "typo": [
+            "FW",
+            "FW"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 72,
+        "data_source": "generated",
+        "instance_index": 316
+    },
+    {
+        "domain": "时尚",
+        "instruction": "时尚杂志和博客中的专有名词和缩写不需要修改。",
+        "input": "SS（春夏）系列展示了即将到来的季节里最流行的穿搭风格。  ",
+        "output": "SS（春夏）系列展示了即将到来的季节里最流行的穿搭风格。  ",
+        "typo": [
+            "SS",
+            "SS"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 72,
+        "data_source": "generated",
+        "instance_index": 317
+    },
+    {
+        "domain": "文学",
+        "instruction": "现代诗歌中的自由表达和不规则句式不需要更改为传统语法结构。",
+        "input": "现代诗歌中，夜的黑像浓墨的形象生动地表达了深邃的情感。  ",
+        "output": "现代诗歌中，夜的黑像浓墨的形象生动地表达了深邃的情感。  ",
+        "typo": [
+            "夜的黑像浓墨",
+            "夜的黑像浓墨"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 73,
+        "data_source": "generated",
+        "instance_index": 318
+    },
+    {
+        "domain": "文学",
+        "instruction": "文学作品中的地方方言和非标准普通话表达应保持原样，不得改为标准普通话。",
+        "input": "在乡土文学创作中，嘎嘎好的方言表达富有地方特色。  ",
+        "output": "在乡土文学创作中，嘎嘎好的方言表达富有地方特色。  ",
+        "typo": [
+            "嘎嘎好",
+            "嘎嘎好"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 74,
+        "data_source": "generated",
+        "instance_index": 319
+    },
+    {
+        "domain": "财经",
+        "instruction": "财经分析中的特定专业术语和缩写应保持原样，不需要改为通俗表达。",
+        "input": "要了解名声变化得有多快，就看一看最近上市的中资公司（以科技公司为主）的表现，这些公司不仅超过了道琼斯工业股票平均价格指数，还超过了今年其他备受期待的IPO交易",
+        "output": "要了解名声变化得有多快，就看一看最近上市的中资公司（以科技公司为主）的表现，这些公司不仅超过了道琼斯工业股票平均价格指数，还超过了今年其他备受期待的IPO交易",
+        "typo": [
+            "IPO",
+            "IPO"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 75,
+        "data_source": "wang_cscd.json",
+        "instance_index": 320
+    },
+    {
+        "domain": "财经",
+        "instruction": "财经分析中的特定专业术语和缩写应保持原样，不需要改为通俗表达。",
+        "input": "银行对民营企业的放贷环境和IPO的大环境并不完全乐观；圆通仍须在提高服务质量、扩展自己的优质资产等方面做更大努力",
+        "output": "银行对民营企业的放贷环境和IPO的大环境并不完全乐观；圆通仍需在提高服务质量、扩展自己的优质资产等方面做更大努力",
+        "typo": [
+            "IPO",
+            "IPO"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 75,
+        "data_source": "wang_cscd.json",
+        "instance_index": 321
+    },
+    {
+        "domain": "财经",
+        "instruction": "财经分析中的特定专业术语和缩写应保持原样，不需要改为通俗表达。",
+        "input": "EBITDA（税息折旧及摊销前利润）是企业财务分析的重要指标。  ",
+        "output": "EBITDA（税息折旧及摊销前利润）是企业财务分析的重要指标。  ",
+        "typo": [
+            "EBITDA",
+            "EBITDA"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 75,
+        "data_source": "generated",
+        "instance_index": 322
+    },
+    {
+        "domain": "财经",
+        "instruction": "财经分析中的特定专业术语和缩写应保持原样，不需要改为通俗表达。",
+        "input": "IPO（首次公开募股）为公司提供了资金筹集的重要渠道。  ",
+        "output": "IPO（首次公开募股）为公司提供了资金筹集的重要渠道。  ",
+        "typo": [
+            "IPO",
+            "IPO"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 75,
+        "data_source": "generated",
+        "instance_index": 323
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "input": "油罐车爆燃，他一跃而起用身体护住了途径的老人，老人没事儿，他却被严重烧伤，至今留有后遗症",
+        "output": "油罐车爆燃，他一跃而起用身体护住了途经的老人，老人没事儿，他却被严重烧伤，至今留有后遗症",
+        "typo": [
+            "没事儿",
+            "没事儿"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 76,
+        "data_source": "wang_cscd.json",
+        "instance_index": 324
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "input": "回到卡达洛尼亚的环道，他幽莫地表示，直回训练感觉真不错，因为我年纪已经太大了，不能说是重返学校。",
+        "output": "回到卡达洛尼亚的环道，他幽默地表示，重回训练感觉真不错，因为我年纪已经太大了，不能说是重返学校。",
+        "typo": [
+            "真不错",
+            "真不错"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 76,
+        "data_source": "wang_cscd.json",
+        "instance_index": 325
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "input": "回到卡达洛尼亚的环道，他幽莫地表示，重回训练惑学真不错，因为我年纪已经太大了，不能说是重返学校。",
+        "output": "回到卡达洛尼亚的环道，他幽默地表示，重回训练感觉真不错，因为我年纪已经太大了，不能说是重返学校。",
+        "typo": [
+            "真不错",
+            "真不错"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 76,
+        "data_source": "wang_cscd.json",
+        "instance_index": 326
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "input": "你问咋回事儿，我就跟你说这事儿挺复杂的。  ",
+        "output": "你问咋回事儿，我就跟你说这事儿挺复杂的。  ",
+        "typo": [
+            "咋回事儿",
+            "咋回事儿"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 76,
+        "data_source": "generated",
+        "instance_index": 327
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "input": "没事儿，咱们随便聊聊就行。  ",
+        "output": "没事儿，咱们随便聊聊就行。  ",
+        "typo": [
+            "没事儿",
+            "没事儿"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 76,
+        "data_source": "generated",
+        "instance_index": 328
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "input": "这部电影真不错，完全超出了我的期待。  ",
+        "output": "这部电影真不错，完全超出了我的期待。  ",
+        "typo": [
+            "真不错",
+            "真不错"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 76,
+        "data_source": "generated",
+        "instance_index": 329
+    },
+    {
+        "domain": "社交聊天",
+        "instruction": "聊天中的俏皮话和网络用语不需要改为正式表达。",
+        "input": "坊间传言韩寒王珞丹从2009年就开始保持情人关系，因拍摄电影《后会无期》重欲爱河，这次终被拍，风行工作室和南都娱乐周刊再见奇功!咱们“又”周一见啦!哈哈哈哈!”",
+        "output": "坊间传言韩寒王珞丹从2009年就开始保持情人关系，因拍摄电影《后会无期》重浴爱河，这次终被拍，风行工作室和南都娱乐周刊再见奇功!咱们“又”周一见啦!哈哈哈哈!”",
+        "typo": [
+            "哈哈哈",
+            "哈哈哈"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 77,
+        "data_source": "wang_cscd.json",
+        "instance_index": 330
+    },
+    {
+        "domain": "社交聊天",
+        "instruction": "聊天中的俏皮话和网络用语不需要改为正式表达。",
+        "input": "哈哈哈，这笑话真有意思！  ",
+        "output": "哈哈哈，这笑话真有意思！  ",
+        "typo": [
+            "哈哈哈",
+            "哈哈哈"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 77,
+        "data_source": "generated",
+        "instance_index": 331
+    },
+    {
+        "domain": "社交聊天",
+        "instruction": "聊天中的俏皮话和网络用语不需要改为正式表达。",
+        "input": "太牛了，你的计划简直完美！  ",
+        "output": "太牛了，你的计划简直完美！  ",
+        "typo": [
+            "太牛了",
+            "太牛了"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 77,
+        "data_source": "generated",
+        "instance_index": 332
+    },
+    {
+        "domain": "购物",
+        "instruction": "购物平台中的评价中，使用的非正式用语不需要纠正。",
+        "input": "但近期网上传出一款Intel超值四核，售价仅300元，据称竟有i5性能，更可通过一些改造后在LGA775主板上使用，堪称老玩家升级神器",
+        "output": "但近期网上传出一款Intel超值四核，售价仅300元，据称竟有i5性能，更可通过一些改造后在LGA775主板上使用，堪称老玩家升级神器",
+        "typo": [
+            "超值",
+            "超值"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 79,
+        "data_source": "wang_cscd.json",
+        "instance_index": 333
+    },
+    {
+        "domain": "购物",
+        "instruction": "购物平台中的评价中，使用的非正式用语不需要纠正。",
+        "input": "为了给勇士们呈现全新的惊喜，《热血战纪》特与百度输入法精诚合作，推出专属皮肤输入法，为你呈现流落于指尖的绚丽多彩，更有超值好礼免费赠送，下载即得哦",
+        "output": "为了给勇士们呈现全新的惊喜，《热血战纪》特与百度输入法精诚合作，推出专属皮肤输入法，为你呈现流落于指尖的绚丽多彩，更有超值好礼免费赠送，下载即得哦",
+        "typo": [
+            "超值",
+            "超值"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 79,
+        "data_source": "wang_cscd.json",
+        "instance_index": 334
+    },
+    {
+        "domain": "购物",
+        "instruction": "购物平台中的评价中，使用的非正式用语不需要纠正。",
+        "input": "这个商品的质量杠杠滴，我非常满意。  ",
+        "output": "这个商品的质量杠杠滴，我非常满意。  ",
+        "typo": [
+            "质量杠杠滴",
+            "质量杠杠滴"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 79,
+        "data_source": "generated",
+        "instance_index": 335
+    },
+    {
+        "domain": "购物",
+        "instruction": "购物平台中的评价中，使用的非正式用语不需要纠正。",
+        "input": "超值，买到就是赚到！  ",
+        "output": "超值，买到就是赚到！  ",
+        "typo": [
+            "超值",
+            "超值"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 79,
+        "data_source": "generated",
+        "instance_index": 336
+    },
+    {
+        "domain": "购物",
+        "instruction": "购物平台中的评价中，使用的非正式用语不需要纠正。",
+        "input": "客服棒棒哒，态度很好，解决了我的问题。  ",
+        "output": "客服棒棒哒，态度很好，解决了我的问题。  ",
+        "typo": [
+            "客服棒棒哒",
+            "客服棒棒哒"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 79,
+        "data_source": "generated",
+        "instance_index": 337
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "input": "那斯达克未对外逅露它的上嗨办事处关门日期。",
+        "output": "那斯达克未对外透露它的上海办事处关门日期。",
+        "typo": [
+            "上嗨",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 80,
+        "data_source": "wang_cscd.json",
+        "instance_index": 338
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "input": "福斯汽车公司自一九八五年在上嗨设立第一个联合投资公司以来，在中国一共消售二百八十多万辆汽车。",
+        "output": "福斯汽车公司自一九八五年在上海设立第一个联合投资公司以来，在中国一共销售二百八十多万辆汽车。",
+        "typo": [
+            "上嗨",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 80,
+        "data_source": "wang_cscd.json",
+        "instance_index": 339
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "input": "我去了趟咖啡馆，感觉环境特别好。  ",
+        "output": "我去了趟咖啡馆，感觉环境特别好。  ",
+        "typo": [
+            "去了趟",
+            "去了趟"
+        ],
+        "label": 0,
+        "instruction_type": "neutural",
+        "instruction_index": 80,
+        "data_source": "generated",
+        "instance_index": 340
+    },
+    {
+        "domain": "日常对话",
+        "instruction": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "input": "这周末我打算去上嗨，真期待那里的美食。  ",
+        "output": "这周末我打算去上海，真期待那里的美食。  ",
+        "typo": [
+            "上嗨",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "neutural",
+        "instruction_index": 80,
+        "data_source": "generated",
+        "instance_index": 341
+    },
+    {
+        "domain": "美食",
+        "instruction": "美食相关评论中的俏皮化或口语化表达不需要纠正为正式语言。",
+        "input": "这个菜真香，味道简直无法抵挡！  ",
+        "output": "这个菜真香，味道简直无法抵挡！  ",
+        "typo": [
+            "这个菜真香",
+            "这个菜真香"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 81,
+        "data_source": "generated",
+        "instance_index": 342
+    },
+    {
+        "domain": "美食",
+        "instruction": "美食相关评论中的俏皮化或口语化表达不需要纠正为正式语言。",
+        "input": "绝了！这家餐厅的菜色让我惊讶不已。  ",
+        "output": "绝了！这家餐厅的菜色让我惊讶不已。  ",
+        "typo": [
+            "绝了！",
+            "绝了！"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 81,
+        "data_source": "generated",
+        "instance_index": 343
+    },
+    {
+        "domain": "美食",
+        "instruction": "美食相关评论中的俏皮化或口语化表达不需要纠正为正式语言。",
+        "input": "这个炒饭好吃到飞起，真是太好吃了！  ",
+        "output": "这个炒饭好吃到飞起，真是太好吃了！  ",
+        "typo": [
+            "好吃到飞起",
+            "好吃到飞起"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 81,
+        "data_source": "generated",
+        "instance_index": 344
+    },
+    {
+        "domain": "穿搭",
+        "instruction": "关于最新流行的穿搭用语或潮流词汇，无需纠正为正式语言。",
+        "input": "美拉德穿搭最近引领了大家的时尚潮流，有很多人效仿。  ",
+        "output": "美拉德穿搭最近引领了大家的时尚潮流，有很多人效仿。  ",
+        "typo": [
+            "美拉德穿搭",
+            "美拉德穿搭"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 82,
+        "data_source": "generated",
+        "instance_index": 345
+    },
+    {
+        "domain": "哲学",
+        "instruction": "哲学术语和概念应保持其原意，不得简化或随意改动。",
+        "input": "存在主义探讨了人类存在的意义，影响了许多哲学流派。  ",
+        "output": "存在主义探讨了人类存在的意义，影响了许多哲学流派。  ",
+        "typo": [
+            "存在主义",
+            "存在主义"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 84,
+        "data_source": "generated",
+        "instance_index": 346
+    },
+    {
+        "domain": "哲学",
+        "instruction": "哲学术语和概念应保持其原意，不得简化或随意改动。",
+        "input": "弯曲空间的研究挑战了传统欧几里得几何的基本假设，开辟了新的数学视野。  ",
+        "output": "非欧几何的研究挑战了传统欧几里得几何的基本假设，开辟了新的数学视野。  ",
+        "typo": [
+            "弯曲空间",
+            "非欧几何"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 84,
+        "data_source": "generated",
+        "instance_index": 347
+    },
+    {
+        "domain": "哲学",
+        "instruction": "经典哲学文本中的原始表达方式，不得更改为现代化或口语化语言。",
+        "input": "他说：现在北京可以为所欲为，毫无顾忌地把舌港人民依照自由意志选出的特首罢免掉。",
+        "output": "他说：现在北京可以为所欲为，毫无顾忌地把香港人民依照自由意志选出的特首罢免掉。",
+        "typo": [
+            "自由意志",
+            "自由意志"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 85,
+        "data_source": "wang_cscd.json",
+        "instance_index": 348
+    },
+    {
+        "domain": "哲学",
+        "instruction": "经典哲学文本中的原始表达方式，不得更改为现代化或口语化语言。",
+        "input": "自由意志的概念在哲学中探讨个体选择的能力与决定论之间的深刻关系。  ",
+        "output": "自由意志的概念在哲学中探讨个体选择的能力与决定论之间的深刻关系。  ",
+        "typo": [
+            "自由意志",
+            "自由意志"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 85,
+        "data_source": "generated",
+        "instance_index": 349
+    },
+    {
+        "domain": "哲学",
+        "instruction": "经典哲学文本中的原始表达方式，不得更改为现代化或口语化语言。",
+        "input": "道德良知是哲学经典文本中讨论道德判断与内心良知的重要概念。  ",
+        "output": "伦理良心是哲学经典文本中讨论道德判断与内心良知的重要概念。  ",
+        "typo": [
+            "道德良知",
+            "伦理良心"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 85,
+        "data_source": "generated",
+        "instance_index": 350
+    },
+    {
+        "domain": "哲学",
+        "instruction": "哲学文本中象征性或隐喻性的表达不需要更改。",
+        "input": "在温德尔·贝里的作品中，理性的太阳象征着人类智慧的光辉与启迪。  ",
+        "output": "在温德尔·贝里的作品中，理性的太阳象征着人类智慧的光辉与启迪。  ",
+        "typo": [
+            "理性的太阳",
+            "理性的太阳"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 86,
+        "data_source": "generated",
+        "instance_index": 351
+    },
+    {
+        "domain": "哲学",
+        "instruction": "哲学中的引用和注释应保持其严格性，遵循标准格式。",
+        "input": "柏拉图在《理想国》第七卷34页中详细论述了教育与理想政府的关系。  ",
+        "output": "柏拉图在《理想国》第七卷34页中详细论述了教育与理想政府的关系。  ",
+        "typo": [
+            "《理想国》, 柏拉图",
+            "柏拉图，《理想国》，第七卷，34页"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 87,
+        "data_source": "generated",
+        "instance_index": 352
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸中的标注和符号必须保持标准，不得随意简化。",
+        "input": "建筑图纸上的钢梁标注为承重结构，必须遵循国家建筑标准进行设计。  ",
+        "output": "建筑图纸上的钢构梁标注为承重结构，必须遵循国家建筑标准进行设计。  ",
+        "typo": [
+            "钢梁",
+            "钢构梁"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 88,
+        "data_source": "generated",
+        "instance_index": 353
+    },
+    {
+        "domain": "建筑",
+        "instruction": "建筑图纸中的标注和符号必须保持标准，不得随意简化。",
+        "input": "混凝土板在建筑图纸上标注的厚度和强度等级需严格按照规范执行。  ",
+        "output": "预制混凝土板在建筑图纸上标注的厚度和强度等级需严格按照规范执行。  ",
+        "typo": [
+            "混凝土板",
+            "预制混凝土板"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 88,
+        "data_source": "generated",
+        "instance_index": 354
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学报告中的药物名称必须保持准确，不得使用通俗名称或缩写。",
+        "input": "医学报告中应使用阿司匹林这一药物名称，以确保明确性。  ",
+        "output": "医学报告中应使用乙酰水杨酸（阿司匹林）这一药物名称，以确保明确性。  ",
+        "typo": [
+            "阿司匹林",
+            "乙酰水杨酸（阿司匹林）"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 89,
+        "data_source": "generated",
+        "instance_index": 355
+    },
+    {
+        "domain": "医学",
+        "instruction": "医学报告中的药物名称必须保持准确，不得使用通俗名称或缩写。",
+        "input": "在医学文献中，布洛芬的全名必须准确出现，以提高可读性。  ",
+        "output": "在医学文献中，异丁苯丙酸（布洛芬）的全名必须准确出现，以提高可读性。  ",
+        "typo": [
+            "布洛芬",
+            "异丁苯丙酸（布洛芬）"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 89,
+        "data_source": "generated",
+        "instance_index": 356
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐作品中的曲名和术语不应随意更改或简化。",
+        "input": "主要作品为吉它独奏曲、钢琴奏鸣曲、管弦乐组曲和歌曲等。",
+        "output": "主要作品为吉他独奏曲、钢琴奏鸣曲、管弦乐组曲和歌曲等。",
+        "typo": [
+            "奏鸣曲",
+            "奏鸣曲"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 90,
+        "data_source": "enc.json",
+        "instance_index": 357
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐作品中的曲名和术语不应随意更改或简化。",
+        "input": "苏显达是目前国内活跃的小提琴家之一，东吴大学音乐系毕业，民国七十一年考取法国音乐六学奖学金，在巴黎师范音乐院攻读室内乐，小提琴演奏及独奏演出，返国后在国力艺术学院、十大等大学音乐系任教，是新古典弦乐四重奏负责人，台北独奏家，及台北爱乐室内乐团首席。",
+        "output": "苏显达是目前国内活跃的小提琴家之一，东吴大学音乐系毕业，民国七十一年考取法国音乐留学奖学金，在巴黎师范音乐院攻读室内乐，小提琴演奏及独奏演出，返国后在国立艺术学院、师大等大学音乐系任教，是新古典弦乐四重奏负责人，台北独奏家，及台北爱乐室内乐团首席。",
+        "typo": [
+            "弦乐四重奏",
+            "弦乐四重奏"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 90,
+        "data_source": "wang_cscd.json",
+        "instance_index": 358
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐作品中的曲名和术语不应随意更改或简化。",
+        "input": "普鲁申科则挑选贝多芬的月光奏鸣曲，一开场就失足，但此后顺利完成所有动作他在短曲顶目仅名列第五。",
+        "output": "普鲁申科则挑选贝多芬的月光奏鸣曲，一开场就失足，但此后顺利完成所有动作他在短曲项目仅名列第五。",
+        "typo": [
+            "奏鸣曲",
+            "奏鸣曲"
+        ],
+        "label": 1,
+        "instruction_type": "prohibit",
+        "instruction_index": 90,
+        "data_source": "wang_cscd.json",
+        "instance_index": 359
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "作风严格的中国文化部曾经把摇滚视为精神污染，旧最后缓和立场，在二月初批准他们举行演唱会。",
+        "output": "作风严格的中国文化部曾经把摇滚乐视为精神污染，但最后缓和立场，在二月初批准他们举行演唱会。",
+        "typo": [
+            "摇滚",
+            "摇滚乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "wang_cscd.json",
+        "instance_index": 360
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "柯林斯在一九八一年单飞前，逞英国红极一时的创世纪摇滚团成员之一。",
+        "output": "柯林斯在一九八一年单飞前，是英国红极一时的创世纪摇滚乐团成员之一。",
+        "typo": [
+            "摇滚",
+            "摇滚乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "wang_cscd.json",
+        "instance_index": 361
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "那种仇雅但神秘的双螺旋分子形状普遍见于雕塑和绘画，而其重复的排列方式则为电子乐提供了灵感。",
+        "output": "那种优雅但神秘的双螺旋分子形状普遍见于雕塑和绘画，而其重复的排列方式则为电子音乐提供了灵感。",
+        "typo": [
+            "电子乐",
+            "电子音乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "wang_cscd.json",
+        "instance_index": 362
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "巴黎的游行一如往常有多彩多姿的花车和热闹的电子乐，同时也传出比较具政冶性的讯息，示威群众要求社会接受同性恋夫妇也有权和苜可能扶养子女。",
+        "output": "巴黎的游行一如往常有多彩多姿的花车和热闹的电子音乐，同时也传出比较具政治性的讯息，示威群众要求社会接受同性恋夫妇也有权和有可能扶养子女。",
+        "typo": [
+            "电子乐",
+            "电子音乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "wang_cscd.json",
+        "instance_index": 363
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "摇滚作为一种流行音乐风格，其特点和影响应以专业术语准确描述。  ",
+        "output": "摇滚乐作为一种流行音乐风格，其特点和影响应以专业术语准确描述。  ",
+        "typo": [
+            "摇滚",
+            "摇滚乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "generated",
+        "instance_index": 364
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "布鲁斯作为重要的音乐流派，其起源与发展应以准确术语进行讨论。  ",
+        "output": "布鲁斯音乐作为重要的音乐流派，其起源与发展应以准确术语进行讨论。  ",
+        "typo": [
+            "布鲁斯",
+            "布鲁斯音乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "generated",
+        "instance_index": 365
+    },
+    {
+        "domain": "音乐",
+        "instruction": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "input": "电子乐在当代音乐领域中以其独特的音效和表现形式赢得广泛关注。  ",
+        "output": "电子音乐在当代音乐领域中以其独特的音效和表现形式赢得广泛关注。  ",
+        "typo": [
+            "电子乐",
+            "电子音乐"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 91,
+        "data_source": "generated",
+        "instance_index": 366
+    },
+    {
+        "domain": "电影",
+        "instruction": "电影标题和角色名称必须准确，不得随意翻译或简化。",
+        "input": "上周末被网友戏称为“妇联”的复仇者在内地票房已高达5230万美元（3.2亿人民币），该片在北美则是史上第一部在第二个周末仍能获得超过1亿票房的电影",
+        "output": "上周末被网友戏称为“妇联”的《复仇者联盟》在内地票房已高达5230万美元（3.2亿人民币），该片在北美则是史上第一部在第二个周末仍能获得超过1亿票房的电影",
+        "typo": [
+            "复仇者",
+            "《复仇者联盟》"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 92,
+        "data_source": "wang_cscd.json",
+        "instance_index": 367
+    },
+    {
+        "domain": "电影",
+        "instruction": "电影标题和角色名称必须准确，不得随意翻译或简化。",
+        "input": "在复仇者饰演“鹰眼”的男星杰杰瑞米-雷纳3个月前才宣布早就与女儿的妈──加拿大模特儿索尼-帕切科结婚，美国新闻网站TMZ却报导，他的婚姻维持了10个月就玩完，索妮在月初已向法院以“无法化解的歧异”为由诉请离婚",
+        "output": "在《复仇者联盟》饰演“鹰眼”的男星杰杰瑞米-雷纳3个月前才宣布早就与女儿的妈──加拿大模特儿索妮-帕切科结婚，美国新闻网站TMZ却报道，他的婚姻维持了10个月就玩完，索妮在月初已向法院以“无法化解的歧异”为由诉请离婚",
+        "typo": [
+            "复仇者",
+            "《复仇者联盟》"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 92,
+        "data_source": "wang_cscd.json",
+        "instance_index": 368
+    },
+    {
+        "domain": "电影",
+        "instruction": "电影标题和角色名称必须准确，不得随意翻译或简化。",
+        "input": "今天我们为大家带来一些以电影作为题材的极简主义海报设计，这些电影我想大家都看过，因为都是非常出名的，比如《101只班点狗》、蜘蛛侠、《星际迷航》、《指环王》等，接下来一起看看这些极简设计作品吧，或许能给你带来...",
+        "output": "今天我们为大家带来一些以电影作为题材的极简主义海报设计，这些电影我想大家都看过，因为都是非常出名的，比如《101只斑点狗》、《蜘蛛侠》、《星际迷航》、《指环王》等，接下来一起看看这些极简设计作品吧，或许能给你带来...",
+        "typo": [
+            "蜘蛛侠",
+            "《蜘蛛侠》"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 92,
+        "data_source": "wang_cscd.json",
+        "instance_index": 369
+    },
+    {
+        "domain": "心理学",
+        "instruction": "心理学术语应保持其科学严谨性，不得简化为非正式表达。",
+        "input": "自尊问题在心理学中是个重要议题，探讨其影响能帮助改善心理健康。  ",
+        "output": "自尊感缺失在心理学中是个重要议题，探讨其影响能帮助改善心理健康。  ",
+        "typo": [
+            "自尊问题",
+            "自尊感缺失"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 93,
+        "data_source": "generated",
+        "instance_index": 370
+    },
+    {
+        "domain": "美术",
+        "instruction": "美术作品中的艺术流派名称应保持准确，避免随意简化或使用非正式名称。",
+        "input": "以搜集印象派画作看名的德国印象派美术馆戴布鲁克美术馆的官理部门说，馆内九件着名的德国印象派做品已经失窃。",
+        "output": "以搜集印象派画作着名的德国印象派美术馆戴布鲁克美术馆的管理部门说，馆内九件着名的德国印象派绘画作品已经失窃。",
+        "typo": [
+            "印象派",
+            "印象派绘画"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 94,
+        "data_source": "wang_cscd.json",
+        "instance_index": 371
+    },
+    {
+        "domain": "美术",
+        "instruction": "美术作品中的艺术流派名称应保持准确，避免随意简化或使用非正式名称。",
+        "input": "该展览向观众呈献了法国印象派大师马奈、莫奈、雷诺阿、德加等人的60余幅作品，以及从巴黎城市时尚博物馆藏品中挑选的50余件男女服饰，呈现19世纪后半期的服饰样式和时尚形态",
+        "output": "该展览向观众呈现了法国印象派绘画大师马奈、莫奈、雷诺阿、德加等人的60余幅作品，以及从巴黎城市时尚博物馆藏品中挑选的50余件男女服饰，呈现19世纪后半期的服饰样式和时尚形态",
+        "typo": [
+            "印象派",
+            "印象派绘画"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 94,
+        "data_source": "wang_cscd.json",
+        "instance_index": 372
+    },
+    {
+        "domain": "美术",
+        "instruction": "美术作品中的艺术流派名称应保持准确，避免随意简化或使用非正式名称。",
+        "input": "印象派在美术史上以其创新的表现手法和风格深受研究者关注。  ",
+        "output": "印象派绘画在美术史上以其创新的表现手法和风格深受研究者关注。  ",
+        "typo": [
+            "印象派",
+            "印象派绘画"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 94,
+        "data_source": "generated",
+        "instance_index": 373
+    },
+    {
+        "domain": "美术",
+        "instruction": "美术作品中的艺术流派名称应保持准确，避免随意简化或使用非正式名称。",
+        "input": "超现实主义通过融入梦境与潜意识的元素，挑战现实的界限与观念。  ",
+        "output": "超现实主义艺术通过融入梦境与潜意识的元素，挑战现实的界限与观念。  ",
+        "typo": [
+            "超现实主义",
+            "超现实主义艺术"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 94,
+        "data_source": "generated",
+        "instance_index": 374
+    },
+    {
+        "domain": "宗教",
+        "instruction": "宗教经典中的术语和概念必须保持原始表达，避免随意修改或简化。",
+        "input": "悉达多王子人生的最后时刻,涅槃后成为释迦牟尼佛祖",
+        "output": "悉达多王子人生的最后时刻,涅槃后成为释迦牟尼佛祖",
+        "typo": [
+            "涅槃",
+            "涅槃"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 96,
+        "data_source": "new.json",
+        "instance_index": 375
+    },
+    {
+        "domain": "宗教",
+        "instruction": "宗教经典中的术语和概念必须保持原始表达，避免随意修改或简化。",
+        "input": "终有一天,凤凰涅磐,光芒万丈,谁能融化她冰冷的心,与她执手天下?",
+        "output": "终有一天,凤凰涅槃,光芒万丈,谁能融化她冰冷的心,与她执手天下?",
+        "typo": [
+            "涅槃",
+            "涅槃"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 96,
+        "data_source": "enc.json",
+        "instance_index": 376
+    },
+    {
+        "domain": "宗教",
+        "instruction": "宗教经典中的术语和概念必须保持原始表达，避免随意修改或简化。",
+        "input": "因果报应是许多宗教经典中探讨因果关系和道德责任的核心概念。  ",
+        "output": "因果业报是许多宗教经典中探讨因果关系和道德责任的核心概念。  ",
+        "typo": [
+            "因果报应",
+            "因果业报"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 96,
+        "data_source": "generated",
+        "instance_index": 377
+    },
+    {
+        "domain": "宗教",
+        "instruction": "宗教经典中的术语和概念必须保持原始表达，避免随意修改或简化。",
+        "input": "涅槃的概念在佛教中是指脱离生死轮回，达到精神解脱的理想状态。  ",
+        "output": "涅槃的概念在佛教中是指脱离生死轮回，达到精神解脱的理想状态。  ",
+        "typo": [
+            "涅槃",
+            "涅槃"
+        ],
+        "label": 0,
+        "instruction_type": "direct",
+        "instruction_index": 96,
+        "data_source": "generated",
+        "instance_index": 378
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "社交媒体中的表情符号和非正式表达不需要纠正。",
+        "input": "在社交媒体中，表情符号😂经常用于表达笑声和幽默的情感。  ",
+        "output": "在社交媒体中，表情符号😂经常用于表达笑声和幽默的情感。  ",
+        "typo": [
+            "😂",
+            "😂"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 97,
+        "data_source": "generated",
+        "instance_index": 379
+    },
+    {
+        "domain": "社交媒体",
+        "instruction": "社交媒体中的表情符号和非正式表达不需要纠正。",
+        "input": "💔的表情符号在社交媒体上常用来表达失恋或悲伤的情感。  ",
+        "output": "💔的表情符号在社交媒体上常用来表达失恋或悲伤的情感。  ",
+        "typo": [
+            "💔",
+            "💔"
+        ],
+        "label": 0,
+        "instruction_type": "prohibit",
+        "instruction_index": 97,
+        "data_source": "generated",
+        "instance_index": 380
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "魔都明天起实施住房租凭合同网签备案制度",
+        "output": "上海明天起实施住房租赁合同网签备案制度",
+        "typo": [
+            "魔都",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "new.json",
+        "instance_index": 381
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "2015年4月30日土星关爱行动,帝都理工大學幼儿园委托奥伦达部落足球队向西部小学捐贈图书、文具仪式在原乡西镇举行。",
+        "output": "2015年4月30日土星关爱行动,北京理工大学幼儿园委托奥伦达部落足球队向西部小学捐赠图书、文具仪式在原乡西镇举行。",
+        "typo": [
+            "帝都",
+            "北京"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "enc.json",
+        "instance_index": 382
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "截至2017年底,帝都站设16条股道和8个站台。",
+        "output": "截至2017年底,北京站设16条轨道和8个站台。",
+        "typo": [
+            "帝都",
+            "北京"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "enc.json",
+        "instance_index": 383
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "英文中国日报报导，中国大陆的非法毒品百分之八十是从东南亚的金三角走私近来的。帝都刻正与寮国、缅甸和泰国举行为期一天的管制毒品会议，四国主管反毒阁员出席了这项会议。",
+        "output": "英文中国日报报导，中国大陆的非法毒品百分之八十是从东南亚的金三角走私进来的。北京刻正与寮国、缅甸和泰国举行为期一天的管制毒品会议，四国主管反毒阁员出席了这项会议。",
+        "typo": [
+            "帝都",
+            "北京"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "wang_cscd.json",
+        "instance_index": 384
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "左里克于二十日晚间抵达帝都，并与中国国务院副总理吴仪及对外贸易经济合作部副郜长马秀红举行会谈。",
+        "output": "左里克于二十日晚间抵达北京，并与中国国务院副总理吴仪及对外贸易经济合作部副部长马秀红举行会谈。",
+        "typo": [
+            "帝都",
+            "北京"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "wang_cscd.json",
+        "instance_index": 385
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "另外，约一千五百名超过二十一岁的巴勒昕坦工人，将可以进入圣城北方阿塔罗特工业区工作。",
+        "output": "另外，约一千五百名超过二十一岁的巴勒斯坦工人，将可以进入耶路撒冷北方阿塔罗特工业区工作。",
+        "typo": [
+            "圣城",
+            "耶路撒冷"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "wang_cscd.json",
+        "instance_index": 386
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "以色列国土报今天刊出的报导中说，靠近圣城的哈拉德与哈吉涪区及约旦河西岸的伯利恒，在相邻土地重新划分后，将兴建超过五百户新屋。",
+        "output": "以色列国土报今天刊出的报导中说，靠近耶路撒冷的哈拉德与哈吉洛区及约旦河西岸的伯利恒，在相邻土地重新划分后，将兴建超过五百户新屋。",
+        "typo": [
+            "圣城",
+            "耶路撒冷"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "wang_cscd.json",
+        "instance_index": 387
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "帝都是中国的首都，拥有丰富的历史和文化遗产，吸引着全球游客。  ",
+        "output": "北京是中国的首都，拥有丰富的历史和文化遗产，吸引着全球游客。  ",
+        "typo": [
+            "帝都",
+            "北京"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "generated",
+        "instance_index": 388
+    },
+    {
+        "domain": "旅游",
+        "instruction": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "input": "魔都作为中国的国际大都市，以其现代化的建筑和繁华的商业中心而闻名。  ",
+        "output": "上海作为中国的国际大都市，以其现代化的建筑和繁华的商业中心而闻名。  ",
+        "typo": [
+            "魔都",
+            "上海"
+        ],
+        "label": 1,
+        "instruction_type": "direct",
+        "instruction_index": 98,
+        "data_source": "generated",
+        "instance_index": 389
+    }
+]

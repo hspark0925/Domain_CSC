@@ -1,0 +1,802 @@
+[
+    {
+        "域": "时尚",
+        "指令": "新兴的时尚风格相关的新词语不需要修改。",
+        "错误示例": "街头风\t森女系\tlo娘",
+        "正确示例": "街头风\t森女系\tlo娘",
+        "instruction_type": "prohibit",
+        "instruction_index": 0
+    },
+    {
+        "域": "游戏",
+        "指令": "游戏角色的名字或词语可以使用简称，不一定要写全称。",
+        "错误示例": "刀妹‌\t刀锋舞者\t卡莎",
+        "正确示例": "刀妹‌\t刀锋舞者\t卡莎",
+        "instruction_type": "prohibit",
+        "instruction_index": 1
+    },
+    {
+        "域": "游戏",
+        "指令": "游戏类型的英文缩写不需要纠正。",
+        "错误示例": "pvp\tfps\trpg",
+        "正确示例": "pvp\tfps\trpg",
+        "instruction_type": "prohibit",
+        "instruction_index": 2
+    },
+    {
+        "域": "法律",
+        "指令": "法律术语一定要准确。",
+        "错误示例": "债户人\t善养费\t中裁",
+        "正确示例": "债务人\t赡养费\t仲裁",
+        "instruction_type": "prohibit",
+        "instruction_index": 3
+    },
+    {
+        "域": "医学",
+        "指令": "医术缩略词不需要改。",
+        "错误示例": "CT\tMRI\tBPM",
+        "正确示例": "CT\tMRI\tBPM",
+        "instruction_type": "prohibit",
+        "instruction_index": 4
+    },
+    {
+        "域": "医学",
+        "指令": "医学术语保持准确。",
+        "错误示例": "胃水中\t清头明日\t糖尿症",
+        "正确示例": "胃水肿\t清头明目\t糖尿病",
+        "instruction_type": "neutural",
+        "instruction_index": 5
+    },
+    {
+        "域": "新闻",
+        "指令": "确保使用正确的标点符号。",
+        "错误示例": ",\t--\t<论语》",
+        "正确示例": "，\t——\t《论语》\t",
+        "instruction_type": "neutural",
+        "instruction_index": 6
+    },
+    {
+        "域": "新闻",
+        "指令": "人名或企业名等的固有名词保持准确。",
+        "错误示例": "马运\t亚马\t微bo",
+        "正确示例": "马云\t亚马孙\t微博",
+        "instruction_type": "neutural",
+        "instruction_index": 7
+    },
+    {
+        "域": "小说",
+        "指令": "不要改可能是小说中人名或地名。",
+        "错误示例": "波特\t夏尔\t临冬城",
+        "正确示例": "波特\t夏尔\t临冬城",
+        "instruction_type": "prohibit",
+        "instruction_index": 8
+    },
+    {
+        "域": "小说",
+        "指令": "不要改可能是在小说里宇宙中的概念。",
+        "错误示例": "无限宝石\t易形者\t阿尼马格斯",
+        "正确示例": "无限宝石\t易形者\t阿尼马格斯",
+        "instruction_type": "prohibit",
+        "instruction_index": 9
+    },
+    {
+        "域": "公文",
+        "指令": "地名请保持准确，不要使用简称或谐音。",
+        "错误示例": "NY\tNYC\t上hai",
+        "正确示例": "纽约\t纽约市\t上海",
+        "instruction_type": "direct",
+        "instruction_index": 10
+    },
+    {
+        "域": "公文",
+        "指令": "人名或企业名必须准确填写，禁止使用昵称。",
+        "错误示例": "狗东\t拼夕夕\t周董",
+        "正确示例": "京东\t拼多多\t周杰伦",
+        "instruction_type": "direct",
+        "instruction_index": 11
+    },
+    {
+        "域": "公文",
+        "指令": "若出现俚语或口语，严格改成书面语。",
+        "错误示例": "这个事\t弄\t搞定",
+        "正确示例": "此事\t处理\t解决",
+        "instruction_type": "direct",
+        "instruction_index": 12
+    },
+    {
+        "域": "社会媒体",
+        "指令": "故意写的口语化和俏皮化的表达不要纠错。",
+        "错误示例": "好滴\t阔以\t太酷啦",
+        "正确示例": "好滴\t阔以\t太酷啦",
+        "instruction_type": "prohibit",
+        "instruction_index": 13
+    },
+    {
+        "域": "社会媒体",
+        "指令": "可能是网络流行语不需要改。",
+        "错误示例": "内卷\t凡尔赛",
+        "正确示例": "内卷\t凡尔赛",
+        "instruction_type": "prohibit",
+        "instruction_index": 14
+    },
+    {
+        "域": "社会媒体",
+        "指令": "可能是网络首字母缩略词不需纠错。",
+        "错误示例": "yyds\txswl\tdrl",
+        "正确示例": "yyds\txswl\tdrl",
+        "instruction_type": "prohibit",
+        "instruction_index": 15
+    },
+    {
+        "域": "社会媒体",
+        "指令": "人名或企业名的昵称不需要改成准确的。",
+        "错误示例": "狗东\t拼夕夕\t周董",
+        "正确示例": "狗东\t拼夕夕\t周董",
+        "instruction_type": "prohibit",
+        "instruction_index": 16
+    },
+    {
+        "域": "社会媒体",
+        "指令": "如果含有文言文的表达不需要改成现代汉语。",
+        "错误示例": "君子坦荡荡\t吾欲从之\t吾行矣",
+        "正确示例": "君子坦荡荡\t吾欲从之\t吾行矣",
+        "instruction_type": "prohibit",
+        "instruction_index": 17
+    },
+    {
+        "域": "社会媒体",
+        "指令": "如果数字含有其他意思的话不需要更改。",
+        "错误示例": "520\t666",
+        "正确示例": "520\t666",
+        "instruction_type": "prohibit",
+        "instruction_index": 18
+    },
+    {
+        "域": "社会媒体",
+        "指令": "若出现繁体字一律修改简体字。",
+        "错误示例": "風景\t體育\t醫院",
+        "正确示例": "风景\t体育\t医院",
+        "instruction_type": "direct",
+        "instruction_index": 19
+    },
+    {
+        "域": "教育",
+        "指令": "专业术语需要保持准确，禁止使用口语或俚语。",
+        "错误示例": "DNA链条\t小学加减法\t基因编辑工具",
+        "正确示例": "DNA链\t小学算术\t基因编辑技术",
+        "instruction_type": "prohibit",
+        "instruction_index": 20
+    },
+    {
+        "域": "教育",
+        "指令": "学术论文中的正式术语和格式必须严格遵循标准。",
+        "错误示例": "自变量/因变量\t参考书目\t网页来源",
+        "正确示例": "自变量/因变量\t参考文献\t网页引用",
+        "instruction_type": "prohibit",
+        "instruction_index": 21
+    },
+    {
+        "域": "教育",
+        "指令": "缩略词在首次出现时需标注全称。",
+        "错误示例": "PBL\tSTEM\tAI",
+        "正确示例": "项目式学习（PBL）\t科学、技术、工程和数学（STEM）\t人工智能（AI）",
+        "instruction_type": "prohibit",
+        "instruction_index": 22
+    },
+    {
+        "域": "法律",
+        "指令": "法律条款和法规的引用应保持严格一致，不得简写或口语化。",
+        "错误示例": "刑法370条\t劳法合规\t公正合同",
+        "正确示例": "《中华人民共和国刑法》第370条\t劳动法合规\t公平合同",
+        "instruction_type": "direct",
+        "instruction_index": 23
+    },
+    {
+        "域": "法律",
+        "指令": "合同和法律文件中的专有名词不得缩写或使用非正式语言。",
+        "错误示例": "购房协议\t租约合同法\t复审中介",
+        "正确示例": "购房合同\t租赁合同法\t复议中介",
+        "instruction_type": "direct",
+        "instruction_index": 24
+    },
+    {
+        "域": "财经",
+        "指令": "专业缩写可以保留，不需要修改。",
+        "错误示例": "IPO\tPE\tNPV",
+        "正确示例": "IPO\tPE\tNPV",
+        "instruction_type": "prohibit",
+        "instruction_index": 25
+    },
+    {
+        "域": "财经",
+        "指令": "人名和公司名称必须准确，且不得使用别称。",
+        "错误示例": "马爸爸\t比亚迪（BYD）\t茅台酒厂",
+        "正确示例": "马云\t比亚迪\t贵州茅台",
+        "instruction_type": "direct",
+        "instruction_index": 26
+    },
+    {
+        "域": "医学",
+        "指令": "医学报告中的专业术语保持准确，不得缩略。",
+        "错误示例": "免疫缺陷\t肠道问题\t血糖调节",
+        "正确示例": "获得性免疫缺陷综合症（AIDS）\t肠道菌群失调\t高血糖症",
+        "instruction_type": "direct",
+        "instruction_index": 27
+    },
+    {
+        "域": "科技",
+        "指令": "技术术语和专有名词必须准确，且不得使用俚语或简化。",
+        "错误示例": "电池耗能\t大数据解决方案\t黑客防护",
+        "正确示例": "电池能量消耗\t大数据分析解决方案\t网络安全防护",
+        "instruction_type": "direct",
+        "instruction_index": 28
+    },
+    {
+        "域": "科技",
+        "指令": "新兴词汇及缩写不需修改。",
+        "错误示例": "AI\t云计算\tVR",
+        "正确示例": "AI\t云计算\tVR",
+        "instruction_type": "prohibit",
+        "instruction_index": 29
+    },
+    {
+        "域": "文学",
+        "指令": "古典汉语表达不需要修改为现代汉语。",
+        "错误示例": "天涯若比邻\t风萧萧兮易水寒",
+        "正确示例": "天涯若比邻\t风萧萧兮易水寒",
+        "instruction_type": "prohibit",
+        "instruction_index": 30
+    },
+    {
+        "域": "文学",
+        "指令": "诗词中的对仗结构和韵律必须保持，不得随意更改。",
+        "错误示例": "明月几时有，问君能有几多愁。\t白日依山尽，黄河入海流",
+        "正确示例": "明月几时有，把酒问青天。\t白日依山尽，黄河入海流",
+        "instruction_type": "neutural",
+        "instruction_index": 31
+    },
+    {
+        "域": "文学",
+        "指令": "象征性或隐喻性表达不要修改。",
+        "错误示例": "心如死灰\t人生如梦",
+        "正确示例": "心如死灰\t人生如梦",
+        "instruction_type": "prohibit",
+        "instruction_index": 32
+    },
+    {
+        "域": "体育",
+        "指令": "体育术语需要准确，不得使用俚语或口语。",
+        "错误示例": "进球\t三分弹\t罚球区",
+        "正确示例": "进球\t三分球\t罚球线",
+        "instruction_type": "neutural",
+        "instruction_index": 33
+    },
+    {
+        "域": "体育",
+        "指令": "体育比赛中使用的特定术语和缩写不需要修改。",
+        "错误示例": "MVP\tPPG\tFT%",
+        "正确示例": "MVP\tPPG\tFT%",
+        "instruction_type": "prohibit",
+        "instruction_index": 34
+    },
+    {
+        "域": "体育",
+        "指令": "球队、运动员和赛事名称必须准确，不得使用昵称或缩写。",
+        "错误示例": "詹皇\t红魔\t曼联",
+        "正确示例": "勒布朗·詹姆斯\t曼联\t曼彻斯特联队",
+        "instruction_type": "direct",
+        "instruction_index": 35
+    },
+    {
+        "域": "文化",
+        "指令": "文学术语和表达方式应保持原意，不得随意改动。",
+        "错误示例": "阴阳和合\t太极\t八卦",
+        "正确示例": "阴阳和合\t太极\t八卦",
+        "instruction_type": "prohibit",
+        "instruction_index": 36
+    },
+    {
+        "域": "文化",
+        "指令": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "错误示例": "功夫\t茶道\t风水",
+        "正确示例": "武术\t茶艺\t风水",
+        "instruction_type": "direct",
+        "instruction_index": 37
+    },
+    {
+        "域": "文化",
+        "指令": "涉及宗教术语和文化符号的表达应保持准确，避免更改为现代化或非正式语言。",
+        "错误示例": "佛祖\t上帝\t轮回",
+        "正确示例": "释迦牟尼\t佛\t上帝\t轮回",
+        "instruction_type": "direct",
+        "instruction_index": 38
+    },
+    {
+        "域": "文化",
+        "指令": "非中文的文化专有名词应保留原文或公认翻译，不得随意翻译或改写。",
+        "错误示例": "禅宗（Zen）\t幽灵节（Halloween）\t圣诞老人",
+        "正确示例": "禅宗（Zen）\t万圣节（Halloween）\t圣诞老人",
+        "instruction_type": "direct",
+        "instruction_index": 39
+    },
+    {
+        "域": "艺术",
+        "指令": "专业术语和表现形式需保持不变，不得随意改动。",
+        "错误示例": "立体派\t印象派\t达达主义",
+        "正确示例": "立体派\t印象派\t达达主义",
+        "instruction_type": "prohibit",
+        "instruction_index": 40
+    },
+    {
+        "域": "艺术",
+        "指令": "外来术语或缩写不需修改。",
+        "错误示例": "NFT\tGraffiti",
+        "正确示例": "NFT\tGraffiti",
+        "instruction_type": "prohibit",
+        "instruction_index": 41
+    },
+    {
+        "域": "艺术",
+        "指令": "象征性或隐喻性表达不需要改动。",
+        "错误示例": "向日葵象征希望\t苍蝇寓意腐朽",
+        "正确示例": "向日葵象征希望\t苍蝇寓意腐朽",
+        "instruction_type": "prohibit",
+        "instruction_index": 42
+    },
+    {
+        "域": "科技",
+        "指令": "公式和符号必须准确，禁止随意更改。",
+        "错误示例": "E=mc平方\tF=m*a\tρ=m/V",
+        "正确示例": "E=mc²\tF=ma\tρ=m/V",
+        "instruction_type": "direct",
+        "instruction_index": 43
+    },
+    {
+        "域": "科技",
+        "指令": "专利名称和技术术语应保持标准，不得简化。",
+        "错误示例": "可折叠屏幕技术\t微处理器",
+        "正确示例": "柔性可折叠显示屏技术\t高性能微处理器",
+        "instruction_type": "direct",
+        "instruction_index": 44
+    },
+    {
+        "域": "旅游",
+        "指令": "旅游景点的名称和地理位置需保持准确，不得使用俗称或别名。",
+        "错误示例": "香榭大道\t红磨坊\t大皇宫",
+        "正确示例": "香榭丽舍大街\t红磨坊\t曼谷大皇宫",
+        "instruction_type": "direct",
+        "instruction_index": 45
+    },
+    {
+        "域": "旅游",
+        "指令": "旅游行业的术语应保持原样，不需要现代化或非正式表达。",
+        "错误示例": "全包旅行\t自助游\t环游世界",
+        "正确示例": "全包式旅行\t自助旅行\t环球旅行",
+        "instruction_type": "direct",
+        "instruction_index": 46
+    },
+    {
+        "域": "娱乐",
+        "指令": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "错误示例": "小鲜肉\t萌宠\tCP",
+        "正确示例": "小鲜肉\t萌宠\tCP",
+        "instruction_type": "prohibit",
+        "instruction_index": 47
+    },
+    {
+        "域": "娱乐",
+        "指令": "娱乐节目中的流行语或俏皮话不需要纠正。",
+        "错误示例": "吃瓜\t打call\t上头",
+        "正确示例": "吃瓜\t打call\t上头",
+        "instruction_type": "prohibit",
+        "instruction_index": 48
+    },
+    {
+        "域": "旅游",
+        "指令": "旅游类的俚语或网络用语不需要纠正。",
+        "错误示例": "打卡\t小众路线",
+        "正确示例": "打卡\t小众路线",
+        "instruction_type": "prohibit",
+        "instruction_index": 49
+    },
+    {
+        "域": "娱乐",
+        "指令": "新兴网络流行语不需要修改。",
+        "错误示例": "凡尔赛\t内娱\t拉踩",
+        "正确示例": "凡尔赛\t内娱\t拉踩",
+        "instruction_type": "prohibit",
+        "instruction_index": 50
+    },
+    {
+        "域": "娱乐",
+        "指令": "影视作品中的角色名称及其设定不可更改，即使听起来不合常理。",
+        "错误示例": "钢铁侠\t黑豹\t奇异博士",
+        "正确示例": "钢铁侠\t黑豹\t奇异博士",
+        "instruction_type": "prohibit",
+        "instruction_index": 51
+    },
+    {
+        "域": "社交媒体",
+        "指令": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "错误示例": "哈哈哈哈\t羡慕嫉妒恨",
+        "正确示例": "哈哈哈哈\t羡慕嫉妒恨",
+        "instruction_type": "prohibit",
+        "instruction_index": 52
+    },
+    {
+        "域": "文学",
+        "指令": "方言表达不需要更正为普通话。",
+        "错误示例": "嘎嘎好\t侬好\t撒拉嘿哟",
+        "正确示例": "嘎嘎好\t侬好\t撒拉嘿哟",
+        "instruction_type": "prohibit",
+        "instruction_index": 53
+    },
+    {
+        "域": "文学",
+        "指令": "可能带有象征意义的词语或短语不可更改。",
+        "错误示例": "白马过隙\t红尘滚滚",
+        "正确示例": "白马过隙\t红尘滚滚",
+        "instruction_type": "prohibit",
+        "instruction_index": 54
+    },
+    {
+        "域": "教育",
+        "指令": "引文和参考文献格式必须严格遵循标准，不得随意更改。",
+        "错误示例": "引用：张三 2019",
+        "正确示例": "引用：（张三，2019）",
+        "instruction_type": "direct",
+        "instruction_index": 55
+    },
+    {
+        "域": "心理学",
+        "指令": "专业术语必须保持准确，不得简化或使用通俗表达。",
+        "错误示例": "情感障碍\t焦虑病\t自我认知",
+        "正确示例": "情感障碍\t焦虑症\t自我意识",
+        "instruction_type": "direct",
+        "instruction_index": 56
+    },
+    {
+        "域": "心理学",
+        "指令": "心理测试中的术语和缩写应保持准确。",
+        "错误示例": "MBTI\tIQ\tPTDS",
+        "正确示例": "MBTI\tIQ\tPTSD",
+        "instruction_type": "neutural",
+        "instruction_index": 57
+    },
+    {
+        "域": "广告",
+        "指令": "广告文案中的创意表达和口语化词汇不需要更改。",
+        "错误示例": "pick一下\t爽歪歪",
+        "正确示例": "pick一下\t爽歪歪",
+        "instruction_type": "prohibit",
+        "instruction_index": 58
+    },
+    {
+        "域": "广告",
+        "指令": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "错误示例": "百威啤\t星爸爸\t阿里",
+        "正确示例": "百威啤酒\t星巴克\t阿里巴巴",
+        "instruction_type": "direct",
+        "instruction_index": 59
+    },
+    {
+        "域": "广告",
+        "指令": "俏皮化、个性化表达无需修改。",
+        "错误示例": "超燃\t好吃到飞起\t剁手党必备",
+        "正确示例": "超燃\t好吃到飞起\t剁手党必备",
+        "instruction_type": "prohibit",
+        "instruction_index": 60
+    },
+    {
+        "域": "影视",
+        "指令": "影视作品的剧本中角色的台词不应修改为书面语或正式表达。",
+        "错误示例": "我要撤了\t兄弟，挺住\t厉害了我的哥",
+        "正确示例": "我要撤了\t兄弟，挺住\t厉害了我的哥",
+        "instruction_type": "prohibit",
+        "instruction_index": 61
+    },
+    {
+        "域": "影视",
+        "指令": "影视作品中的台词如为方言或口语，不需更改为标准普通话。",
+        "错误示例": "阿拉晓得了\t哎呦不错哦",
+        "正确示例": "阿拉晓得了\t哎呦不错哦",
+        "instruction_type": "prohibit",
+        "instruction_index": 62
+    },
+    {
+        "域": "旅游",
+        "指令": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "错误示例": "超赞\t棒棒哒\t治愈系景点",
+        "正确示例": "超赞\t棒棒哒\t治愈系景点",
+        "instruction_type": "prohibit",
+        "instruction_index": 63
+    },
+    {
+        "域": "心理学",
+        "指令": "心理疗法的名称和技术术语必须保持准确，避免简化。",
+        "错误示例": "认知疗法\t行为修正\t深度分析",
+        "正确示例": "认知行为疗法（CBT）\t行为疗法\t深层心理分析",
+        "instruction_type": "direct",
+        "instruction_index": 64
+    },
+    {
+        "域": "时光",
+        "指令": "时光平台中的用户感受描述和情感表达不要纠错，保持原有的口语化和个性化表达。",
+        "错误示例": "心情超级棒\t很治愈\t美得不行",
+        "正确示例": "心情超级棒\t很治愈\t美得不行",
+        "instruction_type": "prohibit",
+        "instruction_index": 65
+    },
+    {
+        "域": "建筑",
+        "指令": "建筑术语和专业名词必须准确，不得使用口语化表达。",
+        "错误示例": "楼顶\t楼层划分\t结构设计",
+        "正确示例": "屋顶\t楼板划分\t结构力学设计",
+        "instruction_type": "direct",
+        "instruction_index": 66
+    },
+    {
+        "域": "建筑",
+        "指令": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "错误示例": "GFA\tBIM\tCAD",
+        "正确示例": "GFA\tBIM\tCAD",
+        "instruction_type": "prohibit",
+        "instruction_index": 67
+    },
+    {
+        "域": "建筑",
+        "指令": "建筑风格和历史术语必须保持准确，不得简化或口语化。",
+        "错误示例": "巴洛克风\t哥特式教堂\t功能主义建筑",
+        "正确示例": "巴洛克建筑风格\t哥特式建筑\t功能主义建筑",
+        "instruction_type": "direct",
+        "instruction_index": 68
+    },
+    {
+        "域": "金融",
+        "指令": "专有名词和术语应保持准确，不得使用通俗表达。",
+        "错误示例": "股票收益\t贷款额度\t风险控制",
+        "正确示例": "股本回报率（ROE）\t贷款限额\t风险管理",
+        "instruction_type": "direct",
+        "instruction_index": 69
+    },
+    {
+        "域": "金融",
+        "指令": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "错误示例": "EPS\tROA\tP/E",
+        "正确示例": "EPS\tROA\tP/E",
+        "instruction_type": "prohibit",
+        "instruction_index": 70
+    },
+    {
+        "域": "时尚",
+        "指令": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "错误示例": "复古风\t小清新\t潮流",
+        "正确示例": "复古风\t小清新\t潮流",
+        "instruction_type": "prohibit",
+        "instruction_index": 71
+    },
+    {
+        "域": "时尚",
+        "指令": "时尚杂志和博客中的专有名词和缩写不需要修改。",
+        "错误示例": "OOTD\tFW\tSS",
+        "正确示例": "OOTD\tFW\tSS",
+        "instruction_type": "prohibit",
+        "instruction_index": 72
+    },
+    {
+        "域": "文学",
+        "指令": "现代诗歌中的自由表达和不规则句式不需要更改为传统语法结构。",
+        "错误示例": "夜的黑像浓墨\t梦里是你的笑容\t等你千年",
+        "正确示例": "夜的黑像浓墨\t梦里是你的笑容\t等你千年",
+        "instruction_type": "prohibit",
+        "instruction_index": 73
+    },
+    {
+        "域": "文学",
+        "指令": "文学作品中的地方方言和非标准普通话表达应保持原样，不得改为标准普通话。",
+        "错误示例": "嘎嘎好\t阿拉去哪里\t侬好",
+        "正确示例": "嘎嘎好\t阿拉去哪里\t侬好",
+        "instruction_type": "prohibit",
+        "instruction_index": 74
+    },
+    {
+        "域": "财经",
+        "指令": "财经分析中的特定专业术语和缩写应保持原样，不需要改为通俗表达。",
+        "错误示例": "EBITDA\tIPO\t估值模型",
+        "正确示例": "EBITDA\tIPO\t估值模型",
+        "instruction_type": "prohibit",
+        "instruction_index": 75
+    },
+    {
+        "域": "日常对话",
+        "指令": "口语化的表达不要纠正为正式书面语。",
+        "错误示例": "咋回事儿\t没事儿\t真不错",
+        "正确示例": "咋回事儿\t没事儿\t真不错",
+        "instruction_type": "prohibit",
+        "instruction_index": 76
+    },
+    {
+        "域": "社交聊天",
+        "指令": "聊天中的俏皮话和网络用语不需要改为正式表达。",
+        "错误示例": "哈哈哈\t我服了\t太牛了",
+        "正确示例": "哈哈哈\t我服了\t太牛了",
+        "instruction_type": "prohibit",
+        "instruction_index": 77
+    },
+    {
+        "域": "短信",
+        "指令": "短信的表情符号不需要纠正。",
+        "错误示例": "❤️\t😊\t👍",
+        "正确示例": "❤️\t😊\t👍",
+        "instruction_type": "prohibit",
+        "instruction_index": 78
+    },
+    {
+        "域": "购物",
+        "指令": "购物平台中的评价中，使用的非正式用语不需要纠正。",
+        "错误示例": "质量杠杠滴\t超值\t客服棒棒哒",
+        "正确示例": "质量杠杠滴\t超值\t客服棒棒哒",
+        "instruction_type": "prohibit",
+        "instruction_index": 79
+    },
+    {
+        "域": "日常对话",
+        "指令": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "错误示例": "有个会\t去了趟\t上嗨",
+        "正确示例": "有个会\t去了趟\t上海",
+        "instruction_type": "neutural",
+        "instruction_index": 80
+    },
+    {
+        "域": "美食",
+        "指令": "美食相关评论中的俏皮化或口语化表达不需要纠正为正式语言。",
+        "错误示例": "这个菜真香\t绝了！\t好吃到飞起",
+        "正确示例": "这个菜真香\t绝了！\t好吃到飞起",
+        "instruction_type": "prohibit",
+        "instruction_index": 81
+    },
+    {
+        "域": "穿搭",
+        "指令": "关于最新流行的穿搭用语或潮流词汇，无需纠正为正式语言。",
+        "错误示例": "盐系\t美拉德穿搭\t班味",
+        "正确示例": "盐系\t美拉德穿搭\t班味",
+        "instruction_type": "prohibit",
+        "instruction_index": 82
+    },
+    {
+        "域": "化妆",
+        "指令": "化妆教程中的俏皮话或非正式表达不需要纠正为正式语言。",
+        "错误示例": "完美伪妆\t素颜神器",
+        "正确示例": "完美伪妆\t素颜神器",
+        "instruction_type": "prohibit",
+        "instruction_index": 83
+    },
+    {
+        "域": "哲学",
+        "指令": "哲学术语和概念应保持其原意，不得简化或随意改动。",
+        "错误示例": "存在主义\t弯曲空间\t因果链",
+        "正确示例": "存在主义\t非欧几何\t因果律",
+        "instruction_type": "direct",
+        "instruction_index": 84
+    },
+    {
+        "域": "哲学",
+        "指令": "经典哲学文本中的原始表达方式，不得更改为现代化或口语化语言。",
+        "错误示例": "自由意志\t道德良知\t人类本性",
+        "正确示例": "自由意志\t伦理良心\t人之性",
+        "instruction_type": "prohibit",
+        "instruction_index": 85
+    },
+    {
+        "域": "哲学",
+        "指令": "哲学文本中象征性或隐喻性的表达不需要更改。",
+        "错误示例": "洞穴之喻\t理性的太阳",
+        "正确示例": "洞穴之喻\t理性的太阳",
+        "instruction_type": "prohibit",
+        "instruction_index": 86
+    },
+    {
+        "域": "哲学",
+        "指令": "哲学中的引用和注释应保持其严格性，遵循标准格式。",
+        "错误示例": "《理想国》, 柏拉图",
+        "正确示例": "柏拉图，《理想国》，第七卷，34页",
+        "instruction_type": "direct",
+        "instruction_index": 87
+    },
+    {
+        "域": "建筑",
+        "指令": "建筑图纸中的标注和符号必须保持标准，不得随意简化。",
+        "错误示例": "钢梁\t混凝土板",
+        "正确示例": "钢构梁\t预制混凝土板",
+        "instruction_type": "direct",
+        "instruction_index": 88
+    },
+    {
+        "域": "医学",
+        "指令": "医学报告中的药物名称必须保持准确，不得使用通俗名称或缩写。",
+        "错误示例": "阿司匹林\t布洛芬",
+        "正确示例": "乙酰水杨酸（阿司匹林）\t异丁苯丙酸（布洛芬）",
+        "instruction_type": "direct",
+        "instruction_index": 89
+    },
+    {
+        "域": "音乐",
+        "指令": "音乐作品中的曲名和术语不应随意更改或简化。",
+        "错误示例": "F大调\t弦乐四重奏\t奏鸣曲",
+        "正确示例": "F大调\t弦乐四重奏\t奏鸣曲",
+        "instruction_type": "prohibit",
+        "instruction_index": 90
+    },
+    {
+        "域": "音乐",
+        "指令": "音乐专有名词和风格名称应保持准确，不能使用通俗表达或缩写。",
+        "错误示例": "摇滚\t布鲁斯\t电子乐",
+        "正确示例": "摇滚乐\t布鲁斯音乐\t电子音乐",
+        "instruction_type": "direct",
+        "instruction_index": 91
+    },
+    {
+        "域": "电影",
+        "指令": "电影标题和角色名称必须准确，不得随意翻译或简化。",
+        "错误示例": "复仇者\t蜘蛛侠\t绝地武士",
+        "正确示例": "《复仇者联盟》\t《蜘蛛侠》\t《星球大战》绝地武士",
+        "instruction_type": "direct",
+        "instruction_index": 92
+    },
+    {
+        "域": "心理学",
+        "指令": "心理学术语应保持其科学严谨性，不得简化为非正式表达。",
+        "错误示例": "自尊问题\t情绪控制",
+        "正确示例": "自尊感缺失\t情绪调节",
+        "instruction_type": "direct",
+        "instruction_index": 93
+    },
+    {
+        "域": "美术",
+        "指令": "美术作品中的艺术流派名称应保持准确，避免随意简化或使用非正式名称。",
+        "错误示例": "印象派\t超现实主义",
+        "正确示例": "印象派绘画\t超现实主义艺术",
+        "instruction_type": "direct",
+        "instruction_index": 94
+    },
+    {
+        "域": "科学",
+        "指令": "科学论文中的图表和公式必须保持原样，避免任何形式的修改或简化。",
+        "错误示例": "f(x)=x²\tE=mc²",
+        "正确示例": "f(x)=x²\tE=mc²",
+        "instruction_type": "prohibit",
+        "instruction_index": 95
+    },
+    {
+        "域": "宗教",
+        "指令": "宗教经典中的术语和概念必须保持原始表达，避免随意修改或简化。",
+        "错误示例": "因果报应\t涅槃",
+        "正确示例": "因果业报\t涅槃",
+        "instruction_type": "direct",
+        "instruction_index": 96
+    },
+    {
+        "域": "社交媒体",
+        "指令": "社交媒体中的表情符号和非正式表达不需要纠正。",
+        "错误示例": "😂\t💔",
+        "正确示例": "😂\t💔",
+        "instruction_type": "prohibit",
+        "instruction_index": 97
+    },
+    {
+        "域": "旅游",
+        "指令": "地名和旅游景点的官方名称应保持准确，不得使用俗称或缩写。",
+        "错误示例": "帝都\t魔都\t圣城",
+        "正确示例": "北京\t上海\t耶路撒冷",
+        "instruction_type": "direct",
+        "instruction_index": 98
+    },
+    {
+        "域": "广告",
+        "指令": "广告文案中的创意表达应保持原样，不需要修改为正式语言。",
+        "错误示例": "买一送一，嗨翻全场！\t现在下单，享受剁手快感",
+        "正确示例": "买一送一，嗨翻全场！\t现在下单，享受剁手快感",
+        "instruction_type": "prohibit",
+        "instruction_index": 99
+    }
+]
