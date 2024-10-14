@@ -1,7 +1,13 @@
 set -ex
+<<<<<<< HEAD
 export WANDB_API_KEY=11218807886bb5d12911917dbf678c2484bc3d85
 export WANDB_PROJECT=domain_csc
 export CUDA_VISIBLE_DEVICES=0,1,2,3
+=======
+export WANDB_API_KEY=
+export WANDB_PROJECT=
+export CUDA_VISIBLE_DEVICES=0
+>>>>>>> 2d053875028c7534b863a411c3284748aedd25a9
 
 BASE_DIR=$PWD
 DATE=$(TZ=Asia/Shanghai date +'%Y%m%d%H%M%S')
