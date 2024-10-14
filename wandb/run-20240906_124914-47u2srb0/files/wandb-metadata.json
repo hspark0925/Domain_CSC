@@ -1,0 +1,190 @@
+{
+    "os": "Linux-4.15.0-142-generic-x86_64-with-glibc2.23",
+    "python": "3.10.13",
+    "heartbeatAt": "2024-09-06T04:49:25.442813",
+    "startedAt": "2024-09-06T04:49:14.520773",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--do_eval",
+        "--do_train",
+        "--pretrained_model_path",
+        "baichuan-inc/Baichuan2-13B-Chat",
+        "--train_dataset_path",
+        "/home/piaoxx/piao1/Domain_LLM/dataset/dcsc_train.json",
+        "--eval_dataset_path",
+        "/home/piaoxx/piao1/Domain_LLM/dataset/dcsc_dev.json",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "1",
+        "--gradient_accumulation_steps",
+        "64",
+        "--lora_target",
+        "q_proj,k_proj,v_proj",
+        "--logging_steps",
+        "4",
+        "--eval_steps",
+        "100",
+        "--save_steps",
+        "100",
+        "--load_best_model_at_end",
+        "--evaluation_strategy",
+        "steps",
+        "--save_strategy",
+        "steps",
+        "--metric_for_best_model",
+        "eval_loss",
+        "--greater_is_better",
+        "false",
+        "--prediction_loss_only",
+        "--save_total_limit",
+        "25",
+        "--learning_rate",
+        "1e-4",
+        "--num_train_epochs",
+        "10",
+        "--fp16",
+        "--log_level",
+        "info",
+        "--remove_unused_columns",
+        "false",
+        "--output_dir",
+        "/home/piaoxx/piao1/Domain_LLM/checkpoint/domain-csc-20240906124730",
+        "--report",
+        "wandb",
+        "--run_name",
+        "domain-csc-20240906124730",
+        "--ft_type",
+        "lora",
+        "--seed",
+        "3407",
+        "--deepspeed",
+        "/home/piaoxx/piao1/Domain_LLM/ds_config/zero_3.json"
+    ],
+    "state": "running",
+    "program": "/home/piaoxx/piao1/Domain_LLM/train_new.py",
+    "codePathLocal": "train_new.py",
+    "codePath": "train_new.py",
+    "host": "jupiter",
+    "username": "piaoxx",
+    "executable": "/home/piaoxx/miniconda3/envs/env/bin/python",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 2.3293125,
+        "min": 1200.0,
+        "max": 3700.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1.2,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3.652,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1.33,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3.602,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3.641,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1.491,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1.25,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2.186,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1.201,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3.596,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1.214,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3.651,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 3.655,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 1.409,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2.053,
+            "min": 1200.0,
+            "max": 3700.0
+        },
+        {
+            "current": 2.138,
+            "min": 1200.0,
+            "max": 3700.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 7392.249362945557,
+            "used": 5932.634712219238
+        }
+    },
+    "gpu": "NVIDIA TITAN RTX",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA TITAN RTX",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 251.78791046142578
+    }
+}

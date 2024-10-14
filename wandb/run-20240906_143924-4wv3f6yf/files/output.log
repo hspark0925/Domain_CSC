@@ -1,0 +1,19 @@
+
+
+  5%|██████                                                                                                                    | 1/20 [03:50<1:12:59, 230.49s/it]
+
+ 10%|████████████▏                                                                                                             | 2/20 [07:35<1:08:06, 227.03s/it]
+[2024-09-06 14:47:14,451] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 2147483648, reducing to 1073741824
+
+
+ 20%|████████████████████████▍                                                                                                 | 4/20 [15:09<1:00:36, 227.30s/it]
+[2024-09-06 14:54:49,301] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 536870912, reducing to 268435456
+
+ 25%|███████████████████████████████                                                                                             | 5/20 [18:56<56:45, 227.05s/it]
+
+ 30%|█████████████████████████████████████▏                                                                                      | 6/20 [22:44<53:01, 227.24s/it]
+[2024-09-06 15:02:23,516] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 134217728, reducing to 67108864
+
+ 35%|███████████████████████████████████████████▍                                                                                | 7/20 [26:29<49:05, 226.61s/it]
+[2024-09-06 15:09:55,018] [INFO] [loss_scaler.py:183:update_scale] [deepspeed] OVERFLOW! Rank 0 Skipping step. Attempted loss scale: 33554432, reducing to 16777216
+

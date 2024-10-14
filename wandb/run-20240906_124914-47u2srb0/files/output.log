@@ -1,0 +1,71 @@
+
+  0%|                                                                                                                                     | 0/10 [00:00<?, ?it/s]Traceback (most recent call last):
+  File "/home/piaoxx/piao1/Domain_LLM/train_new.py", line 118, in <module>
+    train()
+  File "/home/piaoxx/piao1/Domain_LLM/train_new.py", line 115, in train
+    trainer.train()
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in train
+    return inner_training_loop(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 3318, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 3363, in compute_loss
+    outputs = model(**inputs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1899, in forward
+    loss = self.module(*inputs, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/peft/peft_model.py", line 1577, in forward
+    return self.base_model(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/tmp/home/.cache/huggingface/modules/transformers_modules/baichuan-inc/Baichuan2-13B-Chat/09464ad0452a7f4ce69612e4a0147ab853c5fd69/modeling_baichuan.py", line 693, in forward
+    outputs = self.model(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/tmp/home/.cache/huggingface/modules/transformers_modules/baichuan-inc/Baichuan2-13B-Chat/09464ad0452a7f4ce69612e4a0147ab853c5fd69/modeling_baichuan.py", line 460, in forward
+    layer_outputs = torch.utils.checkpoint.checkpoint(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/tmp/home/.cache/huggingface/modules/transformers_modules/baichuan-inc/Baichuan2-13B-Chat/09464ad0452a7f4ce69612e4a0147ab853c5fd69/modeling_baichuan.py", line 456, in custom_forward
+    return module(*inputs, output_attentions, None)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    result = hook(self, args)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/parameter_offload.py", line 275, in _pre_forward_module_hook
+    self.pre_sub_module_forward_function(module)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/parameter_offload.py", line 449, in pre_sub_module_forward_function
+    param_coordinator.fetch_sub_module(sub_module, forward=True)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partitioned_param_coordinator.py", line 386, in fetch_sub_module
+    self.__all_gather_params(params_to_prefetch, forward)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partitioned_param_coordinator.py", line 435, in __all_gather_params
+    self.__all_gather_params_(nonquantized_params, forward, quantize=self.zero_quantized_weights)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partitioned_param_coordinator.py", line 464, in __all_gather_params_
+    handle = param_group[0].all_gather_coalesced(param_group, quantize=quantize)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 1312, in all_gather_coalesced
+    _all_gather_dtype(dtype, params, world_size, rank_in_group, ds_process_group))
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 1164, in _all_gather_dtype
+    flat_tensor = torch.empty(partition_sz * world_size,
+torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 2.40 GiB (GPU 0; 23.65 GiB total capacity; 19.33 GiB already allocated; 1.74 GiB free; 21.09 GiB reserved in total by PyTorch) If reserved memory is >> allocated memory try setting max_split_size_mb to avoid fragmentation.  See documentation for Memory Management and PYTORCH_CUDA_ALLOC_CONF

@@ -1,0 +1,105 @@
+
+
+
+
+
+  5%| | 4/80 [11:04<3:29:50, 165.66s/
+
+
+
+
+ 10%|████████████                                                                                                             | 8/80 [22:04<3:18:06, 165.10s/it]
+
+
+
+
+ 15%|▏| 12/80 [33:02<3:06:31, 164.58s
+
+
+
+
+ 20%|▏| 16/80 [44:00<2:55:25, 164.47s
+
+
+
+ 24%|▏| 19/80 [52:13<2:47:03, 164.33s
+
+
+
+
+ 29%|▎| 23/80 [1:03:10<2:36:03, 164.2
+
+ 30%|▎| 24/80 [1:05:54<2:33:20, 164.3Traceback (most recent call last):
+  File "/home/piaoxx/piao1/Domain_LLM/train_new.py", line 160, in <module>
+    train()
+  File "/home/piaoxx/piao1/Domain_LLM/train_new.py", line 157, in train
+    trainer.train()
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 1938, in train
+    return inner_training_loop(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 2279, in _inner_training_loop
+    tr_loss_step = self.training_step(model, inputs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 3318, in training_step
+    loss = self.compute_loss(model, inputs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/trainer.py", line 3363, in compute_loss
+    outputs = model(**inputs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/engine.py", line 1899, in forward
+    loss = self.module(*inputs, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/peft/peft_model.py", line 1577, in forward
+    return self.base_model(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/peft/tuners/tuners_utils.py", line 188, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 1104, in forward
+    outputs = self.model(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 904, in forward
+    layer_outputs = self._gradient_checkpointing_func(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 655, in forward
+    hidden_states, self_attn_weights, present_key_value = self.self_attn(
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/transformers/models/qwen2/modeling_qwen2.py", line 294, in forward
+    query_states = self.q_proj(hidden_states)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1538, in _call_impl
+    result = forward_call(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/peft/tuners/lora/layer.py", line 544, in forward
+    result = self.base_layer(x, *args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1527, in _call_impl
+    result = hook(self, args)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/parameter_offload.py", line 275, in _pre_forward_module_hook
+    self.pre_sub_module_forward_function(module)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/parameter_offload.py", line 449, in pre_sub_module_forward_function
+    param_coordinator.fetch_sub_module(sub_module, forward=True)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partitioned_param_coordinator.py", line 310, in fetch_sub_module
+    self.__inflight_param_registry.pop(param).wait()
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/utils/nvtx.py", line 18, in wrapped_fn
+    ret_val = func(*args, **kwargs)
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/deepspeed/runtime/zero/partition_parameters.py", line 86, in wait
+    get_accelerator().current_stream().synchronize()
+  File "/home/piaoxx/miniconda3/envs/env/lib/python3.10/site-packages/torch/cuda/streams.py", line 98, in synchronize
+    super().synchronize()
+KeyboardInterrupt
