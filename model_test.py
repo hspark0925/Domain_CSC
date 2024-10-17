@@ -28,7 +28,7 @@ def interactive_predict(args):
         try:
             input_text = input('I:')
             tokenizer, model = load_model(args.pretrained_model_path, args.lora_path)
-            output_text,_,_,_,_,_ = predict_samples(model, tokenizer, [input_text])
+            output_text,_,_,_,_,_ = predict_and_tokenize(model, tokenizer, [input_text])
             print('O:', output_text)
         except KeyboardInterrupt:
             return
@@ -70,7 +70,15 @@ def promptor(item, mode):
         raise ValueError(f"Invalid mode: {mode}. Expected 'instruction' or 'non_instruction'.")
     return prompt
 
-def predict_samples(model, tokenizer, item):
+    if template['template_name'] == "prediction_extract":
+        response['predict'] = re.sub(r'\n\n输入.*', '', response['predict'], flags=re.DOTALL)
+        user_content = template['user_content'].format(
+            source_sentence=response['input'],
+            instance_index=response['instance_index'],
+            prediction=response['predict']
+        )
+
+def predict_and_tokenize(model, tokenizer, item):
     """
     预测一个query
     :return:
@@ -106,22 +114,26 @@ def batch_predict(args):
     :return:
     """
     tokenizer, model = load_model(args.pretrained_model_path, args.lora_path)
-    data = json.load(open(args.testset_dir, 'rt', encoding='utf-8'))
+    data = json.load(open(args.testset_dir, 'rt', encoding='utf-8')) # data is a list of testset items
     data_with_predict = []
     
-    for item in tqdm(data):
-        prompt = promptor(item, args.mode)
-        item['predict'],_,_,_,_,_ = predict_samples(model, tokenizer, prompt)
-        
-        data_with_predict.append(item)
-        print(prompt)
-        print('-' * 20)
-        print(item['predict'])
-        print('=' * 20)
-
-
-    # 디렉토리 생성
+    # Save the model response in lines in case of crashing.
     os.makedirs(os.path.dirname(args.output_dir), exist_ok=True)
+    with open(args.output_dir, 'a', encoding='utf-8') as f:
+        for item in tqdm(data):
+            prompt = promptor(item, args.mode)
+            item['predict'], _, _, _, _, _ = predict_and_tokenize(model, tokenizer, prompt)
+
+            data_with_predict.append(item)
+            print(prompt)
+            print('-' * 20)
+            print(item['predict'])
+            print('=' * 20)
+
+            json.dump(item, f, ensure_ascii=False)
+            f.write('\n')  # jsonl 포맷이므로 각 json 객체를 한 줄로 기록
+
+
     
     json.dump(data_with_predict, open(args.output_dir, 'wt', encoding='utf-8'),
             ensure_ascii=False, indent=4)
@@ -130,10 +142,10 @@ def batch_predict(args):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--pretrained_model_path", type=str)
-    parser.add_argument("--lora_path")
+    parser.add_argument("--lora_path", type=str, help="Path to the checkpoint. If non, test with vanila model.")
     parser.add_argument("--testset_dir", type=str)
-    parser.add_argument("--output_dir", type=str)
-    parser.add_argument("--mode", type=str)
+    parser.add_argument("--output_dir", type=str, help="Path to store the results.")
+    parser.add_argument("--mode", type=str, default="batch", help="interaction or batch")
     args = parser.parse_args()
 
     # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
