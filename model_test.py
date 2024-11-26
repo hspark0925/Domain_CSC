@@ -2,6 +2,8 @@ import argparse
 import json
 import os.path
 import os
+import sys
+import ipdb
 
 from peft import PeftModel
 from tqdm import tqdm
@@ -24,11 +26,14 @@ def interactive_predict(args):
     交互式体验
     :return:
     """
+    tokenizer, model = load_model(args.pretrained_model_path, args.lora_path)
     while True:
         try:
-            input_text = input('I:')
-            tokenizer, model = load_model(args.pretrained_model_path, args.lora_path)
-            output_text,_,_,_,_,_ = predict_and_tokenize(model, tokenizer, [input_text])
+            print("I:")
+            input_text = sys.stdin.read()
+            if input_text.strip() == "exit":
+                return
+            output_text, _, _, _, _, _ = predict_and_tokenize(model, tokenizer, input_text)
             print('O:', output_text)
         except KeyboardInterrupt:
             return
@@ -61,13 +66,13 @@ def load_model(pretrain_model_path, lora_path):
     model = model.eval()
     return tokenizer, model
 
-def promptor(item, mode):
-    if mode == 'instruction':
+def promptor(item, test_mode):
+    if test_mode == 'instruction':
         prompt = f"对以下{item['domain']}领域的文本进行纠错。注意，{item['instruction']}\n请直接给出答案，不要添加前缀词。\n输入: {item['input']}\n输出: "
-    elif mode == 'non_instruction':
+    elif test_mode == 'non_instruction':
         prompt = f"请改正输入文本中的错别字。如果错别字不存在，直接输出原本输入。\n输入: {item['input']}\n输出: "
     else:
-        raise ValueError(f"Invalid mode: {mode}. Expected 'instruction' or 'non_instruction'.")
+        raise ValueError(f"Invalid mode: {test_mode}. Expected 'instruction' or 'non_instruction'.")
     return prompt
 
     if template['template_name'] == "prediction_extract":
@@ -80,7 +85,7 @@ def promptor(item, mode):
 
 def predict_and_tokenize(model, tokenizer, item):
     """
-    预测一个query
+     预测一个query
     :return:
     """
     texts = [item]
@@ -114,14 +119,13 @@ def batch_predict(args):
     :return:
     """
     tokenizer, model = load_model(args.pretrained_model_path, args.lora_path)
-    data = json.load(open(args.testset_dir, 'rt', encoding='utf-8')) # data is a list of testset items
+    data = json.load(open(args.testset_dir, 'rt', encoding='utf-8'))
     data_with_predict = []
     
-    # Save the model response in lines in case of crashing.
-    os.makedirs(os.path.dirname(args.output_dir), exist_ok=True)
-    with open(args.output_dir, 'a', encoding='utf-8') as f:
+    os.makedirs(os.path.dirname(args.output_dir + ".json"), exist_ok=True)
+    with open(args.output_dir + ".json", 'a', encoding='utf-8') as f:
         for item in tqdm(data):
-            prompt = promptor(item, args.mode)
+            prompt = promptor(item, args.test_mode)
             item['predict'], _, _, _, _, _ = predict_and_tokenize(model, tokenizer, prompt)
 
             data_with_predict.append(item)
@@ -131,24 +135,22 @@ def batch_predict(args):
             print('=' * 20)
 
             json.dump(item, f, ensure_ascii=False)
-            f.write('\n')  # jsonl 포맷이므로 각 json 객체를 한 줄로 기록
-
 
     
-    json.dump(data_with_predict, open(args.output_dir, 'wt', encoding='utf-8'),
+    json.dump(data_with_predict, open(args.output_dir + ".json", 'wt', encoding='utf-8'),
             ensure_ascii=False, indent=4)
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("--pretrained_model_path", type=str)
-    parser.add_argument("--lora_path", type=str, help="Path to the checkpoint. If non, test with vanila model.")
+    parser.add_argument("--lora_path", type=str, help="Path to the checkpoint. If none, test with vanila model.")
     parser.add_argument("--testset_dir", type=str)
     parser.add_argument("--output_dir", type=str, help="Path to store the results.")
-    parser.add_argument("--mode", type=str, default="batch", help="interaction or batch")
+    parser.add_argument("--test_mode", type=str, default="instruction", help="interaction or non_instruction")
     args = parser.parse_args()
 
-    # os.environ["CUDA_VISIBLE_DEVICES"] = "0,1,2,3"
+    # os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
     
-    #interactive_predict(args)
+    # interactive_predict(args)
     batch_predict(args)

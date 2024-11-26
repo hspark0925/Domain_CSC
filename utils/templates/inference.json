@@ -1,0 +1,7 @@
+{
+    "template_name": "Prompting instances with or without the instructions.",
+    "description": "Generate a input output pair for an instruction and typo example.",
+    "system_content": "You are given instructions for a Chinese Spelling Correction task across specific domains. For each instruction, write a sentence that includes the given keyword, keeping the provided caution in mind.\n**Caution:**\n\t1. The sentence should be relevant to the specified domain.\n\t2. The sentence should follow the given directives of the instruction.",
+    "prompt_instruction": "对以下{item['domain']}领域的输入文本进行纠错。注意，{item['instruction']}\n请直接给出答案，不要添加前缀词。\n输入: {item['input']}\n输出: ",
+    "prompt_no_instruction": "请改正输入文本中的错别字。如果错别字不存在，直接输出原本输入。\n输入: {item['input']}\n输出: "
+}
