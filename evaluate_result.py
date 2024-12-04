@@ -16,6 +16,7 @@ from accelerate import Accelerator
 import re
 from utils.calculate_metric import compute
 from collections import Counter
+import ipdb
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
                     datefmt="%m/%d/%Y %H:%M:%S",
@@ -36,38 +37,52 @@ class DataProcessor:
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(data, f, indent=4, ensure_ascii=False)
 
+def clean_text(text):
+    text = re.sub(r'\s+', '', text)
+    text = re.sub(r'：', ':', text)
+    text = re.sub(r'，', ',', text)
+    text = re.sub(r'！', '!', text)
+    return text
+
 def prediction_process(prediction, input):
     prediction = re.sub(r'\n\n输入.*', '', prediction, flags=re.DOTALL)
-    if prediction.startswith("无误"):
+    prediction = clean_text(prediction)
+    
+    #Copy input
+    copy_input = ["正确", "无误", "正确。", "正确输入", "无需修改", "错误:无", "错别字"]
+    
+    if len(prediction) < 25 and any(word in prediction for word in copy_input):
         return input
+    
+    #Prefix Removal
+    prefix = ["正确输入:", "正确版本:", "错误:", "错误纠正后的句子:", "错误纠正后的文本:", "修正后:", "纠正后:"]
+    for p in prefix:
+        if prediction.startswith(p):
+            return prediction.removeprefix(p)
+        
     return prediction
     
    
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--results_dir", type=str, default="./result/11-26/qwen_instruction/qwen_instruction_result.json")
+    parser.add_argument("--results_dir", type=str, default="./result/11-28/qwen_instruction/qwen_instruction_result.json")
+    parser.add_argument("--metric_mode", type=str, default="token",help="token or sentence")
     args = parser.parse_args()
     
     processor = DataProcessor()
     
     data = processor._read(args.results_dir)
-    
     src_sents, trg_sents, prd_sents, keywords, domains, instructions, index = [], [], [], [], [], [], []
-    for line in data:
-        
-        clean_input = re.sub(r'\s+', '', line["input"])
-        clean_output = re.sub(r'\s+', '', line["output"])
-        clean_prediction = re.sub(r'\s+', '', prediction_process(line["predict"], line["input"]))
-        
-        src_sents.append(clean_input)
-        trg_sents.append(clean_output)
-        prd_sents.append(clean_prediction)
+    for line in data:        
+        src_sents.append(clean_text(line["input"]))
+        trg_sents.append(clean_text(line["output"]))
+        prd_sents.append(prediction_process(line["predict"], clean_text(line["input"])))
         domains.append(line["domain"])
         instructions.append(line["instruction"])
-        keywords.append(line["typo"])
+        keywords.append([clean_text(keyword) for keyword in line["typo"]])
         index.append(line['instance_index'])
     
-    p, r, f1, fpr, tp_sents, fp_sents, fn_sents, wrong_sents = compute(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index, k=2)
+    p, r, f1, fpr, tp_sents, fp_sents, fn_sents, wrong_sents = compute(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index, args.metric_mode, k=2)
     
     result = {
         "p": round(p * 100, 2),
@@ -78,6 +93,7 @@ def main():
 
     # Log the evaluation results
     logger.info("***** Eval results *****")
+    logger.info(f"Test mode: {os.path.splitext(args.results_dir)[0]}")
     logger.info(f"{result}")
     
     err_types_counts = Counter(err_type for item in wrong_sents for err_type in item['err_type'])
