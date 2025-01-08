@@ -1,5 +1,13 @@
 {
-    "template_name": "Prompting instances with or without the instructions.",
-    "prompt_instruction": "对以下{item['domain']}领域的输入文本进行纠错。注意，{item['instruction']}\n请直接给出答案，不要添加前缀词。\n输入: {item['input']}\n输出: ",
-    "prompt_no_instruction": "请改正输入文本中的错别字。如果错别字不存在，直接输出原本输入。\n输入: {item['input']}\n输出: "
+    "description": "Inference mode: {test_mode}.",
+    "system_content": "你是一位精通中文的人，对中文的各个领域都有深入的理解。",
+    "user_content_instruction": "以下是{domain}领域中输入的文本。请改正输入文本中的错别字，然后直接输出改正后的文本。如果错别字不存在，直接输出原本输入。注意，{instruction}\n输入文本: {input}\n正确输出: ",
+    "user_content_non_instruction": "请改正输入文本中的错别字，然后直接输出改正后的文本。如果错别字不存在，直接输出原本输入。\n输入文本: {input}\n正确输出: ",
+    "user_content_contrastive": "以下是{domain}领域中输入的文本。请改正输入文本中的错别字，然后直接输出改正后的文本。如果错别字不存在，直接输出原本输入。注意，{instruction}{contrastive_example}\n输入文本: {input}\n正确输出: ",
+    "contrastive_example": "比如，\"{false_output}\"是错误的输出，不要这样输出。",
+    "user_content_false_case_generation": "参考以下给定的上下文，直接输出指定关键词的纠正方案。\n上下文: {input}\n关键词: {err_keyword}\n纠正后的关键词: ",
+    "assistant_content_instruction": "{output}",
+    "assistant_content_non_instruction": "{output}",
+    "assistant_content_contrastive": "{output}",
+    "assistant_content_false_case_generation": "{corr_keyword}"
 }
