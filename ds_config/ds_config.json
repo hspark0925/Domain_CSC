@@ -1,0 +1,37 @@
+{
+    "zero_optimization": {
+      "stage": 3,
+      "offload_optimizer": {
+        "device": "cpu",
+        "pin_memory": true
+      },
+      "offload_param": {
+        "device": "cpu",
+        "pin_memory": true
+      },
+      "allgather_partitions": true,
+      "allgather_bucket_size": 2e8,
+      "reduce_scatter": true,
+      "reduce_bucket_size": 2e8,
+      "overlap_comm": true,
+      "contiguous_gradients": true,
+    "stage3_prefetch_bucket_size": 1e8,
+    "stage3_param_persistence_threshold": 1e6,
+      "sub_group_size": 1e7
+    },
+    "partition_activations": true,
+    "gradient_accumulation_steps": "auto",
+    "gradient_clipping": "auto",
+    "train_batch_size": "auto",
+    "train_micro_batch_size_per_gpu": "auto",
+    "max_memory": {
+      "gpu0": "22GB",
+      "gpu1": "22GB",
+      "gpu2": "22GB",
+      "gpu3": "22GB"
+    },
+    "fp16": {
+      "enabled": "auto",
+      "loss_scale": 0
+  }
+  }

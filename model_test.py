@@ -15,6 +15,8 @@ import openai
 import random
 import time
 import logging
+from utils.prompter import Prompter
+import re
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
                     datefmt="%m/%d/%Y %H:%M:%S",
@@ -33,7 +35,11 @@ def interactive_predict(args):
             input_text = sys.stdin.read()
             if input_text.strip() == "exit":
                 return
-            output_text, _, _, _, _, _ = predict_and_tokenize(model, tokenizer, input_text)
+            
+            messages = []
+            messages.append({"role": "system", "content": "你是一位精通中文的人，对中文的各个领域都有深入的理解。"})
+            messages.append({"role": "user", "content": input_text})
+            output_text = predict_and_tokenize(model, tokenizer, messages, args.pretrained_model_path, args.test_mode)
             print('O:', output_text)
         except KeyboardInterrupt:
             return
@@ -43,7 +49,7 @@ def load_model(pretrain_model_path, lora_path):
                                             # padding_side='left', 
                                             trust_remote_code=True, 
                                             use_fast=False,
-                                            model_max_length=512) 
+                                            model_max_length=1024) 
     # tokenizer.pad_token_id = 0
     logger.info("Start loading model: %s", pretrain_model_path)
     
@@ -66,51 +72,79 @@ def load_model(pretrain_model_path, lora_path):
     model = model.eval()
     return tokenizer, model
 
-def promptor(item, test_mode):
-    if test_mode == 'instruction':
-        prompt = f"对以下{item['domain']}领域的文本进行纠错。注意，{item['instruction']}\n请直接给出答案，不要添加前缀词。\n输入: {item['input']}\n输出: "
-    elif test_mode == 'non_instruction':
-        prompt = f"请改正输入文本中的错别字。如果错别字不存在，直接输出原本输入。\n输入: {item['input']}\n输出: "
-    else:
-        raise ValueError(f"Invalid mode: {test_mode}. Expected 'instruction' or 'non_instruction'.")
-    return prompt
-
-    if template['template_name'] == "prediction_extract":
-        response['predict'] = re.sub(r'\n\n输入.*', '', response['predict'], flags=re.DOTALL)
-        user_content = template['user_content'].format(
-            source_sentence=response['input'],
-            instance_index=response['instance_index'],
-            prediction=response['predict']
-        )
-
-def predict_and_tokenize(model, tokenizer, item):
+def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, test_mode):
     """
      预测一个query
     :return:
     """
-    texts = [item]
-    inputs = tokenizer(texts, return_tensors="pt", padding=True)
-    
-    inputs = inputs.to(model.device)
-    max_seq_len = inputs['input_ids'].shape[1]
-    
-    outputs = model.generate(
-        **inputs,
-        do_sample=False,
-        max_new_tokens=300,
-        num_beams=1
-    )
-    outputs_pre = outputs[:, max_seq_len:]
-    outputs_pre = tokenizer.batch_decode(outputs_pre, skip_special_tokens=True)
-    
-    outputs_ids = outputs
-    outputs_token = [tokenizer.decode(d) for d in outputs_ids[0]]
-    outputs = tokenizer.batch_decode(outputs, skip_special_tokens=True)
-    outputs_tokenizer_ids = tokenizer(outputs[0])['input_ids']
-    outputs_tokenizer_token = [tokenizer.decode(d) for d in outputs_tokenizer_ids]
-    flag = bool(outputs_ids[0].tolist() == outputs_tokenizer_ids) or bool(outputs_ids[0].tolist()[:-1] == outputs_tokenizer_ids)
-    
-    return outputs_pre[0], outputs_ids[0].tolist(), outputs_token, outputs_tokenizer_ids, outputs_tokenizer_token, flag
+    if "qwen" in model_path.lower():
+        text = tokenizer.apply_chat_template(
+        messages,
+        tokenize=False,
+        add_generation_prompt=True
+        )
+        model_inputs = tokenizer(
+            [text], 
+            return_tensors="pt",
+            padding=True,
+            truncation=True,
+            ).to(model.device) 
+        
+        if test_mode == "false_case_generation":
+            err_keyword_match = re.search(r"关键词:\s*(.+)", messages[-1]['content'])
+            if not err_keyword_match:
+                raise ValueError("Couldn't find the keyword in this content: {}".format(messages[-1]['content']))
+            err_keyword = err_keyword_match.group(1).strip()
+            
+            generated_ids = []
+            num_return_sequences = 5
+            
+            outputs = []
+            for i in range(num_return_sequences):
+                temp = 1 + i * 0.2
+                top_k_value = 50 + i * 25
+                top_p_value = 0.8 + i * 0.05
+                
+                generated_ids = model.generate(
+                    input_ids=model_inputs.input_ids,
+                    attention_mask=model_inputs.attention_mask,
+                    top_k=top_k_value,
+                    top_p=top_p_value,
+                    temperature=temp,
+                    do_sample=True,
+                    max_new_tokens=512
+                )
+                generated_ids = [
+                    output_ids[len(input_ids):]
+                    for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+                ]
+                output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+                outputs.append(output[0])
+                if err_keyword.lower() not in output[0].lower():
+                    break
+                else:
+                    continue
+            return outputs
+        else:
+            generated_ids = model.generate(
+                input_ids=model_inputs.input_ids,
+                attention_mask=model_inputs.attention_mask,
+                max_new_tokens=512
+            )
+            generated_ids = [
+                output_ids[len(input_ids):] for input_ids, output_ids in zip(model_inputs.input_ids, generated_ids)
+            ]
+            output = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)
+            return output
+
+    elif "baichuan" in model_path:
+        outputs = model.chat(
+            tokenizer, 
+            messages
+            )
+        return [outputs]
+    else:
+        raise ValueError("Unknown model path for chat template: %s" % model_path)
 
         
 def batch_predict(args):
@@ -119,26 +153,44 @@ def batch_predict(args):
     :return:
     """
     tokenizer, model = load_model(args.pretrained_model_path, args.lora_path)
-    data = json.load(open(args.testset_dir, 'rt', encoding='utf-8'))
-    data_with_predict = []
     
-    os.makedirs(os.path.dirname(args.output_dir + ".json"), exist_ok=True)
-    with open(args.output_dir + ".json", 'a', encoding='utf-8') as f:
+    data = json.load(open(args.testset_dir, 'rt', encoding='utf-8'))
+    
+    # Configurations for false_case_generation.
+    if args.test_mode == "false_case_generation":
+        data = [item for item in data if item['keyword_label'] == 1]
+    
+    data_with_predict = []
+    os.makedirs(os.path.dirname(args.output_dir + ".jsonl"), exist_ok=True)
+    with open(args.output_dir+".jsonl", "w") as file:
+        pass
+    
+    with open(args.output_dir + ".jsonl", 'a', encoding='utf-8') as f:
+        prompter = Prompter(args.template_dir, args.testset_dir, args.test_mode, verbose=True)
+        
+        logger.info("****** Messages example ******")
+        logger.info("\n------------------\n".join([message['content'] for message in prompter.gen_messages(data[0], args.incontext_learning)]))
+        logger.info("****** Starting Test ******")
+        
         for item in tqdm(data):
-            prompt = promptor(item, args.test_mode)
-            item['predict'], _, _, _, _, _ = predict_and_tokenize(model, tokenizer, prompt)
+            messages = prompter.gen_messages(item, args.incontext_learning)
+            item['predict'] = predict_and_tokenize(model, tokenizer, messages, args.pretrained_model_path, args.test_mode)
+            
 
             data_with_predict.append(item)
-            print(prompt)
+            print(messages[-1]['content'])
             print('-' * 20)
-            print(item['predict'])
+            print(item['predict'][-1])
             print('=' * 20)
+            
+            if args.test_mode != "false_case_generation":
+                item['predict'] = item['predict'][0]
+            f.write(json.dumps(item, ensure_ascii=False) + '\n')
 
-            json.dump(item, f, ensure_ascii=False)
-
-    
+    os.makedirs(os.path.dirname(args.output_dir + ".json"), exist_ok=True)
     json.dump(data_with_predict, open(args.output_dir + ".json", 'wt', encoding='utf-8'),
             ensure_ascii=False, indent=4)
+    logger.info(f"Results saved to {args.output_dir}.json")
 
 
 if __name__ == '__main__':
@@ -147,10 +199,13 @@ if __name__ == '__main__':
     parser.add_argument("--lora_path", type=str, help="Path to the checkpoint. If none, test with vanila model.")
     parser.add_argument("--testset_dir", type=str)
     parser.add_argument("--output_dir", type=str, help="Path to store the results.")
-    parser.add_argument("--test_mode", type=str, default="instruction", help="interaction or non_instruction")
+    parser.add_argument("--test_mode", type=str, default="instruction", help="interaction, non_instruction, interaction, false_case_generation")
+    parser.add_argument("--incontext_learning", type=int, default=3, help="Numbers of shots.")
+    parser.add_argument("--template_dir", type=str, default="inference", help="Prompt template name.")
     args = parser.parse_args()
 
     # os.environ["CUDA_VISIBLE_DEVICES"] = "2,3"
-    
-    # interactive_predict(args)
-    batch_predict(args)
+    if args.test_mode == "interaction":
+        interactive_predict(args)
+    else:
+        batch_predict(args)
