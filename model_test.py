@@ -207,6 +207,9 @@ if __name__ == '__main__':
     if args.test_mode == "interaction":
         interactive_predict(args)
     else:
+        logger.info(f"Test Mode: {args.test_mode}")
+        logger.info(f"Shots: {args.incontext_learning}")
+        logger.info(f"results directory: {args.output_dir}")
         batch_predict(args)
         evaluate(args.output_dir)
         
