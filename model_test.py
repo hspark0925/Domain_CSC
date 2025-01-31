@@ -46,6 +46,9 @@ def interactive_predict(args):
             return
 
 def load_model(pretrain_model_path, lora_path):
+    if "gpt" in pretrain_model_path.lower():
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        return None, None
     tokenizer = AutoTokenizer.from_pretrained(pretrain_model_path, 
                                         # padding_side='left', 
                                         trust_remote_code=True, 
@@ -152,10 +155,6 @@ def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, tes
             return responses
         
         except openai.error.RateLimitError as e:
-            if attempt < retries - 1:  # Only wait and retry if we have retries left
-                logger.info(f"Rate limit reached. Attempt {attempt + 1} of {retries}. Waiting for {wait_time} seconds before retrying...")
-                time.sleep(wait_time)
-            else:
                 logger.info("Rate limit reached and all retries exhausted.")
             
     else:
@@ -223,8 +222,5 @@ if __name__ == '__main__':
     if args.test_mode == "interaction":
         interactive_predict(args)
     else:
-        logger.info(f"Test Mode: {args.test_mode}")
-        logger.info(f"Shots: {args.incontext_learning}")
-        logger.info(f"results directory: {args.output_dir}")
         batch_predict(args)
-        evaluate(args.output_dir)        
+        evaluate(args.output_dir)
