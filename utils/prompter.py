@@ -87,7 +87,7 @@ class Prompter(object):
         return few_shot_examples
     
     def user_prompter(self, item: dict[str, any], test_mode: str) -> str:
-        if test_mode == "contrastive":
+        if "contrastive" in test_mode:
             contrastive_example = self.template['contrastive_example'].format(
                 false_output = item['false_output']
             )

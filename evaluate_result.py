@@ -20,7 +20,8 @@ import ipdb
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
                     datefmt="%m/%d/%Y %H:%M:%S",
-                    level=logging.INFO)
+                    level=logging.INFO,
+                    filename='temp.log')
 logger = logging.getLogger(__name__)
 
 class DataProcessor:
@@ -42,6 +43,7 @@ def clean_text(text):
     text = re.sub(r'：', ':', text)
     text = re.sub(r'，', ',', text)
     text = re.sub(r'！', '!', text)
+    text = text.lower()
     return text
 
 def prediction_process(prediction, input):
@@ -63,14 +65,11 @@ def prediction_process(prediction, input):
     return prediction
     
    
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--results_dir", type=str, default="result/01-08/qwen_contrastive/qwen_contrastive_result.json")
-    args = parser.parse_args()
+def evaluate(results_dir):
     
     processor = DataProcessor()
     
-    data = processor._read(args.results_dir)
+    data = processor._read(results_dir)
     src_sents, trg_sents, prd_sents, keywords, domains, instructions, index = [], [], [], [], [], [], []
     for line in data:        
         src_sents.append(clean_text(line["input"]))
@@ -92,7 +91,7 @@ def main():
         "fpr": round(fpr * 100, 1),
     }
 
-    logger.info(f"Test Mode: {os.path.splitext(args.results_dir)[0]}")
+    logger.info(f"Test Mode: {os.path.splitext(results_dir)[0]}")
     
     # Log the evaluation results
     logger.info("***** Sentence Level results *****")
@@ -120,11 +119,16 @@ def main():
     for value_type, count in err_types_counts.items():
         logger.info(f"{value_type}: {count/len(data) * 100:.1f}%")
     
-    processor._write(os.path.join(os.path.dirname(args.results_dir), "fp_sents.json"), fp_sents)
-    processor._write(os.path.join(os.path.dirname(args.results_dir), "fn_sents.json"), fn_sents)
-    processor._write(os.path.join(os.path.dirname(args.results_dir), "wrong_sents.json"), wrong_sents)
+    processor._write(os.path.join(os.path.dirname(results_dir), "fp_sents.json"), fp_sents)
+    processor._write(os.path.join(os.path.dirname(results_dir), "fn_sents.json"), fn_sents)
+    processor._write(os.path.join(os.path.dirname(results_dir), "wrong_sents.json"), wrong_sents)
+    processor._write
 
-
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--results_dir", type=str, default="result/01-08/qwen_contrastive/qwen_contrastive_result.json")
+    args = parser.parse_args()
+    evaluate(args.results_dir)
 
 if __name__ == "__main__":
     main()

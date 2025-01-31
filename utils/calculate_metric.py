@@ -39,15 +39,15 @@ def get_target_indices(sentence, target_sent_piece) -> list:
         raise ValueError(f"'{target_sent_piece}' not found in: {sentence}")
     return indices
 
-def context_check(trg_sent, prd_sent, target_sent_pieces, k=2):
+def context_check(trg_sent, prd_sent, target_sent_pieces, typos, k=2):
     """
     Return:
         True if the context around the target token matches, False otherwise.
     """
-    ti,pi = 0,0
+    # ti,pi = 0,0
     for target_sent_piece in target_sent_pieces:
-        trg_sent = trg_sent[ti:]
-        prd_sent = prd_sent[pi:]
+        # trg_sent = trg_sent[ti:]
+        # prd_sent = prd_sent[pi:]
         trg_indices = get_target_indices(trg_sent, target_sent_piece)
         prd_indices = get_target_indices(prd_sent, target_sent_piece)        
         
@@ -59,16 +59,35 @@ def context_check(trg_sent, prd_sent, target_sent_pieces, k=2):
             trg_content[trg_index] = trg_sent[max(0, trg_index[0] - k): min(len(trg_sent), trg_index[1] + k)]
         
         for prd_index in prd_indices:
-            prd_content[prd_index] = prd_sent[max(0, prd_index[0] - k): min(len(prd_sent), prd_index[1] + k)]
-        
+            for typo in typos:
+                if len(typo)>1: #If the typo is keyword
+                    i,j = None, None
+                    for i in range(trg_index[0]-max(0, prd_index[0] - k)):
+                        if typo[-1] == prd_sent[i]:
+                            break
+                    for j in range(prd_index[1], min(len(prd_sent), trg_index[1] + k)):
+                        if typo[0] == prd_sent[j]:
+                            break
+                    prd_content[prd_index] = prd_sent[i:j]
+                    trg_content[trg_index] = trg_sent[i:j]                    
+                    break
+                for i in range(trg_index[0]-max(0, prd_index[0] - k)):
+                    if typo == prd_sent[i]:
+                        prd_sent[i] == trg_sent[i]
+                for i in range(prd_index[1], min(len(prd_sent), trg_index[1] + k)):
+                    if typo == prd_sent[i]:
+                        prd_sent[i] == trg_sent[i]
+            else:
+                prd_content[prd_index] = prd_sent[max(0, prd_index[0] - k): min(len(prd_sent), prd_index[1] + k)]
+                    
         flag = False
         for trg_idx, trg_ctt in trg_content.items():
             for prd_idx, prd_ctt in prd_content.items():
                 if trg_ctt == prd_ctt:
-                    ti = trg_idx[1]
-                    pi = prd_idx[1]
+                    # ti = trg_idx[1]
+                    # pi = prd_idx[1]
                     flag = True
-                    break                            
+                    break                                   
             if flag:
                 break
         else:
@@ -85,26 +104,32 @@ def get_label(src_sent, trg_sent, prd_sent, keyword, k):
     err_type = set()
     label = 1
     corrected_words = []
-    # Keyword Process
-    if keyword not in prd_sent:
-        err_type.add("non_keyword")
-        label = 0
-    else:
-        corrected_words.append(keyword)
+    incorrect_words = []
             
     #typos without keyword
     typos = get_typos(src_sent, trg_sent, keyword)
     for typo in typos:
         if typo not in prd_sent:
-            err_type.add("general_csc_err")
-            label = 0
+            if "general_csc_err" not in err_type:
+                err_type.add("general_csc_err")
+                label = 0
+                incorrect_words.append(typo)
         else:
             corrected_words.append(typo)
-            
+    
+    # Keyword Process
+    if keyword not in prd_sent:
+        err_type.add("non_keyword")
+        label = 0
+        incorrect_words.append(keyword)
+    # else:
+    #     if not context_check(trg_sent, prd_sent, keyword, incorrect_words, k):
+    #         err_type.add("keyword_context")
+    #         label = 0
     # TODO: Context Mismatch is so difficult!!
     # if len(corrected_words) > 0:
-    #     if not context_check(trg_sent, prd_sent, corrected_words, k):
-    #         err_type.add("context_mismatch")
+    #     if not context_check(trg_sent, prd_sent, corrected_words, incorrect_words, k):
+    #         err_type.add("general_csc_context")
     #         label = 0
     return label, list(err_type), typos
 

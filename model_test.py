@@ -17,6 +17,7 @@ import time
 import logging
 from utils.prompter import Prompter
 import re
+from evaluate_result import evaluate
 
 logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
                     datefmt="%m/%d/%Y %H:%M:%S",
@@ -207,3 +208,5 @@ if __name__ == '__main__':
         interactive_predict(args)
     else:
         batch_predict(args)
+        evaluate(args.output_dir)
+        

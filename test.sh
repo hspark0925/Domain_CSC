@@ -2,9 +2,9 @@
 
 model="Qwen/Qwen2.5-0.5B-Instruct"  # qwen or baichuan
 LORA_DIR="" # path to finetune weights, if none run with base model
-test_mode="contrastive" #mode instruction or non_instruction
+test_mode="only_contrastive" #mode instruction or non_instruction
 gpu_index=(0 1 2 3)
-incontext_learning=3
+incontext_learning=0
 test_set="./dataset/dcsc.json"
 
 
