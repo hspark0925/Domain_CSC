@@ -73,7 +73,7 @@ def load_model(pretrain_model_path, lora_path):
 
 def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, test_mode):
     """
-     预测一个query
+    预测一个query
     :return:
     """
     if "qwen" in model_path.lower():
@@ -142,6 +142,22 @@ def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, tes
             messages
             )
         return [outputs]
+    elif "gpt" in model_path:
+        try:
+            response = openai.ChatCompletion.create(
+                model=model_path,
+                messages=messages,
+            )
+            responses = [choice.message['content'] for choice in response.choices]
+            return responses
+        
+        except openai.error.RateLimitError as e:
+            if attempt < retries - 1:  # Only wait and retry if we have retries left
+                logger.info(f"Rate limit reached. Attempt {attempt + 1} of {retries}. Waiting for {wait_time} seconds before retrying...")
+                time.sleep(wait_time)
+            else:
+                logger.info("Rate limit reached and all retries exhausted.")
+            
     else:
         raise ValueError("Unknown model path for chat template: %s" % model_path)
 
@@ -211,5 +227,4 @@ if __name__ == '__main__':
         logger.info(f"Shots: {args.incontext_learning}")
         logger.info(f"results directory: {args.output_dir}")
         batch_predict(args)
-        evaluate(args.output_dir)
-        
+        evaluate(args.output_dir)        
