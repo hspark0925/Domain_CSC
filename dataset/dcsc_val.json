@@ -1,0 +1,2687 @@
+[
+    {
+        "domain": "游戏",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "游戏类型的英文缩写不需要纠正。",
+        "instruction_index": 3,
+        "keyword": [
+            "rpg",
+            "rpg"
+        ],
+        "keyword_label": 1,
+        "input": "许多玩家选择rpg游戏，享受在虚拟世界中发展角色的乐趣。  ",
+        "output": "许多玩家选择rpg游戏，享受在虚拟世界中发展角色的乐趣。  ",
+        "typos": [],
+        "false_keyword": [
+            "rpg",
+            "角色扮演"
+        ],
+        "false_output": "许多玩家选择角色扮演游戏，享受在虚拟世界中发展角色的乐趣。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 11
+    },
+    {
+        "domain": "时尚",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "时尚界中的流行用语和潮流词汇无需纠正。",
+        "instruction_index": 54,
+        "keyword": [
+            "小清新",
+            "小清新"
+        ],
+        "keyword_label": 1,
+        "input": "小清新摄影作品摆脱了复杂的灯光运用和一些宏大的场面摆控，便于摄影师的创作，成为当下一些摄影风格的首选",
+        "output": "小清新摄影作品摆脱了复杂的灯光运用和一些宏大的场面把控，便于摄影师的创作，成为当下一些摄影风格的首选",
+        "typos": [
+            "把"
+        ],
+        "false_keyword": [
+            "小清新",
+            "清新小"
+        ],
+        "false_output": "清新小摄影作品摆脱了复杂的灯光运用和一些宏大的场面把控，便于摄影师的创作，成为当下一些摄影风格的首选",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 201
+    },
+    {
+        "domain": "日常对话",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "instruction_index": 59,
+        "keyword": [
+            "没事儿",
+            "没事儿"
+        ],
+        "keyword_label": 1,
+        "input": "油罐车爆燃，他一跃而起用身体护住了途径的老人，老人没事儿，他却被严重烧伤，至今留有后遗症",
+        "output": "油罐车爆燃，他一跃而起用身体护住了途经的老人，老人没事儿，他却被严重烧伤，至今留有后遗症",
+        "typos": [
+            "经"
+        ],
+        "false_keyword": [
+            "没事儿",
+            "没事"
+        ],
+        "false_output": "油罐车爆燃，他一跃而起用身体护住了途经的老人，老人没事，他却被严重烧伤，至今留有后遗症",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 213
+    },
+    {
+        "domain": "医学",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "医术缩略词不需要改。",
+        "instruction_index": 5,
+        "keyword": [
+            "MRI",
+            "MRI"
+        ],
+        "keyword_label": 1,
+        "input": "头MRI基本正常,建议找医生看一下,头痛原因很多,根据部位、性质、持续时间等可能怀疑很多病,多数是功能性头痛,比如偏头痛、紧张性头痛等。",
+        "output": "头MRI基本正常,建议找医生看一下,头痛原因很多,根据部位、性质、持续时间等可能怀疑很多病,多数是功能性头痛,比如偏头痛、紧张性头痛等。",
+        "typos": [],
+        "false_keyword": [
+            "MRI",
+            "磁共振成像"
+        ],
+        "false_output": "头磁共振成像基本正常,建议找医生看一下,头痛原因很多,根据部位、性质、持续时间等可能怀疑很多病,多数是功能性头痛,比如偏头痛、紧张性头痛等。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "mec.json",
+        "seq_label": 1,
+        "instance_index": 28
+    },
+    {
+        "domain": "法律",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "法律术语一定要准确。",
+        "instruction_index": 4,
+        "keyword": [
+            "债户人",
+            "债务人"
+        ],
+        "keyword_label": 0,
+        "input": "印尼银行重追署正针对无法信守一九九八年协议的债户人采取追讨行动。",
+        "output": "印尼银行重建署正针对无法信守一九九八年协议的债务人采取追讨行动。",
+        "typos": [
+            "建"
+        ],
+        "false_keyword": [
+            "债户人",
+            "债户人"
+        ],
+        "false_output": "印尼银行重建署正针对无法信守一九九八年协议的债户人采取追讨行动。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 17
+    },
+    {
+        "domain": "美食",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "美食相关评论中的俏皮化或口语化表达不需要纠正为正式语言。",
+        "instruction_index": 63,
+        "keyword": [
+            "这个菜真香",
+            "这个菜真香"
+        ],
+        "keyword_label": 1,
+        "input": "这个菜真香，味道简直无法抵挡！  ",
+        "output": "这个菜真香，味道简直无法抵挡！  ",
+        "typos": [],
+        "false_keyword": [
+            "这个菜真香",
+            "这道菜非常香"
+        ],
+        "false_output": "这道菜非常香，味道简直无法抵挡！  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 230
+    },
+    {
+        "domain": "财经",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "人名和公司名称必须准确，且不得使用别称。",
+        "instruction_index": 19,
+        "keyword": [
+            "马爸爸",
+            "马云"
+        ],
+        "keyword_label": 0,
+        "input": "据上证报，由阿里巴巴的马爸爸、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布同意批文",
+        "output": "据上证报，由阿里巴巴的马云、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布统一批文",
+        "typos": [
+            "统",
+            "一"
+        ],
+        "false_keyword": [
+            "马爸爸",
+            "马爸爸"
+        ],
+        "false_output": "据上证报，由阿里巴巴的马爸爸、中国平安的马明哲、腾讯的马化腾联手设立的众安在线财产保险公司，已走完监管审批流程，预计保监会很快将正式发布统一批文",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 85
+    },
+    {
+        "domain": "金融",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "instruction_index": 53,
+        "keyword": [
+            "ROA",
+            "ROA"
+        ],
+        "keyword_label": 1,
+        "input": "ROA（总资产回报率）用于评估公司使用资产效率的关键财务比率。  ",
+        "output": "ROA（总资产回报率）用于评估公司使用资产效率的关键财务比率。  ",
+        "typos": [],
+        "false_keyword": [
+            "ROA",
+            "总资产回报率"
+        ],
+        "false_output": "总资产回报率（总资产回报率）用于评估公司使用资产效率的关键财务比率。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 196
+    },
+    {
+        "domain": "小说",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "小说中的人名或地名应按照小说中的准确写法书写。",
+        "instruction_index": 9,
+        "keyword": [
+            "哈力波特",
+            "哈利波特"
+        ],
+        "keyword_label": 0,
+        "input": "“哈力波特,也不想当这个救世主!”",
+        "output": "“哈利波特,也不想当这个救世主!”",
+        "typos": [],
+        "false_keyword": [
+            "哈力波特",
+            "哈力波特"
+        ],
+        "false_output": "“哈力波特,也不想当这个救世主!”",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "nov.json",
+        "seq_label": 0,
+        "instance_index": 51
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上常用的非正式词汇和网络用语，避免过度纠正导致表达不自然。比如，人名或企业名允许用口语化的表达。",
+        "instruction_index": 86,
+        "keyword": [
+            "狗东",
+            "狗东"
+        ],
+        "keyword_label": 1,
+        "input": "小程序的号买白边限购 另一个号买kitty相纸但为了省邮费 肌肉记忆点两份就买不了了 好生气啊要去开狗东会员了、、、",
+        "output": "小程序的号买白边限购 另一个号买kitty相纸但为了省邮费 肌肉记忆点两份就买不了了 好生气啊要去开狗东会员了、、、",
+        "typos": [],
+        "false_keyword": [
+            "狗东",
+            "京东"
+        ],
+        "false_output": "小程序的号买白边限购 另一个号买kitty相纸但为了省邮费 肌肉记忆点两份就买不了了 好生气啊要去开京东会员了、、、",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 397
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "人名或企业名的昵称不需要改成准确的。",
+        "instruction_index": 15,
+        "keyword": [
+            "周董",
+            "周董"
+        ],
+        "keyword_label": 1,
+        "input": "切周董和方文山的公司没有任何相关。",
+        "output": "且周董和方文山的公司没有任何相关。",
+        "typos": [
+            "且"
+        ],
+        "false_keyword": [
+            "周董",
+            "周杰伦"
+        ],
+        "false_output": "且周杰伦和方文山的公司没有任何相关。",
+        "err_types": [
+            "non_keyword",
+            "context_mismatch"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 72
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "上下文逻辑处理",
+        "instruction": "分析用户在社交媒体发布内容的上下文，确保逻辑连贯。",
+        "instruction_index": 75,
+        "keyword": [
+            "去那了",
+            "去哪了"
+        ],
+        "keyword_label": 0,
+        "input": "奇迹暖暖 也来整个年终总结，总算明白今年的钻都去那了，这甚至还没算复刻orz 圈是打算拿的 收集度13800，签到1656，累消259813，最爱套装1220次，游光投稿189次，家具1229，明年再接再厉",
+        "output": "奇迹暖暖 也来整个年终总结，总算明白今年的钻都去哪了，这甚至还没算复刻orz 圈是打算拿的 收集度13800，签到1656，累消259813，最爱套装1220次，游光投稿189次，家具1229，明年再接再厉",
+        "typos": [],
+        "false_keyword": [
+            "去那了",
+            "去那了"
+        ],
+        "false_output": "奇迹暖暖 也来整个年终总结，总算明白今年的钻都去那了，这甚至还没算复刻orz 圈是打算拿的 收集度13800，签到1656，累消259813，最爱套装1220次，游光投稿189次，家具1229，明年再接再厉",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 279
+    },
+    {
+        "domain": "广告",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "instruction_index": 44,
+        "keyword": [
+            "星爸爸",
+            "星巴克"
+        ],
+        "keyword_label": 0,
+        "input": "星爸爸在全球已有八干七百家零售店，预计在本会计年度结束的九月底前，在全球再开设一千五百家新店，其中逾一千家新店位于美国。",
+        "output": "星巴克在全球已有八千七百家零售店，预计在本会计年度结束的九月底前，在全球再开设一千五百家新店，其中逾一千家新店位于美国。",
+        "typos": [
+            "千"
+        ],
+        "false_keyword": [
+            "星爸爸",
+            "星爸爸"
+        ],
+        "false_output": "星爸爸在全球已有八千七百家零售店，预计在本会计年度结束的九月底前，在全球再开设一千五百家新店，其中逾一千家新店位于美国。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 168
+    },
+    {
+        "domain": "文化",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "instruction_index": 27,
+        "keyword": [
+            "风水",
+            "风水"
+        ],
+        "keyword_label": 1,
+        "input": "风水在中国传统文化中被视为影响人们生活与命运的重要因素。",
+        "output": "风水在中国传统文化中被视为影响人们生活与命运的重要因素。",
+        "typos": [],
+        "false_keyword": [
+            "风水",
+            "环境学"
+        ],
+        "false_output": "环境学在中国传统文化中被视为影响人们生活与命运的重要因素。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 121
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "拼写错误处理",
+        "instruction": "检查在社交媒体中常见的拼写错误，并进行纠正。",
+        "instruction_index": 72,
+        "keyword": [
+            "幸苦",
+            "辛苦"
+        ],
+        "keyword_label": 0,
+        "input": "#2024道个别#2024好与不好都已过去，希望2025少些幸苦，多些幸福！",
+        "output": "#2024道个别#2024好与不好都已过去，希望2025少些辛苦，多些幸福！",
+        "typos": [],
+        "false_keyword": [
+            "幸苦",
+            "幸苦"
+        ],
+        "false_output": "#2024道个别#2024好与不好都已过去，希望2025少些幸苦，多些幸福！",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 252
+    },
+    {
+        "domain": "公文",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "instruction_index": 11,
+        "keyword": [
+            "NY",
+            "纽约"
+        ],
+        "keyword_label": 0,
+        "input": "但是麦克雷澜拒绝评论NY时报的一篇撮导。",
+        "output": "但是麦克雷兰拒绝评论纽约时报的一篇报导。",
+        "typos": [
+            "兰",
+            "报"
+        ],
+        "false_keyword": [
+            "NY",
+            "NY"
+        ],
+        "false_output": "但是麦克雷兰拒绝评论NY时报的一篇报导。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 61
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "多源领域自适应",
+        "instruction": "适应社交媒体中美食领域的内容，美食相关的新兴词语无需修改，避免过度或不当纠正。",
+        "instruction_index": 83,
+        "keyword": [
+            "测评",
+            "测评"
+        ],
+        "keyword_label": 1,
+        "input": "经过的不懈的测评 草莓＞阳光玫瑰＞糯米山楂＞水果大杂烩",
+        "output": "经过的不懈的测评 草莓＞阳光玫瑰＞糯米山楂＞水果大杂烩",
+        "typos": [],
+        "false_keyword": [
+            "测评",
+            "品尝"
+        ],
+        "false_output": "经过的不懈的品尝 草莓＞阳光玫瑰＞糯米山楂＞水果大杂烩",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 381
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "若出现繁体字一律修改简体字。",
+        "instruction_index": 17,
+        "keyword": [
+            "風景",
+            "风景"
+        ],
+        "keyword_label": 0,
+        "input": "我觉得在山上看風景很有意思,在哪里野餐也不错。",
+        "output": "我觉得在山上看风景很有意思,在那里野餐也不错。",
+        "typos": [
+            "那"
+        ],
+        "false_keyword": [
+            "風景",
+            "風景"
+        ],
+        "false_output": "我觉得在山上看風景很有意思,在那里野餐也不错。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "sig.json",
+        "seq_label": 0,
+        "instance_index": 76
+    },
+    {
+        "domain": "艺术",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "象征性或隐喻性表达不需要改动。",
+        "instruction_index": 32,
+        "keyword": [
+            "苍蝇寓意腐朽",
+            "苍蝇寓意腐朽"
+        ],
+        "keyword_label": 1,
+        "input": "苍蝇寓意腐朽，在许多文学作品中象征着死亡与衰败。",
+        "output": "苍蝇寓意腐朽，在许多文学作品中象征着死亡与衰败。",
+        "typos": [],
+        "false_keyword": [
+            "苍蝇寓意腐朽",
+            "苍蝇的寓意是腐朽"
+        ],
+        "false_output": "苍蝇在许多文学作品中寓意腐朽，象征着死亡与衰败。，在许多文学作品中象征着死亡与衰败。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 132
+    },
+    {
+        "domain": "文化",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "instruction_index": 26,
+        "keyword": [
+            "八卦",
+            "八卦"
+        ],
+        "keyword_label": 1,
+        "input": "当晚9时许，在上步路南行方向看到，一辆运载小轿车的平板货车正准备在八卦二路口掉头，但因车身超长，约10余米，横在那里，将南北双向共计八车道满满占据",
+        "output": "当晚9时许，在上步路南行方向看到，一辆运载小轿车的平板货车正准备在八卦二路口掉头，但因车身超长，约10余米，横在那里，将南北双向共计八车道满满占据",
+        "typos": [],
+        "false_keyword": [
+            "八卦",
+            "十字"
+        ],
+        "false_output": "当晚9时许，在上步路南行方向看到，一辆运载小轿车的平板货车正准备在十字二路口掉头，但因车身超长，约10余米，横在那里，将南北双向共计八车道满满占据",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 1,
+        "instance_index": 111
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "上下文逻辑处理",
+        "instruction": "分析用户在社交媒体发布内容的上下文，确保逻辑连贯。",
+        "instruction_index": 75,
+        "keyword": [
+            "毕业了",
+            "毕业了"
+        ],
+        "keyword_label": 1,
+        "input": "单拉我的全给你们毕业了 有病",
+        "output": "单拉我的全给你们毕业了 有病",
+        "typos": [],
+        "false_keyword": [
+            "毕业了",
+            "毕业"
+        ],
+        "false_output": "单拉我的全给你们毕业 有病",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 281
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "多源领域自适应",
+        "instruction": "适应社交媒体中游戏领域的内容，游戏角色的名字或词语可以使用简称，不一定要写全称，避免过度或不当纠正。",
+        "instruction_index": 84,
+        "keyword": [
+            "大头",
+            "大头"
+        ],
+        "keyword_label": 1,
+        "input": "早上一看男朋友居然在看LOL剪辑，一问原来他只关心老壳马大头还不认识小抖更别提我担，嗯好的打扰了[微笑]我们没法聊这个",
+        "output": "早上一看男朋友居然在看LOL剪辑，一问原来他只关心老壳马大头还不认识小抖更别提我担，嗯好的打扰了[微笑]我们没法聊这个",
+        "typos": [],
+        "false_keyword": [
+            "大头",
+            "大虾"
+        ],
+        "false_output": "早上一看男朋友居然在看LOL剪辑，一问原来他只关心老壳马大虾还不认识小抖更别提我担，嗯好的打扰了[微笑]我们没法聊这个",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 383
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "instruction_index": 39,
+        "keyword": [
+            "羡慕嫉妒恨",
+            "羡慕嫉妒恨"
+        ],
+        "keyword_label": 1,
+        "input": "这一届新生可是老生们羡慕嫉妒恨的对象，因为焕然一新的校舍，因为4人间，还因为空调，热水器也已经全部配备到位",
+        "output": "这一届新生可是老生们羡慕嫉妒恨的对象，因为焕然一新的校舍，因为4人间，还因为空调，热水器也已经全部配备到位",
+        "typos": [],
+        "false_keyword": [
+            "羡慕嫉妒恨",
+            "羡慕忌妒恨"
+        ],
+        "false_output": "这一届新生可是老生们羡慕忌妒恨的对象，因为焕然一新的校舍，因为4人间，还因为空调，热水器也已经全部配备到位",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 1,
+        "instance_index": 156
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "多义词判断",
+        "instruction": "判断社交媒体中多义词的用法，确保词义使用正确。",
+        "instruction_index": 74,
+        "keyword": [
+            "红温了",
+            "红温了"
+        ],
+        "keyword_label": 1,
+        "input": "sky光遇 买了礼包，微信也显示支付成功但是衣柜里没有，真的要红温了",
+        "output": "sky光遇 买了礼包，微信也显示支付成功但是衣柜里没有，真的要红温了",
+        "typos": [],
+        "false_keyword": [
+            "红温了",
+            "变红了"
+        ],
+        "false_output": "sky光遇 买了礼包，微信也显示支付成功但是衣柜里没有，真的要变红了",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 277
+    },
+    {
+        "domain": "娱乐",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "新兴网络流行语不需要修改。",
+        "instruction_index": 37,
+        "keyword": [
+            "内娱",
+            "内娱"
+        ],
+        "keyword_label": 1,
+        "input": "内娱因其丰富多样的娱乐内容，成为了网络用户最喜欢的讨论话题之一。",
+        "output": "内娱因其丰富多样的娱乐内容，成为了网络用户最喜欢的讨论话题之一。",
+        "typos": [],
+        "false_keyword": [
+            "内娱",
+            "内地娱乐"
+        ],
+        "false_output": "内地娱乐因其丰富多样的娱乐内容，成为了网络用户最喜欢的讨论话题之一。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 147
+    },
+    {
+        "domain": "建筑",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "instruction_index": 51,
+        "keyword": [
+            "GFA",
+            "GFA"
+        ],
+        "keyword_label": 1,
+        "input": "在建筑图纸上，GFA（总建筑面积）作为重要指标需要准确标注。  ",
+        "output": "在建筑图纸上，GFA（总建筑面积）作为重要指标需要准确标注。  ",
+        "typos": [],
+        "false_keyword": [
+            "GFA",
+            "Gross Floor Area"
+        ],
+        "false_output": "在建筑图纸上，Gross Floor Area（总建筑面积）作为重要指标需要准确标注。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 189
+    },
+    {
+        "domain": "小说",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "小说中的人名或地名应按照小说中的准确写法书写。",
+        "instruction_index": 9,
+        "keyword": [
+            "临冬城",
+            "临冬城"
+        ],
+        "keyword_label": 1,
+        "input": "临冬城的寒风会教你学会坚强，但它从不会宽恕软弱。",
+        "output": "临冬城的寒风会教你学会坚强，但它从不会宽恕软弱。",
+        "typos": [],
+        "false_keyword": [
+            "临冬城",
+            "维斯特洛的临冬城"
+        ],
+        "false_output": "维斯特洛的临冬城的寒风会教你学会坚强，但它从不会宽恕软弱。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 55
+    },
+    {
+        "domain": "广告",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "品牌名称和商标用语必须准确，禁止使用俗称。",
+        "instruction_index": 44,
+        "keyword": [
+            "星爸爸",
+            "星巴克"
+        ],
+        "keyword_label": 0,
+        "input": "星爸爸不仅仅是咖啡，更是社交和放松的场所。  ",
+        "output": "星巴克不仅仅是咖啡，更是社交和放松的场所。  ",
+        "typos": [],
+        "false_keyword": [
+            "星爸爸",
+            "星爸爸"
+        ],
+        "false_output": "星爸爸不仅仅是咖啡，更是社交和放松的场所。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 0,
+        "instance_index": 169
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "专业术语识别",
+        "instruction": "识别社交媒体内容中常见的流行用语，避免过度纠正。",
+        "instruction_index": 79,
+        "keyword": [
+            "cp",
+            "cp"
+        ],
+        "keyword_label": 1,
+        "input": "有些人恨机别恨得太离谱了我想说，一男一女的cp只骂女方不骂男方，真挺恶心的哈，反正你家男同肯定是假的，连书都出不了的那种哈",
+        "output": "有些人恨机别恨得太离谱了我想说，一男一女的cp只骂女方不骂男方，真挺恶心的哈，反正你家男同肯定是假的，连书都出不了的那种哈",
+        "typos": [],
+        "false_keyword": [
+            "cp",
+            "情侣"
+        ],
+        "false_output": "有些人恨机别恨得太离谱了我想说，一男一女的情侣只骂女方不骂男方，真挺恶心的哈，反正你家男同肯定是假的，连书都出不了的那种哈",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 350
+    },
+    {
+        "domain": "旅游",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "旅游类的俚语或网络用语不需要纠正。",
+        "instruction_index": 36,
+        "keyword": [
+            "打卡",
+            "打卡"
+        ],
+        "keyword_label": 1,
+        "input": "套路揭秘:早期打卡,跑步打卡,原来这么赚钱!简直暴利!",
+        "output": "套路揭秘:早起打卡,跑步打卡,原来这么赚钱!简直暴利!",
+        "typos": [
+            "起"
+        ],
+        "false_keyword": [
+            "打卡",
+            "签到"
+        ],
+        "false_output": "套路揭秘:早起签到,跑步签到,原来这么赚钱!简直暴利!",
+        "err_types": [
+            "non_keyword",
+            "context_mismatch"
+        ],
+        "data_source": "new.json",
+        "seq_label": 0,
+        "instance_index": 143
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "专业术语识别",
+        "instruction": "识别社交媒体内容中常见的流行用语，避免过度纠正。",
+        "instruction_index": 79,
+        "keyword": [
+            "牛马",
+            "牛马"
+        ],
+        "keyword_label": 1,
+        "input": "2024收官 也是用上碗筷的牛马了",
+        "output": "2024收官 也是用上碗筷的牛马了",
+        "typos": [],
+        "false_keyword": [
+            "牛马",
+            "劳动者"
+        ],
+        "false_output": "2024收官 也是用上碗筷的劳动者了",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 355
+    },
+    {
+        "domain": "娱乐",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "娱乐节目中的流行语或俏皮话不需要纠正。",
+        "instruction_index": 35,
+        "keyword": [
+            "打call",
+            "打call"
+        ],
+        "keyword_label": 1,
+        "input": "在音乐节目中，观众们总是忍不住打call，为他们喜欢的选手加油。",
+        "output": "在音乐节目中，观众们总是忍不住打call，为他们喜欢的选手加油。",
+        "typos": [],
+        "false_keyword": [
+            "打call",
+            "喊麦"
+        ],
+        "false_output": "在音乐节目中，观众们总是忍不住喊麦，为他们喜欢的选手加油。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 141
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "方言处理",
+        "instruction": "识别并尊重用户使用的方言表达，避免不必要的纠错，保持地域特色。",
+        "instruction_index": 76,
+        "keyword": [
+            "雄起",
+            "雄起"
+        ],
+        "keyword_label": 1,
+        "input": "#春暖京津冀津彩过大年##欢喜庆佳节红火津味年##点赞天津#2025，我在天津雄起",
+        "output": "#春暖京津冀津彩过大年##欢喜庆佳节红火津味年##点赞天津#2025，我在天津雄起",
+        "typos": [],
+        "false_keyword": [
+            "雄起",
+            "崛起"
+        ],
+        "false_output": "#春暖京津冀津彩过大年##欢喜庆佳节红火津味年##点赞天津#2025，我在天津崛起",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 290
+    },
+    {
+        "domain": "法律",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "法律术语一定要准确。",
+        "instruction_index": 4,
+        "keyword": [
+            "善养费",
+            "赡养费"
+        ],
+        "keyword_label": 0,
+        "input": "昨天他将女儿高尚法庭，要求女儿每月给予善养费及护理费共6000元",
+        "output": "昨天他将女儿告上法庭，要求女儿每月给予赡养费及护理费共6000元",
+        "typos": [
+            "告",
+            "上"
+        ],
+        "false_keyword": [
+            "善养费",
+            "善养费"
+        ],
+        "false_output": "昨天他将女儿告上法庭，要求女儿每月给予善养费及护理费共6000元",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 19
+    },
+    {
+        "domain": "日常对话",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "instruction_index": 59,
+        "keyword": [
+            "真不错",
+            "真不错"
+        ],
+        "keyword_label": 1,
+        "input": "这部电影真不错，完全超出了我的期待。  ",
+        "output": "这部电影真不错，完全超出了我的期待。  ",
+        "typos": [],
+        "false_keyword": [
+            "真不错",
+            "非常好"
+        ],
+        "false_output": "这部电影非常好，完全超出了我的期待。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 218
+    },
+    {
+        "domain": "新闻",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "人名或企业名等的固有名词保持准确。",
+        "instruction_index": 8,
+        "keyword": [
+            "亚马",
+            "亚马孙"
+        ],
+        "keyword_label": 0,
+        "input": "据报道，电商巨头亚马宣布将在今年年底前推出一项新的物流服务，进一步提升全球范围内的配送速度，以保持其在市场中的竞争优势。",
+        "output": "据报道，电商巨头亚马孙宣布将在今年年底前推出一项新的物流服务，进一步提升全球范围内的配送速度，以保持其在市场中的竞争优势。",
+        "typos": [],
+        "false_keyword": [
+            "亚马",
+            "亚马"
+        ],
+        "false_output": "据报道，电商巨头亚马宣布将在今年年底前推出一项新的物流服务，进一步提升全球范围内的配送速度，以保持其在市场中的竞争优势。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 0,
+        "instance_index": 50
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上常用的非正式词汇和网络用语，避免过度纠正导致表达不自然。比如，人名或企业名允许用口语化的表达。",
+        "instruction_index": 86,
+        "keyword": [
+            "微bo",
+            "微bo"
+        ],
+        "keyword_label": 1,
+        "input": "#王力宏说自己经历风雨活下来了#夹总，踩到微bo尾巴了？限我干嘛#骂的就是酸鸡喷子#",
+        "output": "#王力宏说自己经历风雨活下来了#夹总，踩到微bo尾巴了？限我干嘛#骂的就是酸鸡喷子#",
+        "typos": [],
+        "false_keyword": [
+            "微bo",
+            "微博"
+        ],
+        "false_output": "#王力宏说自己经历风雨活下来了#夹总，踩到微博尾巴了？限我干嘛#骂的就是酸鸡喷子#",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 401
+    },
+    {
+        "domain": "公文",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "instruction_index": 11,
+        "keyword": [
+            "上hai",
+            "上海"
+        ],
+        "keyword_label": 0,
+        "input": "上hai时政府驻昆明办事处主任,上hai援滇干部联络组组长",
+        "output": "上海市政府驻昆明办事处主任,上海援滇干部联络组组长",
+        "typos": [
+            "市"
+        ],
+        "false_keyword": [
+            "上hai",
+            "上hai"
+        ],
+        "false_output": "上hai市政府驻昆明办事处主任,上hai援滇干部联络组组长",
+        "err_types": [
+            "non_keyword",
+            "context_mismatch"
+        ],
+        "data_source": "ec_odw.json",
+        "seq_label": 0,
+        "instance_index": 58
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "简繁体转换",
+        "instruction": "确保简繁体一致性，内容以简体为主时转繁为简，反之亦然。",
+        "instruction_index": 77,
+        "keyword": [
+            "感謝",
+            "感谢"
+        ],
+        "keyword_label": 0,
+        "input": "感謝生命每个阶段都有带着我一步一步变好的人",
+        "output": "感谢生命每个阶段都有带着我一步一步变好的人",
+        "typos": [],
+        "false_keyword": [
+            "感謝",
+            "感謝"
+        ],
+        "false_output": "感謝生命每个阶段都有带着我一步一步变好的人",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 298
+    },
+    {
+        "domain": "体育",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "instruction_index": 24,
+        "keyword": [
+            "三分弹",
+            "三分球"
+        ],
+        "keyword_label": 0,
+        "input": "史普利威尔在延长赛进行至三十二秒时从左翼投进一个三分弹，使尼克队以兀十七比九十四取得领先，并一路领先。",
+        "output": "史普利威尔在延长赛进行至三十二秒时从左翼投进一个三分球，使尼克队以九十七比九十四取得领先，并一路领先。",
+        "typos": [
+            "九"
+        ],
+        "false_keyword": [
+            "三分弹",
+            "三分弹"
+        ],
+        "false_output": "史普利威尔在延长赛进行至三十二秒时从左翼投进一个三分弹，使尼克队以九十七比九十四取得领先，并一路领先。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 100
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "多义词判断",
+        "instruction": "判断社交媒体中多义词的用法，确保词义使用正确。",
+        "instruction_index": 74,
+        "keyword": [
+            "蛐蛐",
+            "蛐蛐"
+        ],
+        "keyword_label": 1,
+        "input": "以后再也不蛐蛐桶桶一个字",
+        "output": "以后再也不蛐蛐桶桶一个字",
+        "typos": [],
+        "false_keyword": [
+            "蛐蛐",
+            "桶桶"
+        ],
+        "false_output": "以后再也不桶桶桶桶一个字",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 266
+    },
+    {
+        "domain": "广告",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "广告文案中的创意表达和口语化词汇不需要更改。",
+        "instruction_index": 43,
+        "keyword": [
+            "pick一下",
+            "pick一下"
+        ],
+        "keyword_label": 1,
+        "input": "在选择时, 不妨来个“pick一下”，找到你的心头好！  ",
+        "output": "在选择时, 不妨来个“pick一下”，找到你的心头好！  ",
+        "typos": [],
+        "false_keyword": [
+            "pick一下",
+            "挑选一下"
+        ],
+        "false_output": "在选择时, 不妨来个“挑选一下”，找到你的心头好！  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 165
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "多义词判断",
+        "instruction": "判断社交媒体中多义词的用法，确保词义使用正确。",
+        "instruction_index": 74,
+        "keyword": [
+            "吃瓜",
+            "吃瓜"
+        ],
+        "keyword_label": 1,
+        "input": "黑仔家有热闹看哎～去吃瓜了耶耶耶",
+        "output": "黑仔家有热闹看哎～去吃瓜了耶耶耶",
+        "typos": [],
+        "false_keyword": [
+            "吃瓜",
+            "围观"
+        ],
+        "false_output": "黑仔家有热闹看哎～去围观了耶耶耶",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 273
+    },
+    {
+        "domain": "科技",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "instruction_index": 20,
+        "keyword": [
+            "云计算",
+            "云计算"
+        ],
+        "keyword_label": 1,
+        "input": "云计算的发展推动了企业服务模式的转变。  ",
+        "output": "云计算的发展推动了企业服务模式的转变。  ",
+        "typos": [],
+        "false_keyword": [
+            "云计算",
+            "云服务"
+        ],
+        "false_output": "云服务的发展推动了企业服务模式的转变。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 91
+    },
+    {
+        "domain": "文学",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "古典汉语表达不需要修改为现代汉语。",
+        "instruction_index": 21,
+        "keyword": [
+            "天涯若比邻",
+            "天涯若比邻"
+        ],
+        "keyword_label": 1,
+        "input": "第五步天涯若比邻不得不临时取消。",
+        "output": "第五部天涯若比邻不得不临时取消。",
+        "typos": [
+            "部"
+        ],
+        "false_keyword": [
+            "天涯若比邻",
+            "千里共婵娟"
+        ],
+        "false_output": "第五部千里共婵娟不得不临时取消。",
+        "err_types": [
+            "non_keyword",
+            "context_mismatch"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 93
+    },
+    {
+        "domain": "财经",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "专业缩写可以保留，不需要修改。",
+        "instruction_index": 18,
+        "keyword": [
+            "PE",
+            "PE"
+        ],
+        "keyword_label": 1,
+        "input": "在私募股权投资（PE）领域，投资者需谨慎选择投资项目。  ",
+        "output": "在私募股权投资（PE）领域，投资者需谨慎选择投资项目。  ",
+        "typos": [],
+        "false_keyword": [
+            "PE",
+            "私募股权投资"
+        ],
+        "false_output": "在私募股权投资（私募股权投资）领域，投资者需谨慎选择投资项目。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 83
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上故意使用的口语化表达，避免过度纠正。",
+        "instruction_index": 78,
+        "keyword": [
+            "干嘛呢",
+            "干嘛呢"
+        ],
+        "keyword_label": 1,
+        "input": "直男 1 幼崽: 你不化妆和化妆都是白白的 臭美好看的 我: 2 幼崽: 你不搬砖就不能赚钱了 我: 牛马 3 幼崽: 妈！你看 大白鲨在干嘛呢 我（看了一眼）: 他在打架！ 幼崽: 没有啊 他在捕食呢 海洋里总有海洋战争 我:",
+        "output": "直男 1 幼崽: 你不化妆和化妆都是白白的 臭美好看的 我: 2 幼崽: 你不搬砖就不能赚钱了 我: 牛马 3 幼崽: 妈！你看 大白鲨在干嘛呢 我（看了一眼）: 他在打架！ 幼崽: 没有啊 他在捕食呢 海洋里总有海洋战争 我:",
+        "typos": [],
+        "false_keyword": [
+            "干嘛呢",
+            "干什么呢"
+        ],
+        "false_output": "直男 1 幼崽: 你不化妆和化妆都是白白的 臭美好看的 我: 2 幼崽: 你不搬砖就不能赚钱了 我: 牛马 3 幼崽: 妈！你看 大白鲨在干什么呢 我（看了一眼）: 他在打架！ 幼崽: 没有啊 他在捕食呢 海洋里总有海洋战争 我:",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 328
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "专业术语识别",
+        "instruction": "识别社交媒体内容中常见的流行用语，避免过度纠正。",
+        "instruction_index": 79,
+        "keyword": [
+            "u1s1",
+            "u1s1"
+        ],
+        "keyword_label": 1,
+        "input": "u1s1时代峰峻对艺人来说其实是个好公司，但素对韭菜一般",
+        "output": "u1s1时代峰峻对艺人来说其实是个好公司，但素对韭菜一般",
+        "typos": [],
+        "false_keyword": [
+            "u1s1",
+            "有一说一"
+        ],
+        "false_output": "有一说一时代峰峻对艺人来说其实是个好公司，但素对韭菜一般",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 345
+    },
+    {
+        "domain": "日常对话",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "instruction_index": 62,
+        "keyword": [
+            "上嗨",
+            "上海"
+        ],
+        "keyword_label": 0,
+        "input": "这周末我打算去上嗨，真期待那里的美食。  ",
+        "output": "这周末我打算去上海，真期待那里的美食。  ",
+        "typos": [],
+        "false_keyword": [
+            "上嗨",
+            "上嗨"
+        ],
+        "false_output": "这周末我打算去上嗨，真期待那里的美食。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 0,
+        "instance_index": 229
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "简繁体转换",
+        "instruction": "确保简繁体一致性，内容以简体为主时转繁为简，反之亦然。",
+        "instruction_index": 77,
+        "keyword": [
+            "偶爾",
+            "偶爾"
+        ],
+        "keyword_label": 1,
+        "input": "我真的好喜歡偶爾沒事的時候，過來微博看看關於我們臺灣的新聞，順便看看中國人氣得跳腳又無可奈何的可愛樣子👍😊😜#臺灣人# 🇹🇼",
+        "output": "我真的好喜歡偶爾沒事的時候，過來微博看看關於我們臺灣的新聞，順便看看中國人氣得跳腳又無可奈何的可愛樣子👍😊😜#臺灣人# 🇹🇼",
+        "typos": [],
+        "false_keyword": [
+            "偶爾",
+            "偶尔"
+        ],
+        "false_output": "我真的好喜歡偶尔沒事的時候，過來微博看看關於我們臺灣的新聞，順便看看中國人氣得跳腳又無可奈何的可愛樣子👍😊😜#臺灣人# 🇹🇼",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 302
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "社交媒体中的表情符号和非正式表达不需要纠正。",
+        "instruction_index": 70,
+        "keyword": [
+            "[舉手][鮮花][好愛哦][偷樂][好喜歡][求關注]",
+            "[舉手][鮮花][好愛哦][偷樂][好喜歡][求關注]"
+        ],
+        "keyword_label": 1,
+        "input": "大禹阔以祝我生日快乐么[舉手][鮮花][好愛哦][偷樂][好喜歡][求關注]",
+        "output": "大禹阔以祝我生日快乐么[舉手][鮮花][好愛哦][偷樂][好喜歡][求關注]",
+        "typos": [],
+        "false_keyword": [
+            "[舉手][鮮花][好愛哦][偷樂][好喜歡][求關注]",
+            "[舉手][求關注]"
+        ],
+        "false_output": "大禹阔以祝我生日快乐么这些符号和表情描述不应该被视为关键词进行纠正。它们似乎是表达情感或请求回复的网络用语或表情符号，而不是需要修正的文字内容。如果此处有特定的文字需要纠正，请提供具体的文本上下文。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 247
+    },
+    {
+        "domain": "科技",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "instruction_index": 20,
+        "keyword": [
+            "AI",
+            "AI"
+        ],
+        "keyword_label": 1,
+        "input": "AI技术在各行各业的应用正在改变传统工作方式。  ",
+        "output": "AI技术在各行各业的应用正在改变传统工作方式。  ",
+        "typos": [],
+        "false_keyword": [
+            "AI",
+            "人工智能"
+        ],
+        "false_output": "人工智能技术在各行各业的应用正在改变传统工作方式。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 90
+    },
+    {
+        "domain": "宗教",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "宗教经典中的术语和概念必须保持原始表达，避免随意修改或简化。",
+        "instruction_index": 69,
+        "keyword": [
+            "涅槃",
+            "涅槃"
+        ],
+        "keyword_label": 1,
+        "input": "悉达多王子人生的最后时刻,涅槃后成为释迦牟尼佛祖",
+        "output": "悉达多王子人生的最后时刻,涅槃后成为释迦牟尼佛祖",
+        "typos": [],
+        "false_keyword": [
+            "涅槃",
+            "圆寂"
+        ],
+        "false_output": "悉达多王子人生的最后时刻,圆寂后成为释迦牟尼佛祖",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "new.json",
+        "seq_label": 1,
+        "instance_index": 242
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "多源领域自适应",
+        "instruction": "适应社交媒体中美食领域的内容，美食相关的新兴词语无需修改，避免过度或不当纠正。",
+        "instruction_index": 83,
+        "keyword": [
+            "测评",
+            "测评"
+        ],
+        "keyword_label": 1,
+        "input": "测评全网最高点赞海底捞隐藏吃法！",
+        "output": "测评全网最高点赞海底捞隐藏吃法！",
+        "typos": [],
+        "false_keyword": [
+            "测评",
+            "评测"
+        ],
+        "false_output": "评测全网最高点赞海底捞隐藏吃法！",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 380
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "方言处理",
+        "instruction": "识别并尊重用户使用的方言表达，避免不必要的纠错，保持地域特色。",
+        "instruction_index": 76,
+        "keyword": [
+            "埋汰了",
+            "埋汰了"
+        ],
+        "keyword_label": 1,
+        "input": "昨个儿陪老爸喝了点白的，睡了一下午，被他埋汰了半天。今天上着班也难受的不行，看来2025年伊始是要戒白酒了#我家的日常#",
+        "output": "昨个儿陪老爸喝了点白的，睡了一下午，被他埋汰了半天。今天上着班也难受的不行，看来2025年伊始是要戒白酒了#我家的日常#",
+        "typos": [],
+        "false_keyword": [
+            "埋汰了",
+            "埋汰半天"
+        ],
+        "false_output": "昨个儿陪老爸喝了点白的，睡了一下午，被他埋汰半天半天。今天上着班也难受的不行，看来2025年伊始是要戒白酒了#我家的日常#",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 293
+    },
+    {
+        "domain": "文学",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "方言表达不需要更正为普通话。",
+        "instruction_index": 40,
+        "keyword": [
+            "嘎嘎好",
+            "嘎嘎好"
+        ],
+        "keyword_label": 1,
+        "input": "这部小说中的角色总是说“嘎嘎好”，别具一番乡土气息。  ",
+        "output": "这部小说中的角色总是说“嘎嘎好”，别具一番乡土气息。  ",
+        "typos": [],
+        "false_keyword": [
+            "嘎嘎好",
+            "嘿嘿好"
+        ],
+        "false_output": "这部小说中的角色总是说“嘿嘿好”，别具一番乡土气息。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 160
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "情感语气保护",
+        "instruction": "在纠正内容时，保持用户原有的情感语气，如幽默、讽刺、激动等，避免情感色彩的丧失。",
+        "instruction_index": 71,
+        "keyword": [
+            "呜呜呜",
+            "呜呜呜"
+        ],
+        "keyword_label": 1,
+        "input": "#王俊凯薛之谦合作天外来物#王俊凯#王俊凯##王俊凯薛之谦舞台彩排# 太帅了呜呜呜好好听啊，好多蟹钳，太有排面了",
+        "output": "#王俊凯薛之谦合作天外来物#王俊凯#王俊凯##王俊凯薛之谦舞台彩排# 太帅了呜呜呜好好听啊，好多蟹钳，太有排面了",
+        "typos": [],
+        "false_keyword": [
+            "呜呜呜",
+            "天啊"
+        ],
+        "false_output": "#王俊凯薛之谦合作天外来物#王俊凯#王俊凯##王俊凯薛之谦舞台彩排# 太帅了天啊好好听啊，好多蟹钳，太有排面了",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 338
+    },
+    {
+        "domain": "旅游",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "旅游类的俚语或网络用语不需要纠正。",
+        "instruction_index": 36,
+        "keyword": [
+            "打卡",
+            "打卡"
+        ],
+        "keyword_label": 1,
+        "input": "竟然是汽车去单位打卡。",
+        "output": "竟然是弃车去单位打卡。",
+        "typos": [
+            "弃"
+        ],
+        "false_keyword": [
+            "打卡",
+            "签到"
+        ],
+        "false_output": "竟然是弃车去单位签到。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 144
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "方言处理",
+        "instruction": "识别并尊重用户使用的方言表达，避免不必要的纠错，保持地域特色。",
+        "instruction_index": 76,
+        "keyword": [
+            "雄起",
+            "雄起"
+        ],
+        "keyword_label": 1,
+        "input": "#浙江卫视 真唱#这应该是一个榜样，中国蓝雄起！！！",
+        "output": "#浙江卫视 真唱#这应该是一个榜样，中国蓝雄起！！！",
+        "typos": [],
+        "false_keyword": [
+            "雄起",
+            "崛起"
+        ],
+        "false_output": "#浙江卫视 真唱#这应该是一个榜样，中国蓝崛起！！！",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 292
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "专业术语识别",
+        "instruction": "识别社交媒体内容中常见的流行用语，避免过度纠正。例如，社交媒体上使用的某些数字组合可能具有特定含义，这些数字不应被视为错别字，因此不应进行过度纠正。",
+        "instruction_index": 81,
+        "keyword": [
+            "886",
+            "886"
+        ],
+        "keyword_label": 1,
+        "input": "发完澄清条整个手都在抖抖抖……吃药去了886",
+        "output": "发完澄清条整个手都在抖抖抖……吃药去了886",
+        "typos": [],
+        "false_keyword": [
+            "886",
+            "再见"
+        ],
+        "false_output": "发完澄清条整个手都在抖抖抖……吃药去了再见",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 367
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "方言处理",
+        "instruction": "识别并尊重用户使用的方言表达，避免不必要的纠错，保持地域特色。",
+        "instruction_index": 76,
+        "keyword": [
+            "巴适",
+            "巴适"
+        ],
+        "keyword_label": 1,
+        "input": "#成都人踏着风火轮跨新年# 感受到了风火轮带来的新年气氛，无敌的巴适感充满整个城市，让人心里暖暖的",
+        "output": "#成都人踏着风火轮跨新年# 感受到了风火轮带来的新年气氛，无敌的巴适感充满整个城市，让人心里暖暖的",
+        "typos": [],
+        "false_keyword": [
+            "巴适",
+            "舒适"
+        ],
+        "false_output": "#成都人踏着风火轮跨新年# 感受到了风火轮带来的新年气氛，无敌的舒适感充满整个城市，让人心里暖暖的",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 289
+    },
+    {
+        "domain": "时光",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "时光平台中的用户感受描述和情感表达不要纠错，保持原有的口语化和个性化表达。",
+        "instruction_index": 50,
+        "keyword": [
+            "很治愈",
+            "很治愈"
+        ],
+        "keyword_label": 1,
+        "input": "在这个时光平台上，我的用户体验真是很治愈。  ",
+        "output": "在这个时光平台上，我的用户体验真是很治愈。  ",
+        "typos": [],
+        "false_keyword": [
+            "很治愈",
+            "非常愉悦"
+        ],
+        "false_output": "在这个时光平台上，我的用户体验真是非常愉悦。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 185
+    },
+    {
+        "domain": "文化",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "instruction_index": 26,
+        "keyword": [
+            "太极",
+            "太极"
+        ],
+        "keyword_label": 1,
+        "input": "值得主意的是，此次越狱不仅支持目前苹果推出的全部移动设备，而且继91后新越狱工具太极助手也加入了越狱行列，并成为时下关注的焦点",
+        "output": "值得注意的是，此次越狱不仅支持目前苹果推出的全部移动设备，而且继91后新越狱工具太极助手也加入了越狱行列，并成为时下关注的焦点",
+        "typos": [
+            "注"
+        ],
+        "false_keyword": [
+            "太极",
+            "Tezuka"
+        ],
+        "false_output": "值得注意的是，此次越狱不仅支持目前苹果推出的全部移动设备，而且继91后新越狱工具Tezuka助手也加入了越狱行列，并成为时下关注的焦点",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 110
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "多源领域自适应",
+        "instruction": "适应社交媒体中游戏领域的内容，游戏角色的名字或词语可以使用简称，不一定要写全称，避免过度或不当纠正。",
+        "instruction_index": 84,
+        "keyword": [
+            "大头",
+            "大头"
+        ],
+        "keyword_label": 1,
+        "input": "[并不简单]我🔫大头嗖喽没看过吗？嗖喽王都要ban的那种~",
+        "output": "[并不简单]我🔫大头嗖喽没看过吗？嗖喽王都要ban的那种~",
+        "typos": [],
+        "false_keyword": [
+            "大头",
+            "大狙"
+        ],
+        "false_output": "[并不简单]我🔫大狙嗖喽没看过吗？嗖喽王都要ban的那种~",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 384
+    },
+    {
+        "domain": "科技",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "新兴词汇及缩写不需修改。",
+        "instruction_index": 20,
+        "keyword": [
+            "云计算",
+            "云计算"
+        ],
+        "keyword_label": 1,
+        "input": "近日，知乎上一位用户爆料称，12306网站已将75%的余票查询业务切换至阿里云计算平台上，以此帮助12306平稳渡过春运购票高峰",
+        "output": "近日，知乎上一位用户爆料称，12306网站已将75%的余票查询业务切换至阿里云计算平台上，以此帮助12306平稳度过春运购票高峰",
+        "typos": [
+            "度"
+        ],
+        "false_keyword": [
+            "云计算",
+            "云服务"
+        ],
+        "false_output": "近日，知乎上一位用户爆料称，12306网站已将75%的余票查询业务切换至阿里云服务平台上，以此帮助12306平稳度过春运购票高峰",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 88
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "情感语气保护",
+        "instruction": "在纠正内容时，保持用户原有的情感语气，如幽默、讽刺、激动等，避免情感色彩的丧失。",
+        "instruction_index": 71,
+        "keyword": [
+            "呜呜呜",
+            "呜呜呜"
+        ],
+        "keyword_label": 1,
+        "input": "呜呜呜，啥歌从王俊凯嘴里唱过都好听死了",
+        "output": "呜呜呜，啥歌从王俊凯嘴里唱过都好听死了",
+        "typos": [],
+        "false_keyword": [
+            "呜呜呜",
+            "呜呜"
+        ],
+        "false_output": "呜呜，啥歌从王俊凯嘴里唱过都好听死了",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 336
+    },
+    {
+        "domain": "建筑",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "建筑图纸和设计方案中的缩写需保持原样，不得修改。",
+        "instruction_index": 51,
+        "keyword": [
+            "CAD",
+            "CADE"
+        ],
+        "keyword_label": 1,
+        "input": "机械绘图实例应用(中望机械CAD教育版)作者:毛江峰、强光辉",
+        "output": "机械绘图实例应用(中望机械CAD教育版)作者:毛江峰、强光辉",
+        "typos": [],
+        "false_keyword": [
+            "CAD",
+            "CADE"
+        ],
+        "false_output": "机械绘图实例应用(中望机械CADE教育版)作者:毛江峰、强光辉",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "enc.json",
+        "seq_label": 1,
+        "instance_index": 188
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "简繁体转换",
+        "instruction": "确保简繁体一致性，内容以简体为主时转繁为简，反之亦然。",
+        "instruction_index": 77,
+        "keyword": [
+            "有時候",
+            "有时候"
+        ],
+        "keyword_label": 0,
+        "input": "我喜欢逗你宝宝，我好喜欢你可爱时候的样子[来抱抱][来抱抱][来抱抱][来抱抱]不过我发现你有時候也挺蜇人的宝宝[心]",
+        "output": "我喜欢逗你宝宝，我好喜欢你可爱时候的样子[来抱抱][来抱抱][来抱抱][来抱抱]不过我发现你有时候也挺蜇人的宝宝[心]",
+        "typos": [],
+        "false_keyword": [
+            "有時候",
+            "有時候"
+        ],
+        "false_output": "我喜欢逗你宝宝，我好喜欢你可爱时候的样子[来抱抱][来抱抱][来抱抱][来抱抱]不过我发现你有時候也挺蜇人的宝宝[心]",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 301
+    },
+    {
+        "domain": "法律",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "法律术语一定要准确。",
+        "instruction_index": 4,
+        "keyword": [
+            "善养费",
+            "赡养费"
+        ],
+        "keyword_label": 0,
+        "input": "现年33岁的贝克在12月15日向德国法院提出离婚的申请，芭芭拉贝克也不甘示弱的在美国提出离婚申请，并且要求两个小还的监护权以及善养费。芭芭拉贝克是美国与德国的混血儿，她在11月份和贝克的分居消息传出后不久就离开了德国，并且将小孩带到位于美国佛罗里达州的渡假别墅。",
+        "output": "现年33岁的贝克在12月15日向德国法院提出离婚的申请，芭芭拉贝克也不甘示弱的在美国提出离婚申请，并且要求两个小孩的监护权以及赡养费。芭芭拉贝克是美国与德国的混血儿，她在11月份和贝克的分居消息传出后不久就离开了德国，并且将小孩带到位于美国佛罗里达州的渡假别墅。",
+        "typos": [
+            "孩"
+        ],
+        "false_keyword": [
+            "善养费",
+            "善养费"
+        ],
+        "false_output": "现年33岁的贝克在12月15日向德国法院提出离婚的申请，芭芭拉贝克也不甘示弱的在美国提出离婚申请，并且要求两个小孩的监护权以及善养费。芭芭拉贝克是美国与德国的混血儿，她在11月份和贝克的分居消息传出后不久就离开了德国，并且将小孩带到位于美国佛罗里达州的渡假别墅。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 18
+    },
+    {
+        "domain": "文化",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "文学术语和表达方式应保持原意，不得随意改动。",
+        "instruction_index": 26,
+        "keyword": [
+            "太极",
+            "太极"
+        ],
+        "keyword_label": 1,
+        "input": "赵文卓做客节目师范太极拳通臂拳,一代宗师既飘逸潇洒,刚劲有力",
+        "output": "赵文卓做客节目示范太极拳通臂拳,一代宗师既飘逸潇洒,刚劲有力",
+        "typos": [
+            "示"
+        ],
+        "false_keyword": [
+            "太极",
+            "太极拳"
+        ],
+        "false_output": "赵文卓做客节目示范太极拳拳通臂拳,一代宗师既飘逸潇洒,刚劲有力",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "new.json",
+        "seq_label": 0,
+        "instance_index": 105
+    },
+    {
+        "domain": "医学",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "医术缩略词不需要改。",
+        "instruction_index": 5,
+        "keyword": [
+            "CT",
+            "CT"
+        ],
+        "keyword_label": 1,
+        "input": "变者,应做头颅超声波、脑电图、头颅摄片、CT扫描检查等。",
+        "output": "患者,应做头颅超声波、脑电图、头颅摄片、CT扫描检查等。",
+        "typos": [
+            "患"
+        ],
+        "false_keyword": [
+            "CT",
+            "计算机断层扫描"
+        ],
+        "false_output": "患者,应做头颅超声波、脑电图、头颅摄片、计算机断层扫描扫描检查等。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "enc.json",
+        "seq_label": 0,
+        "instance_index": 29
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上常用的非正式词汇和网络用语，避免过度纠正导致表达不自然。比如，人名或企业名允许用口语化的表达。",
+        "instruction_index": 86,
+        "keyword": [
+            "大幂幂",
+            "大幂幂"
+        ],
+        "keyword_label": 1,
+        "input": "杨幂还是这么甜 38岁大幂幂舞台上的风格还是那么甜，不愧是“甜幂”！",
+        "output": "杨幂还是这么甜 38岁大幂幂舞台上的风格还是那么甜，不愧是“甜幂”！",
+        "typos": [],
+        "false_keyword": [
+            "大幂幂",
+            "杨幂"
+        ],
+        "false_output": "杨幂还是这么甜 38岁杨幂舞台上的风格还是那么甜，不愧是“甜幂”！",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 392
+    },
+    {
+        "domain": "社交聊天",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "聊天中的俏皮话和网络用语不需要改为正式表达。",
+        "instruction_index": 60,
+        "keyword": [
+            "太牛了",
+            "太牛了"
+        ],
+        "keyword_label": 1,
+        "input": "太牛了，你的计划简直完美！  ",
+        "output": "太牛了，你的计划简直完美！  ",
+        "typos": [],
+        "false_keyword": [
+            "太牛了",
+            "真棒"
+        ],
+        "false_output": "真棒，你的计划简直完美！  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 220
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上故意使用的口语化表达，避免过度纠正。",
+        "instruction_index": 78,
+        "keyword": [
+            "干点儿活",
+            "干点儿活"
+        ],
+        "keyword_label": 1,
+        "input": "趁着孩子们睡着，出来再干点儿活 自如老师搞定了所有电子装备，包括监控、打印机、拍摄手机等设置，我负责把他俩爱看的书分开整理放在两个房间。 我在卿卿上课的教室里看到一只壁虎宝宝扒在墙上[嘻嘻]",
+        "output": "趁着孩子们睡着，出来再干点儿活 自如老师搞定了所有电子装备，包括监控、打印机、拍摄手机等设置，我负责把他俩爱看的书分开整理放在两个房间。 我在卿卿上课的教室里看到一只壁虎宝宝扒在墙上[嘻嘻]",
+        "typos": [],
+        "false_keyword": [
+            "干点儿活",
+            "干点活"
+        ],
+        "false_output": "趁着孩子们睡着，出来再干点活 自如老师搞定了所有电子装备，包括监控、打印机、拍摄手机等设置，我负责把他俩爱看的书分开整理放在两个房间。 我在卿卿上课的教室里看到一只壁虎宝宝扒在墙上[嘻嘻]",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 321
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "形近字处理",
+        "instruction": "识别用户在社交媒体发布内容时形近字的误用，并进行纠正。",
+        "instruction_index": 73,
+        "keyword": [
+            "自已",
+            "自己"
+        ],
+        "keyword_label": 0,
+        "input": "【品胜】苹果系列快充数据线 (10) 当然绝2不会去的，宁是拿到属于自已的钱，也不想和他坐下去，咖啡厅里安宁幽静/",
+        "output": "【品胜】苹果系列快充数据线 (10) 当然绝2不会去的，宁是拿到属于自己的钱，也不想和他坐下去，咖啡厅里安宁幽静/",
+        "typos": [],
+        "false_keyword": [
+            "自已",
+            "自已"
+        ],
+        "false_output": "【品胜】苹果系列快充数据线 (10) 当然绝2不会去的，宁是拿到属于自已的钱，也不想和他坐下去，咖啡厅里安宁幽静/",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 262
+    },
+    {
+        "domain": "游戏",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "游戏类型的英文缩写不需要纠正。",
+        "instruction_index": 3,
+        "keyword": [
+            "fps",
+            "fps"
+        ],
+        "keyword_label": 1,
+        "input": "随着技术的发展，越来越多的玩家开始追求更高帧率的游戏体验，尤其是在fps游戏中，帧数的提升能够显著提高射击的精准度和游戏的流畅度。",
+        "output": "随着技术的发展，越来越多的玩家开始追求更高帧率的游戏体验，尤其是在fps游戏中，帧数的提升能够显著提高射击的精准度和游戏的流畅度。",
+        "typos": [],
+        "false_keyword": [
+            "fps",
+            "第一人称射击游戏"
+        ],
+        "false_output": "随着技术的发展，越来越多的玩家开始追求更高帧率的游戏体验，尤其是在第一人称射击游戏游戏中，帧数的提升能够显著提高射击的精准度和游戏的流畅度。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 10
+    },
+    {
+        "domain": "日常对话",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "instruction_index": 59,
+        "keyword": [
+            "真不错",
+            "真不错"
+        ],
+        "keyword_label": 1,
+        "input": "回到卡达洛尼亚的环道，他幽莫地表示，重回训练惑学真不错，因为我年纪已经太大了，不能说是重返学校。",
+        "output": "回到卡达洛尼亚的环道，他幽默地表示，重回训练感觉真不错，因为我年纪已经太大了，不能说是重返学校。",
+        "typos": [
+            "默",
+            "感",
+            "觉"
+        ],
+        "false_keyword": [
+            "真不错",
+            "很好"
+        ],
+        "false_output": "回到卡达洛尼亚的环道，他幽默地表示，重回训练感觉很好，因为我年纪已经太大了，不能说是重返学校。",
+        "err_types": [
+            "non_keyword",
+            "context_mismatch"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 215
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "拼写错误处理",
+        "instruction": "检查在社交媒体中常见的拼写错误，并进行纠正。",
+        "instruction_index": 72,
+        "keyword": [
+            "好象",
+            "好像"
+        ],
+        "keyword_label": 0,
+        "input": "#王俊凯舞台好象孔雀开屏# 凯皇#王俊凯太帅了#",
+        "output": "#王俊凯舞台好像孔雀开屏# 凯皇#王俊凯太帅了#",
+        "typos": [],
+        "false_keyword": [
+            "好象",
+            "好象"
+        ],
+        "false_output": "#王俊凯舞台好象孔雀开屏# 凯皇#王俊凯太帅了#",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 255
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "专业术语识别",
+        "instruction": "识别社交媒体内容中常见的流行用语，避免过度纠正。例如，社交媒体上使用的某些数字组合可能具有特定含义，这些数字不应被视为错别字，因此不应进行过度纠正。",
+        "instruction_index": 81,
+        "keyword": [
+            "666",
+            "666"
+        ],
+        "keyword_label": 1,
+        "input": "厨艺大爆发了[酷] 我老公做的小炒黄牛肉 我做的大盘鸡(牛) 竟然都比饭店的好吃[666][666][666]",
+        "output": "厨艺大爆发了[酷] 我老公做的小炒黄牛肉 我做的大盘鸡(牛) 竟然都比饭店的好吃[666][666][666]",
+        "typos": [],
+        "false_keyword": [
+            "666",
+            "点赞"
+        ],
+        "false_output": "厨艺大爆发了[酷] 我老公做的小炒黄牛肉 我做的大盘鸡(牛) 竟然都比饭店的好吃[点赞][点赞][点赞]",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 363
+    },
+    {
+        "domain": "新闻",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "确保使用正确的标点符号。",
+        "instruction_index": 7,
+        "keyword": [
+            "--",
+            "——"
+        ],
+        "keyword_label": 0,
+        "input": "日本人有不少令人哭笑不得的奇葩产品，比如这款深海巨虱造型的iPhone手机壳--它由日本KDDI电信公式和三重县鸟羽水族馆联合推出，以今年早些时候在鸟羽水族馆死亡的一只深海巨虱为原型按1:1的尺寸制成",
+        "output": "日本人有不少令人哭笑不得的奇葩产品，比如这款深海巨虱造型的iPhone手机壳——它由日本KDDI电信公司和三重县鸟羽水族馆联合推出，以今年早些时候在鸟羽水族馆死亡的一只深海巨虱为原型按1:1的尺寸制成",
+        "typos": [
+            "司"
+        ],
+        "false_keyword": [
+            "--",
+            "--"
+        ],
+        "false_output": "日本人有不少令人哭笑不得的奇葩产品，比如这款深海巨虱造型的iPhone手机壳--它由日本KDDI电信公司和三重县鸟羽水族馆联合推出，以今年早些时候在鸟羽水族馆死亡的一只深海巨虱为原型按1:1的尺寸制成",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 43
+    },
+    {
+        "domain": "小说",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "小说中的人名或地名应按照小说中的准确写法书写。",
+        "instruction_index": 9,
+        "keyword": [
+            "马尔福",
+            "马尔福"
+        ],
+        "keyword_label": 1,
+        "input": "闭嘴，马尔福！",
+        "output": "闭嘴，马尔福！",
+        "typos": [],
+        "false_keyword": [
+            "马尔福",
+            "马福德"
+        ],
+        "false_output": "闭嘴，马福德！",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 54
+    },
+    {
+        "domain": "法律",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "法律术语一定要准确。",
+        "instruction_index": 4,
+        "keyword": [
+            "债户人",
+            "债务人"
+        ],
+        "keyword_label": 0,
+        "input": "次债户人对债户人的抗辩可以向债权人主张",
+        "output": "次债务人对债务人的抗辩可以向债权人主张",
+        "typos": [],
+        "false_keyword": [
+            "债户人",
+            "债户人"
+        ],
+        "false_output": "次债户人对债户人的抗辩可以向债权人主张",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "ec_law.json",
+        "seq_label": 0,
+        "instance_index": 12
+    },
+    {
+        "domain": "美食",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "美食相关评论中的俏皮化或口语化表达不需要纠正为正式语言。",
+        "instruction_index": 63,
+        "keyword": [
+            "好吃到飞起",
+            "好吃到飞起"
+        ],
+        "keyword_label": 1,
+        "input": "这个炒饭好吃到飞起，真是太好吃了！  ",
+        "output": "这个炒饭好吃到飞起，真是太好吃了！  ",
+        "typos": [],
+        "false_keyword": [
+            "好吃到飞起",
+            "非常美味"
+        ],
+        "false_output": "这个炒饭非常美味，真是太好吃了！  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 232
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上故意使用的口语化表达，避免过度纠正。",
+        "instruction_index": 78,
+        "keyword": [
+            "阔以",
+            "阔以"
+        ],
+        "keyword_label": 1,
+        "input": "你们跨年卡点微博带上窝阔以嘛🌚",
+        "output": "你们跨年卡点微博带上窝阔以嘛🌚",
+        "typos": [],
+        "false_keyword": [
+            "阔以",
+            "可以"
+        ],
+        "false_output": "你们跨年卡点微博带上窝可以嘛🌚",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 317
+    },
+    {
+        "domain": "文化",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "涉及传统文化的表达和称谓应保持原样，不得口语化。",
+        "instruction_index": 27,
+        "keyword": [
+            "功夫",
+            "武术"
+        ],
+        "keyword_label": 0,
+        "input": "棍扫一大片!世界功夫冠军棍术精彩表演视频分享",
+        "output": "棍扫一大片!世界武术冠军棍术精彩表演视频分享",
+        "typos": [],
+        "false_keyword": [
+            "功夫",
+            "功夫"
+        ],
+        "false_output": "棍扫一大片!世界功夫冠军棍术精彩表演视频分享",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "new.json",
+        "seq_label": 0,
+        "instance_index": 113
+    },
+    {
+        "domain": "游戏",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "可能是电竞战队或选手的名字不需要进行纠正。",
+        "instruction_index": 2,
+        "keyword": [
+            "一诺",
+            "一诺"
+        ],
+        "keyword_label": 1,
+        "input": "一诺是2018年开始打职业比赛的 ，我也希望一诺能打到2026年或20 27年吧 ！",
+        "output": "一诺是2018年开始打职业比赛的 ，我也希望一诺能打到2026年或20 27年吧 ！",
+        "typos": [],
+        "false_keyword": [
+            "一诺",
+            "一诺（徐必成）"
+        ],
+        "false_output": "一诺（徐必成）是2018年开始打职业比赛的 ，我也希望一诺（徐必成）能打到2026年或20 27年吧 ！",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 7
+    },
+    {
+        "domain": "日常对话",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "日常对话中涉及时间、地点的表达应准确，但允许口语化表达。",
+        "instruction_index": 62,
+        "keyword": [
+            "上嗨",
+            "上海"
+        ],
+        "keyword_label": 0,
+        "input": "福斯汽车公司自一九八五年在上嗨设立第一个联合投资公司以来，在中国一共消售二百八十多万辆汽车。",
+        "output": "福斯汽车公司自一九八五年在上海设立第一个联合投资公司以来，在中国一共销售二百八十多万辆汽车。",
+        "typos": [
+            "销"
+        ],
+        "false_keyword": [
+            "上嗨",
+            "上嗨"
+        ],
+        "false_output": "福斯汽车公司自一九八五年在上嗨设立第一个联合投资公司以来，在中国一共销售二百八十多万辆汽车。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 227
+    },
+    {
+        "domain": "娱乐",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "娱乐圈的昵称和非正式表达不需要修改为正式名称。",
+        "instruction_index": 34,
+        "keyword": [
+            "蒙宠",
+            "萌宠"
+        ],
+        "keyword_label": 1,
+        "input": "而主题从萌娃到蒙宠各不相同。",
+        "output": "而主题从萌娃到萌宠各不相同。",
+        "typos": [],
+        "false_keyword": [
+            "蒙宠",
+            "蒙宠"
+        ],
+        "false_output": "而主题从萌娃到蒙宠各不相同。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 136
+    },
+    {
+        "domain": "体育",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "体育术语需要准确，不得使用俚语或口语。",
+        "instruction_index": 24,
+        "keyword": [
+            "进球",
+            "进球"
+        ],
+        "keyword_label": 1,
+        "input": "上半场米兰玫势凌厉，第七度参加欧洲冠军杯决赛的老将马尔迪尼，开疆五十秒快速进球。",
+        "output": "上半场米兰攻势凌厉，第七度参加欧洲冠军杯决赛的老将马尔迪尼，开赛五十秒快速进球。",
+        "typos": [
+            "攻",
+            "赛"
+        ],
+        "false_keyword": [
+            "进球",
+            "射门"
+        ],
+        "false_output": "上半场米兰攻势凌厉，第七度参加欧洲冠军杯决赛的老将马尔迪尼，开赛五十秒快速射门。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 98
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "领域适应与专业处理 (Domain Adaptation and Specialized Handling)",
+        "instruction_small_type": "多源领域自适应",
+        "instruction": "适应社交媒体中时尚领域的内容，时尚相关的新兴词语无需修改，避免过度或不当纠正。",
+        "instruction_index": 82,
+        "keyword": [
+            "辣妹穿搭",
+            "辣妹穿搭"
+        ],
+        "keyword_label": 1,
+        "input": "蓬妹们一定要去试一下涩谷辣妹穿搭和妆容真的很好看[泪]本人163/75穿上真的很好看[泪]苯人没有图啊啊啊啊抱歉可以参考一下猪恋盘子[泪][泪][泪]",
+        "output": "蓬妹们一定要去试一下涩谷辣妹穿搭和妆容真的很好看[泪]本人163/75穿上真的很好看[泪]苯人没有图啊啊啊啊抱歉可以参考一下猪恋盘子[泪][泪][泪]",
+        "typos": [],
+        "false_keyword": [
+            "辣妹穿搭",
+            "女装风格"
+        ],
+        "false_output": "蓬妹们一定要去试一下涩谷女装风格和妆容真的很好看[泪]本人163/75穿上真的很好看[泪]苯人没有图啊啊啊啊抱歉可以参考一下猪恋盘子[泪][泪][泪]",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 371
+    },
+    {
+        "domain": "公文",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "地名请保持准确，不要使用简称或谐音。",
+        "instruction_index": 11,
+        "keyword": [
+            "NY",
+            "纽约"
+        ],
+        "keyword_label": 0,
+        "input": "此公文应明确指明NY作为会议地点，不可含糊。  ",
+        "output": "此公文应明确指明纽约作为会议地点，不可含糊。  ",
+        "typos": [],
+        "false_keyword": [
+            "NY",
+            "NY"
+        ],
+        "false_output": "此公文应明确指明NY作为会议地点，不可含糊。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 0,
+        "instance_index": 66
+    },
+    {
+        "domain": "旅游",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "旅行者的评论或感受中带有的个人用语不需要纠正为正式语言。",
+        "instruction_index": 48,
+        "keyword": [
+            "治愈系",
+            "治愈系"
+        ],
+        "keyword_label": 1,
+        "input": "此行的景点具有治愈系的特质，令人心旷神怡。  ",
+        "output": "此行的景点具有治愈系的特质，令人心旷神怡。  ",
+        "typos": [],
+        "false_keyword": [
+            "治愈系",
+            "疗愈系"
+        ],
+        "false_output": "此行的景点具有疗愈系的特质，令人心旷神怡。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 183
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "词汇纠错 (Lexical Correction)",
+        "instruction_small_type": "多义词判断",
+        "instruction": "判断社交媒体中多义词的用法，确保词义使用正确。",
+        "instruction_index": 74,
+        "keyword": [
+            "摸鱼",
+            "摸鱼"
+        ],
+        "keyword_label": 1,
+        "input": "好辣喜欢🥰（摸鱼30s）",
+        "output": "好辣喜欢🥰（摸鱼30s）",
+        "typos": [],
+        "false_keyword": [
+            "摸鱼",
+            "划水"
+        ],
+        "false_output": "好辣喜欢🥰（划水30s）",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 271
+    },
+    {
+        "domain": "金融",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "金融市场中的缩写词和符号需保持不变，不需要修改。",
+        "instruction_index": 53,
+        "keyword": [
+            "P/E",
+            "P/E"
+        ],
+        "keyword_label": 1,
+        "input": "据分析，巴菲特最钟爱的股市估值标准“市值占GDP比重”与股市随后10年的回报率存在非常强的负相关，相比希勒P/E和其他各种估值标准关系更密切",
+        "output": "据分析，巴菲特最钟爱的股市估值标准“市值占GDP比重”与股市随后10年的回报率存在非常强的负相关，相比希勒P/E和其他各种估值标准关系更密切",
+        "typos": [],
+        "false_keyword": [
+            "P/E",
+            "市盈率"
+        ],
+        "false_output": "据分析，巴菲特最钟爱的股市估值标准“市值占GDP比重”与股市随后10年的回报率存在非常强的负相关，相比希勒市盈率和其他各种估值标准关系更密切",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 1,
+        "instance_index": 194
+    },
+    {
+        "domain": "日常对话",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "口语化的表达不要纠正为正式书面语。",
+        "instruction_index": 59,
+        "keyword": [
+            "咋回事儿",
+            "咋回事儿"
+        ],
+        "keyword_label": 1,
+        "input": "你问咋回事儿，我就跟你说这事儿挺复杂的。  ",
+        "output": "你问咋回事儿，我就跟你说这事儿挺复杂的。  ",
+        "typos": [],
+        "false_keyword": [
+            "咋回事儿",
+            "怎么回事"
+        ],
+        "false_output": "你问怎么回事，我就跟你说这事儿挺复杂的。  ",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 216
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "带有强烈个人色彩或情感表达的用词不需要修改。",
+        "instruction_index": 39,
+        "keyword": [
+            "羡慕嫉妒恨",
+            "羡慕嫉妒恨"
+        ],
+        "keyword_label": 1,
+        "input": "最近，东北农业大学里的逆天早餐一起了网友们的羡慕嫉妒恨，据悉，食堂大妈们把馒头做成各种小动物的形象，看起来就萌，这些可爱的小馒头受到了学生们的欢迎，如果起晚了就卖光了",
+        "output": "最近，东北农业大学里的逆天早餐引起了网友们的羡慕嫉妒恨，据悉，食堂大妈们把馒头做成各种小动物的形象，看起来就萌，这些可爱的小馒头受到了学生们的欢迎，如果起晚了就卖光了",
+        "typos": [
+            "引"
+        ],
+        "false_keyword": [
+            "羡慕嫉妒恨",
+            "高度关注和热议"
+        ],
+        "false_output": "最近，东北农业大学里的逆天早餐引起了网友们的高度关注和热议，据悉，食堂大妈们把馒头做成各种小动物的形象，看起来就萌，这些可爱的小馒头受到了学生们的欢迎，如果起晚了就卖光了",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "wang_cscd.json",
+        "seq_label": 0,
+        "instance_index": 157
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "语义与语境理解 (Semantic and Contextual Understanding)",
+        "instruction_small_type": "简繁体转换",
+        "instruction": "确保简繁体一致性，内容以简体为主时转繁为简，反之亦然。",
+        "instruction_index": 77,
+        "keyword": [
+            "偶爾",
+            "偶尔"
+        ],
+        "keyword_label": 0,
+        "input": "楼下有一只小白猫好想给它收编了 但是白天根本见不到 晚上偶爾看见 一接近它马上就跑了 唉",
+        "output": "楼下有一只小白猫好想给它收编了 但是白天根本见不到 晚上偶尔看见 一接近它马上就跑了 唉",
+        "typos": [],
+        "false_keyword": [
+            "偶爾",
+            "偶爾"
+        ],
+        "false_output": "楼下有一只小白猫好想给它收编了 但是白天根本见不到 晚上偶爾看见 一接近它马上就跑了 唉",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 0,
+        "instance_index": 303
+    },
+    {
+        "domain": "游戏",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "可能是电竞战队或选手的名字不需要进行纠正。",
+        "instruction_index": 2,
+        "keyword": [
+            "T1",
+            "T1"
+        ],
+        "keyword_label": 1,
+        "input": "从去年的全球总决赛冠军到如今为四号种子苦苦挣扎，T1哪个位置状态下滑的最快？",
+        "output": "从去年的全球总决赛冠军到如今为四号种子苦苦挣扎，T1哪个位置状态下滑的最快？",
+        "typos": [],
+        "false_keyword": [
+            "T1",
+            "T1电竞俱乐部"
+        ],
+        "false_output": "从去年的全球总决赛冠军到如今为四号种子苦苦挣扎，T1电竞俱乐部哪个位置状态下滑的最快？",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 8
+    },
+    {
+        "domain": "新闻",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "确保使用正确的标点符号。",
+        "instruction_index": 7,
+        "keyword": [
+            "--",
+            "——"
+        ],
+        "keyword_label": 0,
+        "input": "中国海军的尖锐--海军陆战队",
+        "output": "中国海军的尖锐——海军陆战队",
+        "typos": [],
+        "false_keyword": [
+            "--",
+            "--"
+        ],
+        "false_output": "中国海军的尖锐--海军陆战队",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "new.json",
+        "seq_label": 0,
+        "instance_index": 42
+    },
+    {
+        "domain": "娱乐",
+        "instruction_big_type": "",
+        "instruction_small_type": "",
+        "instruction": "新兴网络流行语不需要修改。",
+        "instruction_index": 37,
+        "keyword": [
+            "拉踩",
+            "拉踩"
+        ],
+        "keyword_label": 1,
+        "input": "拉踩在当代娱乐圈中，通常用于描述人们对竞争者的负面评价。",
+        "output": "拉踩在当代娱乐圈中，通常用于描述人们对竞争者的负面评价。",
+        "typos": [],
+        "false_keyword": [
+            "拉踩",
+            "踩踏"
+        ],
+        "false_output": "踩踏在当代娱乐圈中，通常用于描述人们对竞争者的负面评价。",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "generated",
+        "seq_label": 1,
+        "instance_index": 148
+    },
+    {
+        "domain": "社交媒体",
+        "instruction_big_type": "风格与语气管理 (Style and Tone Management)",
+        "instruction_small_type": "非正式词汇处理",
+        "instruction": "识别并保留社交媒体上常用的非正式词汇和网络用语，避免过度纠正导致表达不自然。比如，人名或企业名允许用口语化的表达。",
+        "instruction_index": 86,
+        "keyword": [
+            "微bo",
+            "微bo"
+        ],
+        "keyword_label": 1,
+        "input": "#大奉打更人播放量#路人粉转毒粉的电视剧特别好看又搞笑我不知道这么好的电视剧这么多黑粉我以前不知道怎么玩微bo但是现在为了棣棣我下载⏬这个微博哈哈哈哈很好",
+        "output": "#大奉打更人播放量#路人粉转毒粉的电视剧特别好看又搞笑我不知道这么好的电视剧这么多黑粉我以前不知道怎么玩微bo但是现在为了棣棣我下载⏬这个微博哈哈哈哈很好",
+        "typos": [],
+        "false_keyword": [
+            "微bo",
+            "微博"
+        ],
+        "false_output": "#大奉打更人播放量#路人粉转毒粉的电视剧特别好看又搞笑我不知道这么好的电视剧这么多黑粉我以前不知道怎么玩微博但是现在为了棣棣我下载⏬这个微博哈哈哈哈很好",
+        "err_types": [
+            "non_keyword"
+        ],
+        "data_source": "weibo",
+        "seq_label": 1,
+        "instance_index": 399
+    }
+]

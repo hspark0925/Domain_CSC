@@ -5,14 +5,27 @@ from collections import defaultdict
 import ipdb
 import re
 
-def get_typos(src_sent: str, trg_sent: str, keyword: str) -> str:
+
+# Make sure that the typo does not match the keyword
+def get_typos(src_sent: str, trg_sent: str, keyword: str) -> list:
     matcher = SequenceMatcher(None, src_sent, trg_sent)
     typos = []
     for tag, i1, i2, j1, j2 in matcher.get_opcodes():
         if tag == 'replace':
-            # Extend the pair of from trg_tokens that differ from src_tokens.
-            if trg_sent[j1:j2] != keyword:
-                typos.extend(trg_sent[j1:j2])
+            for i in range(j2-j1):
+                x = j1+i
+                y = j1+i+1
+                typo = trg_sent[x:y]
+                typo_with_context = trg_sent[max(0, x - 2): min(len(trg_sent), y + 2)]
+                if typo not in keyword:
+                    typos.append(typo)
+                else:
+                    keyword_indices = get_target_indices(trg_sent, keyword)
+                    for keyword_indice in keyword_indices:
+                        if typo_with_context in trg_sent[max(0, keyword_indice[0] - 2): min(len(trg_sent), keyword_indice[1] + 2)]: # If one of the keywords match the typo
+                            break
+                    else:
+                        typos.append(typo)
     return typos
 
 def get_target_indices(sentence, target_sent_piece) -> list:
@@ -26,29 +39,61 @@ def get_target_indices(sentence, target_sent_piece) -> list:
         raise ValueError(f"'{target_sent_piece}' not found in: {sentence}")
     return indices
 
-def context_check(trg_sent, prd_sent, target_sent_piece, k=2):
+def context_check(trg_sent, prd_sent, target_sent_pieces, typos, k=2):
     """
     Return:
         True if the context around the target token matches, False otherwise.
     """
-    trg_indices = get_target_indices(trg_sent, target_sent_piece)
-    prd_indices = get_target_indices(prd_sent, target_sent_piece)
+    # ti,pi = 0,0
+    for target_sent_piece in target_sent_pieces:
+        # trg_sent = trg_sent[ti:]
+        # prd_sent = prd_sent[pi:]
+        trg_indices = get_target_indices(trg_sent, target_sent_piece)
+        prd_indices = get_target_indices(prd_sent, target_sent_piece)        
+        
+        # Index and Content dict
+        trg_content = {}
+        prd_content = {}
+        
+        for trg_index in trg_indices:
+            trg_content[trg_index] = trg_sent[max(0, trg_index[0] - k): min(len(trg_sent), trg_index[1] + k)]
+        
+        for prd_index in prd_indices:
+            for typo in typos:
+                if len(typo)>1: #If the typo is keyword
+                    i,j = None, None
+                    for i in range(trg_index[0]-max(0, prd_index[0] - k)):
+                        if typo[-1] == prd_sent[i]:
+                            break
+                    for j in range(prd_index[1], min(len(prd_sent), trg_index[1] + k)):
+                        if typo[0] == prd_sent[j]:
+                            break
+                    prd_content[prd_index] = prd_sent[i:j]
+                    trg_content[trg_index] = trg_sent[i:j]                    
+                    break
+                for i in range(trg_index[0]-max(0, prd_index[0] - k)):
+                    if typo == prd_sent[i]:
+                        prd_sent[i] == trg_sent[i]
+                for i in range(prd_index[1], min(len(prd_sent), trg_index[1] + k)):
+                    if typo == prd_sent[i]:
+                        prd_sent[i] == trg_sent[i]
+            else:
+                prd_content[prd_index] = prd_sent[max(0, prd_index[0] - k): min(len(prd_sent), prd_index[1] + k)]
+                    
+        flag = False
+        for trg_idx, trg_ctt in trg_content.items():
+            for prd_idx, prd_ctt in prd_content.items():
+                if trg_ctt == prd_ctt:
+                    # ti = trg_idx[1]
+                    # pi = prd_idx[1]
+                    flag = True
+                    break                                   
+            if flag:
+                break
+        else:
+            return False
     
-    trg_context = {}
-    prd_context = {}
-    
-    for trg_index in trg_indices:
-        trg_context[trg_index] = trg_sent[max(0, trg_index[0] - k): min(len(trg_sent), trg_index[1] + k)]
-    
-    for prd_index in prd_indices:
-        prd_context[prd_index] = prd_sent[max(0, prd_index[0] - k): min(len(prd_sent), prd_index[1] + k)]
-    
-    for trg_ctx in trg_context.values():
-        for prd_ctx in prd_context.values():
-            if trg_ctx == prd_ctx:
-                return True # Return immediately if a match is found
-    
-    return False  # Return False if no match found
+    return True  # Return False if no match found
 
 
 def get_label(src_sent, trg_sent, prd_sent, keyword, k):
@@ -58,28 +103,65 @@ def get_label(src_sent, trg_sent, prd_sent, keyword, k):
     # For each typos
     err_type = set()
     label = 1
-    if keyword:
-        if keyword not in prd_sent:
-            err_type.add("non_keyword")
-            label = 0
-        else:
-            if not context_check(trg_sent, prd_sent, keyword, k):
-                err_type.add("context_mismatch")
-                label = 0
+    corrected_words = []
+    incorrect_words = []
             
     #typos without keyword
     typos = get_typos(src_sent, trg_sent, keyword)
     for typo in typos:
         if typo not in prd_sent:
-            err_type.add("general_csc_err")
-            label = 0
-        else:
-            if not context_check(trg_sent, prd_sent, typo, k):
-                err_type.add("context_mismatch")
+            if "general_csc_err" not in err_type:
+                err_type.add("general_csc_err")
                 label = 0
+                incorrect_words.append(typo)
+        else:
+            corrected_words.append(typo)
+    
+    # Keyword Process
+    if keyword not in prd_sent:
+        err_type.add("non_keyword")
+        label = 0
+        incorrect_words.append(keyword)
+    # else:
+    #     if not context_check(trg_sent, prd_sent, keyword, incorrect_words, k):
+    #         err_type.add("keyword_context")
+    #         label = 0
+    # TODO: Context Mismatch is so difficult!!
+    # if len(corrected_words) > 0:
+    #     if not context_check(trg_sent, prd_sent, corrected_words, incorrect_words, k):
+    #         err_type.add("general_csc_context")
+    #         label = 0
     return label, list(err_type), typos
 
-def compute(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index, metric_mode, k):
+def sent_compute(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index, k):
+    pos_sents, neg_sents, tp_sents, fp_sents, fn_sents, prd_pos_sents, prd_neg_sents, wrong_sents = [], [], [], [], [], [], [], []
+    for s, t, p, keyword, domain, instruction, i in zip(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index):
+        if s != t:
+            pos_sents.append(t)
+            if p == t:
+                tp_sents.append({"domain": domain, "src": s, "trg": t, "prd": p, "i": i})
+            if p == s:
+                fn_sents.append({"domain": domain, "src": s, "trg": t, "prd": p, "i": i})
+
+        else:
+            neg_sents.append(t)
+            if p != t:
+                fp_sents.append({"domain": domain, "src": s, "trg": t, "prd": p, "i": i})
+
+        if s != p:
+            prd_pos_sents.append(t)
+            wrong_sents.append({"domain": domain, "instruction": instruction, "keywords": keyword, "src": s, "trg": t, "prd": p, "i": i})
+        if s == p:
+            prd_neg_sents.append(t)
+
+    p = 1.0 * len(tp_sents) / (len(prd_pos_sents)+ 1e-12)
+    r = 1.0 * len(tp_sents) / (len(pos_sents)+ 1e-12)
+    f1 = 2.0 * (p * r) / (p + r + 1e-12)
+    fpr = 1.0 * len(fp_sents) / (len(neg_sents) + 1e-12)
+    
+    return p, r, f1, fpr, tp_sents, fp_sents, fn_sents, wrong_sents
+
+def keyword_compute(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index, k):
     """
     tp: src != trg, prd has all the typos with the right context.
     prd_pos: src != prd.
@@ -93,23 +175,22 @@ def compute(src_sents, trg_sents, prd_sents, keywords, domains, instructions, in
     """
     pos_sents, neg_sents, tp_sents, fp_sents, fn_sents, prd_pos_sents, prd_neg_sents, wrong_sents  = [], [], [], [], [], [], [], []
     for s, t, p, keyword, domain, instruction, i in zip(src_sents, trg_sents, prd_sents, keywords, domains, instructions, index):
-        if metric_mode == "token":
-            label, err_type, typos = get_label(s, t, p, keyword[1], k)
-            if not label:
-                wrong_sents.append({"len_s_t_p": f"{len(s)} {len(t)} {len(p)}","domain_instruction": f"在{domain}领域，{instruction}","keywords": keyword, "typos": typos, "src": s, "trg": t, "prd": p, "i": i, "err_type": err_type})
+        label, err_type, typos = get_label(s, t, p, keyword[1], k)
+        if not label:
+            wrong_sents.append({"domain": domain, "instruction": instruction, "keywords": keyword, "typos": typos, "src": s, "trg": t, "prd": p, "i": i, "err_type": err_type})
 
         if s != t:
             pos_sents.append(t)
             if label:
-                tp_sents.append({"len_s_t_p": f"{len(s)} {len(t)} {len(p)}","domain_instruction": f"在{domain}领域，{instruction}","keywords": keyword, "typos": typos, "src": s, "trg": t, "prd": p, "i": i})
+                tp_sents.append({"domain": domain, "src": s, "trg": t, "prd": p, "i": i})
             if p == s:
-                fn_sents.append({"len_s_t_p": f"{len(s)} {len(t)} {len(p)}","domain_instruction": f"在{domain}领域，{instruction}", "src": s, "trg": t, "prd": p})
+                fn_sents.append({"domain": domain, "src": s, "trg": t, "prd": p, "i": i})
         else: #s == t
             neg_sents.append(t)
             
             # If the keyword in trg tokens is not found in prd tokens with the right context.
             if not label:
-                fp_sents.append({"len_s_t_p": f"{len(s)} {len(t)} {len(p)}", "src": s, "trg": t, "prd": p})
+                fp_sents.append({"domain": domain, "src": s, "trg": t, "prd": p, "i": i})
 
         if s != p:
             prd_pos_sents.append(p)
