@@ -45,7 +45,11 @@ def interactive_predict(args):
         except KeyboardInterrupt:
             return
 
+
 def load_model(pretrain_model_path, lora_path):
+    if "gpt" in pretrain_model_path.lower():
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        return None, None
     tokenizer = AutoTokenizer.from_pretrained(pretrain_model_path, 
                                         # padding_side='left', 
                                         trust_remote_code=True, 
@@ -157,6 +161,7 @@ def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, tes
     else:
         raise ValueError("Unknown model path for chat template: %s" % model_path)
 
+        
         
 def batch_predict(args):
     """
