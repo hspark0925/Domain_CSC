@@ -152,10 +152,6 @@ def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, tes
             return responses
         
         except openai.error.RateLimitError as e:
-            if attempt < retries - 1:  # Only wait and retry if we have retries left
-                logger.info(f"Rate limit reached. Attempt {attempt + 1} of {retries}. Waiting for {wait_time} seconds before retrying...")
-                time.sleep(wait_time)
-            else:
                 logger.info("Rate limit reached and all retries exhausted.")
             
     else:
