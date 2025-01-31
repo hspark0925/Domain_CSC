@@ -46,6 +46,9 @@ def interactive_predict(args):
             return
 
 def load_model(pretrain_model_path, lora_path):
+    if "gpt" in pretrain_model_path.lower():
+        openai.api_key = os.getenv("OPENAI_API_KEY")
+        return None, None
     tokenizer = AutoTokenizer.from_pretrained(pretrain_model_path, 
                                         # padding_side='left', 
                                         trust_remote_code=True, 
@@ -219,8 +222,5 @@ if __name__ == '__main__':
     if args.test_mode == "interaction":
         interactive_predict(args)
     else:
-        logger.info(f"Test Mode: {args.test_mode}")
-        logger.info(f"Shots: {args.incontext_learning}")
-        logger.info(f"results directory: {args.output_dir}")
         batch_predict(args)
-        evaluate(args.output_dir)        
+        evaluate(args.output_dir)
