@@ -67,7 +67,11 @@ class Prompter(object):
                     if item['false_keyword'] == case['false_keyword']:
                         continue
                     elif item['false_keyword'] not in few_shot_examples:
-                        few_shot_examples.append(item['false_keyword'])
+                        few_shot_examples.append({
+                            "false_keyword": item['false_keyword'],
+                            "true_keyword": item['keyword']
+                            }
+                        )
                 if len(few_shot_examples) < shots:
                     raise ValueError(f"{len(few_shot_examples)} examples found for '{case['domain']}','{case['instruction']}', but {shots} are required. Exiting ...")
                 few_shot_examples = random.sample(few_shot_examples, min(len(few_shot_examples), shots))
@@ -113,15 +117,26 @@ class Prompter(object):
         
         if test_mode == "few_shot_false_case":
             false_cases = []
-            for false_case in item['few_shot_keywords']:
-                if false_case == item['false_keyword']:
-                    raise ValueError("False case leaked: ", false_case['keyword'], item['false_keyword'])
+            for few_shot_keyword in item['few_shot_keywords']:
+                if few_shot_keyword['false_keyword'] == item['false_keyword']:
+                    raise ValueError("False case leaked: ", few_shot_keyword['false_keyword'], item['false_keyword'])
+                if few_shot_keyword['true_keyword'][0] != few_shot_keyword['false_keyword'][0]:
+                    raise ValueError("Source Keyword not matching: ", few_shot_keyword['true_keyword'], few_shot_keyword['false_keyword'])
+                if few_shot_keyword['false_keyword'][0] != few_shot_keyword['false_keyword'][1]:
+                    false_correction = f"“{few_shot_keyword['false_keyword'][0]}”过度改成“{few_shot_keyword['false_keyword'][1]}”"
+                else:
+                    false_correction = f"“{few_shot_keyword['false_keyword'][0]}”保持不变，不进行纠正"
+                if few_shot_keyword['true_keyword'][0] != few_shot_keyword['true_keyword'][1]:
+                    true_correction = f"“{few_shot_keyword['true_keyword'][0]}”改成“{few_shot_keyword['true_keyword'][1]}”"
+                else:
+                    true_correction = f"“{few_shot_keyword['true_keyword'][0]}”保持不变，不进行纠正"
+                
                 false_cases.append(self.template['false_cases'].format(
-                    true_keyword = false_case[0],
-                    false_keyword = false_case[1]
+                    false_correction=false_correction,
+                    correct_correction=true_correction
                     )
                 )
-            false_cases = ", ".join(false_cases)
+            false_cases = "\n".join([f"\t- {item}" for item in false_cases])
                 
         else:
             false_cases = None
