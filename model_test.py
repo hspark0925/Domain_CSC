@@ -45,6 +45,7 @@ def interactive_predict(args):
         except KeyboardInterrupt:
             return
 
+
 def load_model(pretrain_model_path, lora_path):
     if "gpt" in pretrain_model_path.lower():
         openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -161,6 +162,7 @@ def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, tes
         raise ValueError("Unknown model path for chat template: %s" % model_path)
 
         
+        
 def batch_predict(args):
     """
     批量预测
@@ -213,7 +215,7 @@ if __name__ == '__main__':
     parser.add_argument("--lora_path", type=str, help="Path to the checkpoint. If none, test with vanila model.")
     parser.add_argument("--testset_dir", type=str)
     parser.add_argument("--output_dir", type=str, help="Path to store the results.")
-    parser.add_argument("--test_mode", type=str, default="instruction", help="interaction, non_instruction, interaction, false_case_generation")
+    parser.add_argument("--test_mode", type=str, default="instruction", help="interaction, non_instruction, contrastive, interaction, false_case_generation, fewshot_false_case")
     parser.add_argument("--incontext_learning", type=int, default=3, help="Numbers of shots.")
     parser.add_argument("--template_dir", type=str, default="inference", help="Prompt template name.")
     args = parser.parse_args()
@@ -222,5 +224,8 @@ if __name__ == '__main__':
     if args.test_mode == "interaction":
         interactive_predict(args)
     else:
+        logger.info(f"Test Mode: {args.test_mode}")
+        logger.info(f"Shots: {args.incontext_learning}")
+        logger.info(f"results directory: {args.output_dir}")
         batch_predict(args)
-        evaluate(args.output_dir)
+        evaluate(args.output_dir+".json")        

@@ -29,7 +29,7 @@ class Prompter(object):
 
         # Verbose
         if self._verbose:
-            description = self.template.get('description', 'No description provided.')
+            description = self.template['description'].format(test_mode=test_mode)
             print(f"Using prompt template {template_name}: {description}")
 
         with open(testset_dir, "r", encoding="utf-8") as fp:
@@ -61,26 +61,36 @@ class Prompter(object):
         # Look for shots within the same domain
         if case['domain'] in self._grouped_shots:
             matching_items = self._grouped_shots[case['domain']]      
-            
-            # only fewshot the examples with the different keyword.
-            matching_items = [
-                item for item in matching_items
-                if item['keyword'] != case['keyword']
-            ]
-        
-            few_shot_examples.extend(random.sample(matching_items, min(len(matching_items), shots)))
-
-
-        # Look for shots with the same keyword label
-        if len(matching_items) < shots:
-            logger.info(f"{len(matching_items)} examples found for domain '{case['domain']}', but {shots} are required. Getting {shots-len(matching_items)} examples from other domains.")
-            
-            if self.test_mode == "false_case_generation":
-                few_shot_examples.extend(random.sample(self.shot_bank, shots - len(matching_items)))
+            if self.test_mode == "few_shot_false_case":
+                matching_items = [item for item in matching_items if item['instruction'] == case['instruction']]
+                for item in matching_items:
+                    if item['false_keyword'] == case['false_keyword']:
+                        continue
+                    elif item['false_keyword'] not in few_shot_examples:
+                        few_shot_examples.append(item['false_keyword'])
+                if len(few_shot_examples) < shots:
+                    raise ValueError(f"{len(few_shot_examples)} examples found for '{case['domain']}','{case['instruction']}', but {shots} are required. Exiting ...")
+                few_shot_examples = random.sample(few_shot_examples, min(len(few_shot_examples), shots))
             else:
-                few_shot_examples.extend(random.sample(
-                    [item for item in self.shot_bank if item['keyword_label'] == case['keyword_label']], shots - len(matching_items)
-                ))
+                # only fewshot the examples with the different keyword.
+                matching_items = [
+                    item for item in matching_items
+                    if item['keyword'] != case['keyword']
+                ]
+        
+        if self.test_mode != "few_shot_false_case":
+            # Look for shots with the same keyword label
+            if len(matching_items) < shots:
+                # When test mode is few shot false case, raise an error if there are not enough examples.
+                logger.info(f"{len(matching_items)} examples found for domain '{case['domain']}', but {shots} are required. Getting {shots-len(matching_items)} examples from other domains.")
+                if self.test_mode == "false_case_generation":
+                    few_shot_examples.extend(random.sample(self.shot_bank, shots - len(matching_items)))
+                else:
+                    few_shot_examples.extend(random.sample(
+                        [item for item in self.shot_bank if item['keyword_label'] == case['keyword_label'] and item['keyword'] != case['keyword']], 
+                        shots - len(matching_items)
+                    ))
+
             
 
             
@@ -100,13 +110,28 @@ class Prompter(object):
                 )
         else:
             contrastive_example = None
-            
+        
+        if test_mode == "few_shot_false_case":
+            false_cases = []
+            for false_case in item['few_shot_keywords']:
+                if false_case == item['false_keyword']:
+                    raise ValueError("False case leaked: ", false_case['keyword'], item['false_keyword'])
+                false_cases.append(self.template['false_cases'].format(
+                    true_keyword = false_case[0],
+                    false_keyword = false_case[1]
+                    )
+                )
+            false_cases = ", ".join(false_cases)
+                
+        else:
+            false_cases = None
         return self.template[f'user_content_{test_mode}'].format(
             domain=item['domain'],
             instruction=item['instruction'],
             input=item['input'],
             err_keyword=item['keyword'][0],
-            contrastive_example=contrastive_example
+            contrastive_example=contrastive_example,
+            false_cases=false_cases
         )
     
     def assistant_prompter(self, item: dict[str, any], test_mode: str) -> str:
@@ -121,13 +146,16 @@ class Prompter(object):
         
         if self.test_mode != "false_case_generation":
             messages.append({"role": "system", "content": self.template['system_content']})
-        
 
-        for shot in few_shots:
-            messages.append({"role": "user", "content": self.user_prompter(shot, self.test_mode)})
-            messages.append({"role": "assistant", "content": self.assistant_prompter(shot, self.test_mode)})
-            
-        # Do not provide false case for the current sample.
-        item['false_output'] = None
+        if self.test_mode == "few_shot_false_case":
+            item['few_shot_keywords'] = few_shots
+        else:
+            for shot in few_shots:
+                messages.append({"role": "user", "content": self.user_prompter(shot, self.test_mode)})
+                messages.append({"role": "assistant", "content": self.assistant_prompter(shot, self.test_mode)})
+                
+                # Do not provide false case for the current sample.
+                item['false_output'] = None
+    
         messages.append({"role": "user", "content": self.user_prompter(item, self.test_mode)})
         return messages
