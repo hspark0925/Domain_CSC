@@ -129,6 +129,5 @@ def main():
     parser.add_argument("--results_dir", type=str, default="result/01-08/qwen_contrastive/qwen_contrastive_result.json")
     args = parser.parse_args()
     evaluate(args.results_dir)
-
 if __name__ == "__main__":
     main()
