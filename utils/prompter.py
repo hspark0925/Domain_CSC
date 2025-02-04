@@ -81,6 +81,7 @@ class Prompter(object):
                     item for item in matching_items
                     if item['keyword'] != case['keyword']
                 ]
+                few_shot_examples = random.sample(matching_items, min(len(matching_items), shots))
         
         if self.test_mode != "few_shot_false_case":
             # Look for shots with the same keyword label
