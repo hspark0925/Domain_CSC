@@ -45,6 +45,7 @@ def interactive_predict(args):
         except KeyboardInterrupt:
             return
 
+
 def load_model(pretrain_model_path, lora_path):
     if "gpt" in pretrain_model_path.lower():
         openai.api_key = os.getenv("OPENAI_API_KEY")
@@ -161,6 +162,7 @@ def predict_and_tokenize(model, tokenizer, messages: list[dict], model_path, tes
         raise ValueError("Unknown model path for chat template: %s" % model_path)
 
         
+        
 def batch_predict(args):
     """
     批量预测
@@ -222,5 +224,8 @@ if __name__ == '__main__':
     if args.test_mode == "interaction":
         interactive_predict(args)
     else:
+        logger.info(f"Test Mode: {args.test_mode}")
+        logger.info(f"Shots: {args.incontext_learning}")
+        logger.info(f"results directory: {args.output_dir}")
         batch_predict(args)
-        evaluate(args.output_dir)
+        evaluate(args.output_dir)        
