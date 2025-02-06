@@ -117,7 +117,7 @@ def evaluate(results_dir):
     err_types_counts = Counter(err_type for item in wrong_sents for err_type in item['err_type'])
     logger.info(f"Accuracy: {(1-len(wrong_sents)/len(data)) * 100:.1f}%")
     for value_type, count in err_types_counts.items():
-        logger.info(f"{value_type}: {count/len(data) * 100:.1f}%")
+        logger.info(f"{value_type}: {100-(count/len(data) * 100):.1f}%")
     
     processor._write(os.path.join(os.path.dirname(results_dir), "fp_sents.json"), fp_sents)
     processor._write(os.path.join(os.path.dirname(results_dir), "fn_sents.json"), fn_sents)
