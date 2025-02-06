@@ -18,12 +18,6 @@ from utils.calculate_metric import keyword_compute, sent_compute
 from collections import Counter
 import ipdb
 
-logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
-                    datefmt="%m/%d/%Y %H:%M:%S",
-                    level=logging.INFO,
-                    filename='temp.log')
-logger = logging.getLogger(__name__)
-
 class DataProcessor:
     """
     Processor for the data set:
@@ -44,6 +38,8 @@ def clean_text(text):
     text = re.sub(r'，', ',', text)
     text = re.sub(r'！', '!', text)
     text = text.lower()
+    if text[-1] == '。':
+        text = text[:-1]
     return text
 
 def prediction_process(prediction, input):
@@ -64,8 +60,12 @@ def prediction_process(prediction, input):
         
     return prediction
     
-   
 def evaluate(results_dir):
+    logging.basicConfig(format="%(asctime)s - %(levelname)s - %(name)s -   %(message)s",
+                    datefmt="%m/%d/%Y %H:%M:%S",
+                    level=logging.INFO,
+                    filename='temp.log')
+    logger = logging.getLogger(__name__)
     
     processor = DataProcessor()
     
